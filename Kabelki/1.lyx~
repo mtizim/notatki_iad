@@ -75,7 +75,10 @@
 \end_layout
 
 \begin_layout Standard
-Artur Przelaskowski
+prof.
+ dr hab.
+ inż.
+ Artur Przelaskowski
 \end_layout
 
 \begin_layout Standard
@@ -83,7 +86,90 @@ arturp@mini.pw.edu.pl
 \end_layout
 
 \begin_layout Standard
-www.ire.pw.edu.pl/~arturp/Dydaktyka/pel -tu 
+www.ire.pw.edu.pl/~arturp/Dydaktyka/PEL
+\end_layout
+
+\begin_layout Standard
+^ prezentacje z wykłładów
+\end_layout
+
+\begin_layout Enumerate
+Czym jest elektronika? ( różne definicje)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dyscyplina nauk technicznych zajmująca się obwodami elektrycznymi - ogólnikowa
+\end_layout
+
+\begin_layout Enumerate
+Nauka o przetwarzaniu informacji która jest zakodowana w zjawisjack fizycznych
+ - fizyczno-informatyczna
+\end_layout
+
+\begin_layout Enumerate
+Elekronika zajmuje się korzystaniem z możliwości manipulowania ładunkami
+ elektrycznymi oraz kwantami światła - fizyczna
+\end_layout
+
+\begin_layout Enumerate
+Sterowanie ruchem elektronów i inne śmieszne rzeczy - fizyczno-materiałowo-konst
+rukcyjna
+\end_layout
+
+\begin_layout Enumerate
+Wykorzystywanie zjawisk związanych z ruchem nośników elektrycznych itp.
+ -ad extra
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Elektronika - pragmatyka kształtowania sygnałów
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+i/o, zasilanie, sterowanie
+\end_layout
+
+\begin_layout Enumerate
+Sterowanie sygnałami fizycznymi w celach użytkowych - kształtowanie sygnałów
+ poprzes stosowanie technologii sterowania ruchem ładunków elektrycznych,fotonów
+ i rozkładem pól w okreslonych uwarunkowaniach fizycznych w celu uzyskania
+ określonych efektów użytkowych
+\end_layout
+
+\begin_layout Enumerate
+Metoda - inżynierskie modele fizyczne i proste metody obliczeniowe oraz
+ pragmatyczna sztuka projektowania
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+kombinacja pewnych praw podstawowych, reguł bazujacych na doświadczeniu
+ i dużej porcji trików
+\end_layout
+
+\begin_layout Enumerate
+niematematyczne techniki projektowania, zrozumienie rzeczywistych wyborów
+ i kompromisów towarzyszących konstruowaniu 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Zamierzone cele i efekty przedmiotu
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+to jest na usosie 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Przelaskowski,Jóźwiak - podstawy elektroniki-skrypt podstaw elektroniki
+ - zadania
 \end_layout
 
 \end_body
