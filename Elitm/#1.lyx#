@@ -1283,7 +1283,7 @@ Przykład dowodu formalnego formuły
 \begin_layout Enumerate
 Tw.
  Każda formuła F zapisana w języku rachunku zdań sprowadza się do postaci
- dysjunktywno koniunktywnej (DNF).
+ dysjunktywno koniunktywnej.
  Czyli dla każdej F istnieje F' w DNF tak, że 
 \begin_inset Formula $F\iff F'$
 \end_inset
@@ -1291,13 +1291,6 @@ Tw.
 
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-DNF to drzewkowo alternatywy na samej górze, poziom niżej koniunkcja, dwa
- poziomy niżej zmienna lub jej negacja
-\end_layout
-
-\end_deeper
 \end_deeper
 \end_body
 \end_document

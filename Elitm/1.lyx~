@@ -1283,7 +1283,7 @@ Przykład dowodu formalnego formuły
 \begin_layout Enumerate
 Tw.
  Każda formuła F zapisana w języku rachunku zdań sprowadza się do postaci
- dysjunktywno koniunktywnej (DNF).
+ dysjunktywno koniunktywnej.
  Czyli dla każdej F istnieje F' w DNF tak, że 
 \begin_inset Formula $F\iff F'$
 \end_inset
