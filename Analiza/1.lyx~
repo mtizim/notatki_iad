@@ -107,7 +107,7 @@ Gewert , Skoczylas - Analiza matematyczna I /Definicje twierdzenia wzory
 \end_layout
 
 \begin_layout Enumerate
-Leja - Rachunek różniczkowy i całkowy PWn
+Leja - Rachunek różniczkowy i całkowy PWN
 \end_layout
 
 \begin_layout Standard
@@ -186,10 +186,10 @@ OZNACZENIA
 \end_inset
 
 
-\begin_inset Formula $x^{2}>=$
+\begin_inset Formula $x^{2}\ge0$
 \end_inset
 
-0
+
 \end_layout
 
 \begin_layout Enumerate
@@ -211,7 +211,7 @@ OZNACZENIA
 \end_inset
 
  := 
-\begin_inset Formula ${x\in\mathbb{R}:\text{a<x \ensuremath{\le b}}}$
+\begin_inset Formula $\{x\in\mathbb{R}:\text{a<x \ensuremath{\le b}}\}$
 \end_inset
 
 
@@ -328,7 +328,7 @@ ograniczenia górne -
 \begin_inset Formula $\implies$
 \end_inset
 
-zbiór A jest ograniczone
+zbiór A jest ograniczony
 \end_layout
 
 \end_deeper
@@ -385,7 +385,7 @@ A
 \end_inset
 
  oraz 
-\begin_inset Formula $\forall_{\epsilon>0}\exists_{a_{0}\in A}a_{0}>\beta-\epsilon$
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{a_{0}\in A}a_{0}>\beta-\epsilon)$
 \end_inset
 
 
@@ -454,7 +454,11 @@ Aksjomat ciągłości - Każdy zbiór
 \begin_inset Formula $\emptyset\neq A\subset\mathbb{R}$
 \end_inset
 
- ograniczony z dołu/góry ma skonczony kres dolny/górny
+ ograniczony z dołu/góry ma skonczony kres dolny/górny 
+\begin_inset Formula $\in\mathbb{R}$
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -680,7 +684,7 @@ Def.
 \begin_inset Formula $\mathbb{N}=\cap_{A\in I}A$
 \end_inset
 
- gdzieI to rodzina wszystkich zbiorów induktywnych
+ gdzie I to rodzina wszystkich zbiorów induktywnych
 \end_layout
 
 \end_deeper
