@@ -1,0 +1,645 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+08.10.2019
+\end_layout
+
+\begin_layout Standard
+Barbara Roszkowska-Lech
+\end_layout
+
+\begin_layout Standard
+www.mini.pw.edu.pl/~barosz
+\end_layout
+
+\begin_layout Standard
+barosz@mini.pw.edu.pl
+\end_layout
+
+\begin_layout Standard
+521- 
+\end_layout
+
+\begin_layout Standard
+2 kolokwia - po 16 punktów
+\end_layout
+
+\begin_layout Standard
+24 pkt z kolokwiów zwalnia z części zadaniowej egzaminu - 60pkt zadaniowa,20pkt
+ teoretyczna
+\end_layout
+
+\begin_layout Standard
+zadania weekendowe
+\end_layout
+
+\begin_layout Standard
+kolokwia - piątek 18.00 29.11,24.01
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(f\circ g)(i)=f(g(i))$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\circ id=f=id\circ f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}\circ f=id$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Grupa 
+\begin_inset Formula $(X,\circ)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x,y\in X}x\circ y\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Wewnętrzność
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a,b,c\in G}(a\circ b)\circ c=a\circ(b\circ c)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Łączność
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists_{e\in X}\forall_{x\in X}x\circ e=e\circ x=x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Element neutralny
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in X}\exists_{x'\in X}x\circ x'=x'\circ x=e$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Odwracalność
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Rozwiązywanie układów n równań z n niewiadomymi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Na razie - współczynniki układów równań to liczby rzeczywiste
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Układ m równań z niewiadomymi 
+\begin_inset Formula $x_{1,}...,x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $a_{11}x_{1}+...+a_{1n}x_{n}=b_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $a_{21}x_{1}+...+a_{2n}x_{n}=b_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+...
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $a_{m}x_{1}+...+a_{mn}x_{n}=b_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+na przykład
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2x+3y-5z=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x+2y-3z=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rozwiązanie: 
+\begin_inset Formula $(s_{1},...,s_{n})\in\mathbb{R}^{n}$
+\end_inset
+
+,tj 
+\begin_inset Formula $\forall_{i}a_{i1}s_{1}+...+a_{in}s_{n}=b_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+(
+\begin_inset Formula $\mathbb{R}^{n}=\{(x_{1},..,x_{n})\,x_{i}\in\mathbb{R}$
+\end_inset
+
+) = 
+\begin_inset Formula $\mathbb{R}\times\mathbb{R}\times...\times\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\times B=\{(a,b)\,a\in A,b\in B\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Układ sprzeczny - układ który nie ma rozwiązań
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{vmatrix}b_{1}\\
+...\\
+b_{m}
+\end{vmatrix}$
+\end_inset
+
+- kolumna wyrazów wolnych
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $\forall_{i}b_{i}=0\rightarrow$
+\end_inset
+
+układ U nazywamy jednorodnym - układ jednorodny zawsze ma rozwiązania zerowe
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2x+3y=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x+2y=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $r_{1}-2r_{2}$
+\end_inset
+
+ :
+\begin_inset Formula $x+2y=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $r_{1}-r_{2}$
+\end_inset
+
+ :
+\begin_inset Formula $-y=-6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $r_{1}+2r_{2}$
+\end_inset
+
+ :
+\begin_inset Formula $x=-5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $-r_{2}$
+\end_inset
+
+ :
+\begin_inset Formula $y=6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dwa układy równań są równoważne gdy maja te same zbiory rozwiązań
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lemat: Następujące operacje przekształcają układ równań na układ równoważny.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Zamiana kolejności dwóch równań
+\end_layout
+
+\begin_layout Enumerate
+Do jakiegoś równania dodajemy inne równanie pomnożone przez stałą
+\end_layout
+
+\begin_layout Enumerate
+Mnożenie równania przez stałą inną od zera
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x+2y-3z+t=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2x-y+z-t=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $r_{1}-2r_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $x+2y-3z+t=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $-5y+7z-3t=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $-5y+7z-3t=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\frac{r_{2}}{5}$
+\end_inset
+
+ 
+\begin_inset Formula $-y+\frac{7}{5}z-\frac{3}{5}t=\frac{3}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: itd itp każdy umie
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+potem
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x=\frac{-1}{5}+\frac{z}{5}+\frac{t}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $y=\frac{-3}{5}+\frac{7}{5}z+\frac{3}{5}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $z,t\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Rozw (to jest złe rozwiązanie ale jebać) 
+\begin_inset Formula $\{(\frac{11}{5}+\frac{z}{5}+\frac{t}{5};\frac{-3}{5}+\frac{7}{5}z+\frac{3}{5}t,z,t)\,z,t\in\mathbb{R}\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $U':$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x_{j1}=c_{11}x_{1}+...+c_{1n}x_{n}+d_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+...
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x_{jk}=c_{k1}x_{1}+...+c_{kn}x_{n}+d_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+dla 
+\begin_inset Formula $j_{1}<...<j_{k}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $x_{1},...,x_{jk}$
+\end_inset
+
+ nie występują po prawej stronie 
+\begin_inset Formula $U'$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x_{1},...,x_{jk}$
+\end_inset
+
+ - zmienne zależne , 
+\begin_inset Formula $x_{i}:\,i\notin\{j_{1},...,j_{k}\}$
+\end_inset
+
+ - zmienne niezależne (parametry)
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $U'$
+\end_inset
+
+ jest równoważny 
+\begin_inset Formula $U$
+\end_inset
+
+ to 
+\begin_inset Formula $U'$
+\end_inset
+
+ nazywamy rozwiązaniem ogólnym układu 
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Każde podstawienie ciągu 
+\begin_inset Formula $n-k$
+\end_inset
+
+ liczb za parametry i wyliczeniu pozostałych 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ daje rozwiązanie
+\end_layout
+
+\begin_layout Enumerate
+Różnym ciągom parametrów odpowiadają różne rozwiązania
+\end_layout
+
+\begin_layout Enumerate
+Każde rozwiązanie mozna otrzymać w ten sposób
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
