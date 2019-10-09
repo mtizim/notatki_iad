@@ -1095,10 +1095,30 @@ Z założenia
 \begin_inset Formula $\lim_{n\rightarrow\infty}|a_{n}b_{n}|=0$
 \end_inset
 
- 
+
 \end_layout
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.8: Jeśli ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest niemalejący i ograniczony z góry, to jest zbieżny
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 2.8.1: Jeśli ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest nierosnący i ograniczony z dołu, to jest zbieżny
+\end_layout
+
+\begin_layout Enumerate
+2.8 oraz 2.8.1 razem: Jeśli ciąg jest monotoniczny i ograniczony, to jest zbieżny
+\end_layout
+
 \end_body
 \end_document

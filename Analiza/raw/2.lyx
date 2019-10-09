@@ -1120,5 +1120,32 @@ Twierdzenie 2.8.1: Jeśli ciąg
 2.8 oraz 2.8.1 razem: Jeśli ciąg jest monotoniczny i ograniczony, to jest zbieżny
 \end_layout
 
+\begin_layout Enumerate
+Twierdzenie 2.11 (z przyszłości):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $|a|<1\implies\lim_{n\rightarrow\infty}|a|^{n}$
+\end_inset
+
+= 0
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a>0\implies\lim_{n\rightarrow\infty}\sqrt[n]{a}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{n}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
