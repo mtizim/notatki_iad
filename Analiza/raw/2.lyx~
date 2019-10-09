@@ -413,6 +413,38 @@ Wtedy
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $lim_{n\rightarrow\infty}\frac{1}{n}=0$
+\end_inset
+
+ bo 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|\frac{1}{n}-0|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\frac{1}{n}<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\frac{1}{\epsilon}<n$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_deeper
 \end_body
 \end_document

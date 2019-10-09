@@ -403,7 +403,7 @@ Wtedy
 \end_inset
 
  nazywamy granicą i zapisujemy 
-\begin_inset Formula $lim_{n\rightarrow\infty}a_{n}=g$
+\begin_inset Formula $\lim{}_{n\rightarrow\infty}a_{n}=g$
 \end_inset
 
  lub 
@@ -416,7 +416,7 @@ Wtedy
 \begin_deeper
 \begin_layout Enumerate
 Przykład: 
-\begin_inset Formula $lim_{n\rightarrow\infty}\frac{1}{n}=0$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1}{n}=0$
 \end_inset
 
  bo 
@@ -437,7 +437,7 @@ Przykład:
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula $\frac{1}{\epsilon}<n$
+\begin_inset Formula $\frac{1}{\epsilon}<n\,\longrightarrow\,n_{0}=\lceil\frac{1}{\epsilon}\rceil$
 \end_inset
 
 
@@ -446,5 +446,45 @@ Przykład:
 \end_deeper
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+Def.
+ Jeśli ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ nie jest zbieżny to nazywamy go rozbieżnym;
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 2.1: Każdy ciąg stały jest zbieżny: 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{n}=a\implies\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód: 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|a_{n}-a|<\epsilon$
+\end_inset
+
+.
+ Ponieważ 
+\begin_inset Formula $\forall_{n_{0}\in\mathbb{N}}a_{n}-a=0$
+\end_inset
+
+, to zawsze 
+\begin_inset Formula $0<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.2: Ciąg zbieżny ma tylko jedną granicę
+\end_layout
+
 \end_body
 \end_document
