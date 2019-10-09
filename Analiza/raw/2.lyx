@@ -1,0 +1,450 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+09.10.2019
+\end_layout
+
+\begin_layout Standard
+CIĄGI LICZBOWE
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciągiem 
+\begin_inset Formula $\{a_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+ lub 
+\begin_inset Formula $\{a_{n}\}_{n\ge1}$
+\end_inset
+
+lub 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ nazywamy funkcję 
+\begin_inset Formula $\mathbb{N}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Ponadto 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ nazywamy n-tym wyrazem ciągu
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\sqrt[n]{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+^ ciąg zdefiniowany przez podanie wzoru na nty wyraz tego ciągu
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1,\sqrt{2},\sqrt[3]{3}$
+\end_inset
+
+ itp
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $b_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $b_{n+1}=b_{n}+b_{n-1},n\ge2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+^ ciąg zdefiniowany rekurencyjnie
+\end_layout
+
+\begin_layout Enumerate
+Pierwsze wyrazy ciągu - 
+\begin_inset Formula $1,1,2,3,5,8,13,21,...$
+\end_inset
+
+ fibonacci
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest ograniczony z dołu 
+\begin_inset Formula $\iff\exists_{m\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\ge m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest ograniczony z góry 
+\begin_inset Formula $\iff\exists_{M\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\le M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest ograniczony 
+\begin_inset Formula $\iff(\exists_{m\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\ge m)\land(\exists_{M\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\le M)$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\exists_{K\in\mathbb{R}}\forall_{n\in\mathbb{N}}|a_{n}|\le K$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ciąg 
+\begin_inset Formula $a_{n}=\frac{1}{n}$
+\end_inset
+
+ jest ograniczony z dołu, bo 
+\begin_inset Formula $\exists_{m\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\ge m$
+\end_inset
+
+ (
+\begin_inset Formula $m=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Ciąg 
+\begin_inset Formula $a_{n}=\frac{1}{n}$
+\end_inset
+
+ jest ograniczony z dołu, bo 
+\begin_inset Formula $\exists_{M\in\mathbb{R}}\forall_{n\in\mathbb{N}}a_{n}\le M$
+\end_inset
+
+ (
+\begin_inset Formula $m=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Skoro ciąg jest ograniczony z góry i z dołu to możemy powiedzieć że ciąg
+ ten jest ograniczony
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest rosnący 
+\begin_inset Formula $\iff\forall_{n\in\mathbb{N}}a_{n+1}>a_{n}\frac{\forall_{n\in\mathbb{N}}a_{n}>0}{\iff}\forall_{n\in\mathbb{N}}\frac{a_{n+1}}{a_{n}}>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest niemalejący
+\begin_inset Formula $\iff\forall_{n\in\mathbb{N}}a_{n+1}\ge a_{n}\frac{\forall_{n\in\mathbb{N}}a_{n}>0}{\iff}\forall_{n\in\mathbb{N}}\frac{a_{n+1}}{a_{n}}\ge1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest malejący 
+\begin_inset Formula $\iff\forall_{n\in\mathbb{N}}a_{n+1}<a_{n}\frac{\forall_{n\in\mathbb{N}}a_{n}>0}{\iff}\forall_{n\in\mathbb{N}}\frac{a_{n+1}}{a_{n}}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest nierosnący 
+\begin_inset Formula $\iff\forall_{n\in\mathbb{N}}a_{n+1}\le a_{n}\frac{\forall_{n\in\mathbb{N}}a_{n}>0}{\iff}\forall_{n\in\mathbb{N}}\frac{a_{n+1}}{a_{n}}\le1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ciągi rosnące,niemalejące,malejące i nierosnące nazywamy monotonicznymi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+np 
+\begin_inset Formula $a_{n}=\frac{(-1)^{n}}{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}-1<a_{2}=\frac{1}{2}>a_{3}=-\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\frac{n}{n+1}=\frac{n+1-1}{n+1}=1-\frac{1}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ze wzrostem n, n+1 rośnie, więc 
+\begin_inset Formula $\frac{1}{n+1}$
+\end_inset
+
+ maleje, więc 
+\begin_inset Formula $1-\frac{1}{n+1}$
+\end_inset
+
+ rośnie
+\end_layout
+
+\begin_layout Enumerate
+Zatem ciąg 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ jest rosnący
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Mówimy, że ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest zbieżny do granicy 
+\begin_inset Formula $g\in\mathbb{R}\iff\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|a_{n}-g|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dla dowolnie małego 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ dla wyrazów ciągu o dostatecznie dużych wartościach, odległość pomiędzy
+ dowolnym wyrazem ciągu spełniającym warunki a 
+\begin_inset Formula $g$
+\end_inset
+
+ jest mniejsza od 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Wtedy 
+\begin_inset Formula $g$
+\end_inset
+
+ nazywamy granicą i zapisujemy 
+\begin_inset Formula $lim_{n\rightarrow\infty}a_{n}=g$
+\end_inset
+
+ lub 
+\begin_inset Formula $a_{n}\rightarrow g$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $lim_{n\rightarrow\infty}\frac{1}{n}=0$
+\end_inset
+
+ bo 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|\frac{1}{n}-0|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\frac{1}{n}<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\frac{1}{\epsilon}<n$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_body
+\end_document
