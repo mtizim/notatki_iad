@@ -717,7 +717,14 @@ Niech
 \end_inset
 
  jeśli z A możemy otrzymać B za pomocą skończonej liczby operacji elementarnych)
+ macierzą w postaci schodkowej i z macierzą w postaci schodkowo zredukowanej.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Z tego wynika, że każdy układ równań o współczynnikach w K ma rozwiązanie
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

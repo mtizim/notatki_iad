@@ -574,7 +574,7 @@ b_{m}
 \begin_layout Enumerate
 Def.
  
-\begin_inset Formula $A\subset M_{n}^{m}(K)$
+\begin_inset Formula $A\in M_{n}^{m}(K)$
 \end_inset
 
  Operacjami elementarnymi macierzy 
@@ -628,7 +628,7 @@ Formalna definicja - jak się macierz ułoży w takie jakby schodki to jest
 \begin_deeper
 \begin_layout Enumerate
 Mówimy, że macierz 
-\begin_inset Formula $A\subset M_{n}^{m}(K)$
+\begin_inset Formula $A\in M_{n}^{m}(K)$
 \end_inset
 
  jest w postaci schodkowej, jeśli:
@@ -690,5 +690,34 @@ zredukowanej
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+Niech 
+\begin_inset Formula $K$
+\end_inset
+
+ ciało.
+ Każda 
+\begin_inset Formula $\neq0$
+\end_inset
+
+ macierz 
+\begin_inset Formula $A\in M_{n}^{m}(K$
+\end_inset
+
+) jest równoważna (
+\begin_inset Formula $A$
+\end_inset
+
+ jest równoważne 
+\begin_inset Formula $B$
+\end_inset
+
+ , 
+\begin_inset Formula $A\approx B$
+\end_inset
+
+ jeśli z A możemy otrzymać B za pomocą skończonej liczby operacji elementarnych)
+\end_layout
+
 \end_body
 \end_document
