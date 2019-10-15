@@ -508,7 +508,7 @@ potem
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula $x=\frac{-1}{5}+\frac{z}{5}+\frac{t}{5}$
+\begin_inset Formula $x=\frac{11}{5}+\frac{z}{5}+\frac{t}{5}$
 \end_inset
 
 
@@ -532,7 +532,7 @@ potem
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Rozw (to jest złe rozwiązanie ale jebać) 
+Rozw 
 \begin_inset Formula $\{(\frac{11}{5}+\frac{z}{5}+\frac{t}{5};\frac{-3}{5}+\frac{7}{5}z+\frac{3}{5}t,z,t)\,z,t\in\mathbb{R}\}$
 \end_inset
 

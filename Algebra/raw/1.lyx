@@ -270,7 +270,7 @@ na przykład
 
 \end_deeper
 \begin_layout Enumerate
-Rozwiązanie: 
+Rozwiązanie to taki zbiór 
 \begin_inset Formula $(s_{1},...,s_{n})\in\mathbb{R}^{n}$
 \end_inset
 
@@ -282,6 +282,14 @@ Rozwiązanie:
 \end_layout
 
 \begin_deeper
+\begin_layout Enumerate
+Definicja 
+\begin_inset Formula $n$
+\end_inset
+
+-iloczynu kartezjańskiego
+\end_layout
+
 \begin_layout Enumerate
 (
 \begin_inset Formula $\mathbb{R}^{n}=\{(x_{1},..,x_{n})\,x_{i}\in\mathbb{R}$

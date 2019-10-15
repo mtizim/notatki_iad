@@ -985,11 +985,6 @@ Zdanie jest tautologią jeśli jest prawdziwe w każdym modelu
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-W logice pierwszego rzędu też były modele, tylko nazywaliśmy je każdym możliwym
- wartościowaniem
-\end_layout
-
 \end_deeper
 \end_body
 \end_document

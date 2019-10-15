@@ -1147,5 +1147,30 @@ Twierdzenie 2.11 (z przyszłości):
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+def.
+ 
+\begin_inset Formula $f:\,A\rightarrow\mathbb{R},A\subseteq\mathbb{R}$
+\end_inset
+
+ jest rosnące, jeśli 
+\begin_inset Formula $\forall_{x_{1},x_{2}\in A}:(x_{1}<x_{2}\implies f(x_{1})<f(x_{2}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+def 
+\begin_inset Formula $f:\,A\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją okresową jeśli 
+\begin_inset Formula $\exists_{r\in\mathbb{R\setminus}\{0\}}\forall_{a\in A}x+r\in A\,\land\,x-r\in A\,\land\,f(a)=f(a+r)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

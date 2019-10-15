@@ -805,6 +805,135 @@ Formuły powstałe z tautologii rachunku zdań przez zastąpienie zmiennych
  - ale nie w drugą stronę
 \end_layout
 
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Dowód: 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ - zakres zmiennych 
+\begin_inset Formula $x,y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+ będzie takie, że 
+\begin_inset Formula $\forall_{y}\phi(x_{0},y)$
+\end_inset
+
+ jest prawdą
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ Weźmy dowolne 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+ Prawdą jest, że dla tego 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(x_{0},y)$
+\end_inset
+
+ jest prawdą
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ Zatem rzeczywiście 
+\begin_inset Formula $\forall_{y}\exists_{x}\phi(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Przykład: Przykład, że implikacja odwrotna nie zachodzi
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $X=Y=\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $\phi(x,y)=(x>y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $\exists_{x\in\mathbb{R}}\forall_{y\in\mathbb{R}}x>y$
+\end_inset
+
+ - zdanie fałszywe
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{y\in\mathbb{R}}\exists_{x\in\mathbb{R}}x>y$
+\end_inset
+
+ - zdanie prawdziwe, więc
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{y\in\mathbb{R}}\exists_{x\in\mathbb{R}}x>y\implies\exists_{x\in\mathbb{R}}\forall_{y\in\mathbb{R}}x>y$
+\end_inset
+
+ jest fałszywe 
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\forall_{x}(\phi(x)\land\psi(x))\iff\forall_{x}\phi(x)\land\forall_{x}\psi(x)$
 \end_inset
