@@ -964,5 +964,32 @@ Przykład: Przykład, że implikacja odwrotna nie zachodzi
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+Tautologia dla formuł z kwantyfikatorami:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Logika pierwszego rzędu ma inną definicję tautologii - dla wszystkich wartościow
+ań zdanie jest prawdziwe
+\end_layout
+
+\begin_layout Enumerate
+Dla rachunku predykatów tautologia jest formułą lub zdaniem - (formuła bez
+ zmiennych wolnych),
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Zdanie jest tautologią jeśli jest prawdziwe w każdym modelu
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+W logice pierwszego rzędu też były modele, tylko nazywaliśmy je każdym możliwym
+ wartościowaniem
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
