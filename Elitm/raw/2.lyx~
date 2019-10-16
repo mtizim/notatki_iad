@@ -772,7 +772,11 @@ Przykłady:
 \begin_deeper
 \begin_layout Enumerate
 Formuły powstałe z tautologii rachunku zdań przez zastąpienie zmiennych
- formami rachunku predykatów
+ formami rachunku predykatów (
+\begin_inset Formula $X$
+\end_inset
+
+ - zakres x)
 \end_layout
 
 \begin_deeper
@@ -956,10 +960,179 @@ Przykład: Przykład, że implikacja odwrotna nie zachodzi
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\forall_{x}(\phi(x)\lor\psi(x))\implies\forall_{x}\phi(x)\lor\forall_{x}\psi(x)$
+\begin_inset Formula $\forall_{x}(\phi(x)\lor\psi(x))\impliedby\forall_{x}\phi(x)\lor\forall_{x}\psi(x)$
 \end_inset
 
  - forall-alternatywa/ exists-koniunkcja
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x}\phi(x)\implies\phi(x_{0})$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\neg(\forall_{x}\phi(x))\iff\exists_{x}\neg\phi(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\neg(\exists_{x}\phi(x))\iff\forall_{x}\neg\phi(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall_{x}(\phi(x)\implies\psi(x)))\implies((\forall_{x}\phi(x))\implies(\forall_{x}\psi(x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x}\phi(x)\lor\psi\iff(\forall_{x}\phi(x))\lor\psi$
+\end_inset
+
+- x nie jest zmienną wolną w 
+\begin_inset Formula $\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x}(\phi(x)\land\psi)\iff(\exists_{x}\phi(x))\land\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\phi\implies\forall_{x}\psi(x))\iff\forall_{x}(\phi\implies\psi(x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\phi\implies\exists_{x}\psi(x))\iff\exists_{x}(\phi\implies\psi(x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall_{x}\phi(x)\implies\psi)\iff\exists_{x}(\phi(x)\implies\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+D: 
+\begin_inset Formula $((\forall_{x}\psi(x))\implies\phi)\iff\neg(\forall_{x}\psi(x))\lor\phi\iff(\exists_{x}\neg\psi(x))\lor\phi\iff\exists_{x}(\neg\psi(x)\lor\phi)\iff\exists_{x}(\psi(x)\implies\phi)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $((\exists_{x}\phi(x))\implies\psi)\iff\forall_{x}(\phi(x)\implies\psi)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(vii) 
+\begin_inset Formula $\phi(x)=(x>0),\psi(x)=(x<0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\exists_{x}\phi(x)\land\exists_{x}\psi(x)\iff\exists_{x}x>0\land\exists_{x}x<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: ^ fałsz - w (vii) implikacja odwrotna nie zachodzi
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(viii) 
+\begin_inset Formula $\phi(x)=(x\ge0),\,\psi(x)=(x<0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{x}(\phi(x)\lor\psi(x))\iff\forall_{x}(x\ge0\lor x<0)$
+\end_inset
+
+ - prawda
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(xii) 
+\begin_inset Formula $\phi(x)=(x>0),\,\psi(x)=(x>1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{x}(\phi(x)\implies\psi(x))\iff\forall_{x}(x>0\implies x>1)$
+\end_inset
+
+- działa, bo weźmy 
+\begin_inset Formula $x=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+...
+ W (viii) oraz (xii) implikacje odwrotne nie są tautologiami
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
 \end_layout
 
 \end_deeper
