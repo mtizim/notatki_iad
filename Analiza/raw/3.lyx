@@ -1,0 +1,1177 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+16.10.2019
+\end_layout
+
+\begin_layout Standard
+Nierówność Bernoulliego: 
+\begin_inset Formula $\forall_{x>-1,n\in\mathbb{N}}(1+x)^{n}\ge1+nx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 2.8: Każdy ciąg monotoniczny i ograniczony jest zbieżny.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest monotoniczny i ograniczony 
+\begin_inset Formula $\implies$
+\end_inset
+
+(nie 
+\begin_inset Formula $\impliedby$
+\end_inset
+
+)
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ zbieżny
+\end_layout
+
+\begin_layout Enumerate
+Ciąg, który jest zbieżny, nie musi być monotoniczny.
+ Na przykład 
+\begin_inset Formula $a_{n}=\frac{(-1)^{n}}{n}$
+\end_inset
+
+.
+ Ciąg ten jest zbieżny z twierdzenia o trzech ciągach, bo 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\frac{-1}{n}\le\frac{(-1)^{n}}{n}\le\frac{1}{n}\implies\lim_{n\rightarrow\infty}\frac{(-1)^{n}}{n}=0$
+\end_inset
+
+.
+ Ale ciąg ten nie jest monotoniczny, bo 
+\begin_inset Formula $a_{1}=-1<a_{2}=\frac{1}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $a_{2}=\frac{1}{2}>a_{3}=\frac{-1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Granice niewłaściwe
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest rozbieżny do 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ (co zapisujemy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}=+\infty$
+\end_inset
+
+ lub 
+\begin_inset Formula $a_{n}\rightarrow+\infty$
+\end_inset
+
+)
+\begin_inset Formula $\iff\forall_{D>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}a_{n}>D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest rozbieżny do 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ (co zapisujemy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}=-\infty$
+\end_inset
+
+ lub 
+\begin_inset Formula $a_{n}\rightarrow-\infty$
+\end_inset
+
+)
+\begin_inset Formula $\iff\forall_{D>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}a_{n}<-D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykład:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\rightarrow\infty}n=\infty$
+\end_inset
+
+,bo 
+\begin_inset Formula $\forall_{D>0}\exists_{n_{0}\in\mathbb{N},n_{0}=\lceil D\rceil}\forall_{n\ge n_{0}}a_{n}>D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.9 ( o dwóch ciągach): Jeśli 
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}a_{n}\le b_{n}$
+\end_inset
+
+ i 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=+\infty$
+\end_inset
+
+, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}a_{n}\le b_{n}$
+\end_inset
+
+ i 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b=-\infty$
+\end_inset
+
+, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=-\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.10:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=\pm\infty$
+\end_inset
+
+, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1}{a_{n}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=+\infty$
+\end_inset
+
+ i ciąg 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+ jest ograniczony z dołu, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{n}+b_{n})=+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=-\infty$
+\end_inset
+
+ i ciąg 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+ jest ograniczony z góry, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{n}+b_{n})=-\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykład:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Niech 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=\pm\infty$
+\end_inset
+
+.
+ Co możemy powiedzieć o zbieżności ciągu 
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Nic, bo na przykład 
+\begin_inset Formula $a_{n}=\frac{1}{n}\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}=n\rightarrow\infty,$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}b_{n}=1\rightarrow1$
+\end_inset
+
+, ale dla 
+\begin_inset Formula $a_{n}=\frac{1}{n^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}b_{n}\rightarrow0$
+\end_inset
+
+, lub 
+\begin_inset Formula $a_{n}=\frac{1}{\sqrt{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}b_{n}\rightarrow\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[0\cdot\infty]$
+\end_inset
+
+ to symbol nieoznaczony
+\end_layout
+
+\begin_layout Enumerate
+Inne symbole nieoznaczone:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $[\infty-\infty]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\frac{\infty}{\infty}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\infty^{0}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[0^{0}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[1^{\infty}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ale dla 
+\begin_inset Formula $a\in\mathbb{R}:$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $[a+\infty]=\infty$
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[a\cdot\infty]=(\infty$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $a>0$
+\end_inset
+
+, 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $a<0$
+\end_inset
+
+
+\begin_inset Formula $)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\frac{a}{\infty}]=0$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.11: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $|a|<1\implies\lim_{n\rightarrow\infty}|a|^{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+D: 1.
+ przypadek: 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a^{n}=\lim_{n\rightarrow\infty}0^{n}=\lim_{n\rightarrow\infty}0=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+2.: 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\frac{1}{|a|}>1$
+\end_inset
+
+ więc istnieje 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ taka, że 
+\begin_inset Formula $\frac{1}{|a|}=1+\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\frac{1}{|a|^{n}}=(\frac{1}{|n|})^{n}=(1+\delta)^{n}\ge^{nier.Bern}1+n\delta\ge n\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}0\le|a|^{n}\le\frac{1}{n\delta}\implies^{tw.o\,3\,ciągach}\lim_{n\rightarrow\infty}|a|=0\implies\lim_{n\rightarrow\infty}|a^{n}|=0\implies^{uwaga\,2.1}\lim_{n\rightarrow\infty}a^{n}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a>0\implies\lim_{n\rightarrow\infty}\sqrt[n]{a}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+D: 1.przypadek: 
+\begin_inset Formula $a=1$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{a}=\lim_{n\rightarrow\infty}\sqrt[n]{1}=\lim_{n\rightarrow\infty}1=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 2.
+ przypadek: 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\sqrt[n]{a}>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $a=(\sqrt[n]{a})^{n}=(1+\sqrt[n]{a}-1)^{n}\ge^{n.Bern}1+n(\sqrt[n]{a}-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a\ge1+n(\sqrt[n]{a}-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\frac{a-1}{n}\ge\sqrt[n]{a}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\frac{a-1}{n}+1\ge\sqrt[n]{a}\ge1\implies\lim_{n\rightarrow\infty}\sqrt[n]{a}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 3.
+ przypadek: 
+\begin_inset Formula $a\in(0,1)$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\frac{1}{a}>1\implies^{przpadek\,2}\lim_{n\rightarrow\infty}\sqrt[n]{\frac{1}{a}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: stąd 
+\begin_inset Formula $1=\lim_{n\rightarrow\infty}\sqrt[n]{\frac{1}{a}}$
+\end_inset
+
+=
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{a}}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{a}=\lim_{n\rightarrow\infty}\frac{1}{\frac{1}{\sqrt[n]{a}}}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{n}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a,b\in\mathbb{R},n\in\mathbb{N}}(a+b)^{n}=\sum_{k=0}^{n}{n \choose k}a^{n-k}b^{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Liczba 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rozważmy ciąg Eulera 
+\begin_inset Formula $e_{n}=(1+\frac{1}{n})^{n}.$
+\end_inset
+
+ Pokażemy, że 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+ jest rosnący i ograniczony z góry, zatem zbieżny.
+ Liczba 
+\begin_inset Formula $e$
+\end_inset
+
+ to granica tego ciągu 
+\begin_inset Formula $e=\lim_{n\rightarrow\infty}(1+\frac{1}{n})^{n}\approx2,71828$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 2.12: Ciąg Eulera jest rosnący i ograniczony z góry, więc zbieżny.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+D: Najpierw pokażemy, że 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+ jest rosnący
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\frac{e_{n+1}}{e_{n}}=\frac{(1+\frac{1}{n+1})^{n+1}}{(1+\frac{1}{n})^{n}}=\frac{(\frac{n+2}{n+1})^{n}\cdot(\frac{n+2}{n+1})}{(\frac{n+1}{n})^{n}}=(\frac{\frac{n+2}{n+1}}{\frac{n+1}{n}})^{n}\cdot\frac{n+2}{n+1}=(\frac{n(n+2)}{(n+1)^{2}})^{n}\cdot\frac{n+2}{n+1}=(\frac{n^{2}+2n+1-1}{n^{2}+2n+1})^{n}\cdot\frac{n+2}{n+1}=(1+\frac{-1}{n^{2}+2n+1})^{n}\cdot\frac{n+2}{n+1}\ge^{n.Bern}(1-\frac{n}{n^{2}+2n+1})\frac{n+2}{n+1}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{n^{2}+2n+1-n}{n^{2}+2n+1}\cdot\frac{n+2}{n+1}=\frac{(n^{2}+n+1)(n+2)}{(n+1)\cdot(n+1)}=\frac{n^{3}+3n^{2}+3n+2}{n^{3}+3n^{2}+3n+1}>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Zatem 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\frac{e_{n+1}}{e_{n}}>1\implies^{e_{n}>0}\forall_{n\in\mathbb{N}}e_{n+1}>e_{n}$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+ jest rosnący
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Teraz pokażemy, że 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+ jest ograniczony z góry.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $e_{n}=(1+\frac{1}{n})^{n}=\sum_{k=0}^{n}{n \choose k}\frac{1}{n^{k}}=^{n\ge2}1+n\cdot\frac{1}{n}+\sum_{k=2}^{n}{n \choose k}\frac{1}{n^{k}}=2+\sum_{k=2}^{n}\frac{(n-k+1)(n-k+2)\cdot\dots\cdot n}{k!\cdot n^{k}}<2+$
+\end_inset
+
+
+\begin_inset Formula $\sum_{k=2}^{n}\frac{n^{k}}{k!\cdot n^{k}}=2+\sum_{k=2}^{n}\frac{1}{k!}=2+\sum_{k=2}^{n}\frac{1}{1\cdot2\cdot\dots\cdot k}=2+\sum_{k=2}^{n}\frac{1}{2^{k-1}}=2+\frac{1}{2}\cdot\frac{1-(\frac{1}{2})^{n-2}}{1-\frac{1}{2}}<2+1=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\forall_{n\ge2}e_{n}>3$
+\end_inset
+
+ i 
+\begin_inset Formula $e_{1}=2\implies\forall_{n\in\mathbb{N}}e_{n}<3$
+\end_inset
+
+, czyli ciąg 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+ jest ograniczony z góry
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Liczba 
+\begin_inset Formula $e$
+\end_inset
+
+ to granica ciągu Eulera: 
+\begin_inset Formula $e=\lim_{n\rightarrow\infty}(1+\frac{1}{n})^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pokazaliśmy, że 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}e_{n}<3\implies e=\lim_{n\rightarrow\infty}e_{n}\le3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Pokazaliśmy, że 
+\begin_inset Formula $\{e_{n}\}$
+\end_inset
+
+jest rosnący 
+\begin_inset Formula $\implies\forall_{n\in\mathbb{N}}e_{n}\ge e_{1}=2\implies e=\lim_{n\rightarrow\infty}e_{n}\ge2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Więc 
+\begin_inset Formula $2\le e\le3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Uwaga: to jest przykład na to, że 
+\begin_inset Formula $[1^{\infty}]$
+\end_inset
+
+ to symbol nieoznaczony, bo 
+\begin_inset Formula $a_{n}=1+\frac{1}{n}\rightarrow1,$
+\end_inset
+
+ 
+\begin_inset Formula $b_{n}=n\rightarrow\infty\implies a_{n}^{b_{n}}=(1+\frac{1}{n})^{n}\rightarrow e$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=1+\frac{1}{n}\rightarrow1,$
+\end_inset
+
+ 
+\begin_inset Formula $b_{n}=2n\rightarrow\infty\implies a_{n}^{b_{n}}=(1+\frac{1}{n})^{2n}\rightarrow2e$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Podciągi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ Niech 
+\begin_inset Formula $\{a_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+będzie ciągiem, zaś 
+\begin_inset Formula $n_{1},n_{2},n_{3},\dots$
+\end_inset
+
+ liczbami naturalnymi, takimi, że 
+\begin_inset Formula $n_{1}<n_{2}<n_{3}<\dots$
+\end_inset
+
+Wtedy ciąg 
+\begin_inset Formula $\{a_{n_{k}}\}_{k=1}^{\infty}$
+\end_inset
+
+ o wyrazach 
+\begin_inset Formula $a_{n_{1}},a_{n_{2}},a_{n_{3}},\dots$
+\end_inset
+
+nazywamy podciągiem ciągu 
+\begin_inset Formula $\{a_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $a_{n}=\frac{1}{n},$
+\end_inset
+
+wyrazy tego ciągu: 
+\begin_inset Formula $1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\frac{1}{5},\frac{1}{6},\frac{1}{7},\frac{1}{8},\frac{1}{9},\frac{1}{10},\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $b_{n}=\frac{1}{n^{2}}$
+\end_inset
+
+, wyrazy tego ciągu: 
+\begin_inset Formula $1,\frac{1}{4},\frac{1}{9},\dots$
+\end_inset
+
+ Ciąg 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+to podciąg ciągu 
+\begin_inset Formula $\{a_{n}\}:$
+\end_inset
+
+ 
+\begin_inset Formula $b_{k}=a_{k^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $c_{n}=\frac{1}{\sqrt{n}},$
+\end_inset
+
+ wyrazy tego ciągu: 
+\begin_inset Formula $1,\frac{1}{\sqrt{2}},\frac{1}{\sqrt{3}},\frac{1}{2},\frac{1}{\sqrt{5}},\dots$
+\end_inset
+
+ Ciąg 
+\begin_inset Formula $\{c_{n}\}$
+\end_inset
+
+nie jest podciągiem 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+(ale 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest podciągiem 
+\begin_inset Formula $\{c_{n}\})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.13: Każdy podciąg ciągu zbieżnego do 
+\begin_inset Formula $g$
+\end_inset
+
+ też zbiega do 
+\begin_inset Formula $g$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=g$
+\end_inset
+
+ i 
+\begin_inset Formula $\{a_{n_{k}}\}$
+\end_inset
+
+ jest podciągiem ciągu 
+\begin_inset Formula $\{a_{n}\}\implies\lim_{n\rightarrow\infty}a_{n_{k}}=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Wniosek: Jeśli ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ zawiera co najmniej dwa podciągi zbieżne do różnych granic, to nie jest
+ zbieżny
+\end_layout
+
+\begin_layout Enumerate
+Przykład: Ciąg 
+\begin_inset Formula $a_{n}=(-1)^{n}$
+\end_inset
+
+ nie jest zbieżny, bo 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(-1)^{2n}=1$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(-1)^{2n+1}=-1$
+\end_inset
+
+, oba są podciągami 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ i są zbieżne do innych granic, więc 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ nie jest zbieżny
+\end_layout
+
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(\frac{2n+3}{2n+2})^{4n-3}(=[1^{\infty}]$
+\end_inset
+
+)
+\begin_inset Formula $=\lim_{n\rightarrow\infty}(1+\frac{1}{2n+2})^{4n-3}=\lim_{m\rightarrow\infty}(1+\frac{1}{m})^{2m-7}=\frac{(\lim_{m\rightarrow\infty}(1+\frac{1}{m})^{m})^{2}}{\lim_{n\rightarrow\infty}(1+\frac{1}{n})^{7}}=\frac{e^{2}}{1}=e^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.14: (Bolzano-Weierstrassa)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Każdy ciąg ograniczony zawiera podciąg zbieżny.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest ciągiem Cauchyego (podstawowym) 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n,m\ge n_{0}}|a_{n}-a_{m}|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 2.15 (warunek równoważny zbieżności ciągu)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest ciągiem Cauchyego
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+D
+\begin_inset Formula $\implies$
+\end_inset
+
+ Zakładamy, że 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jest zbieżny, tzn.
+ 
+\begin_inset Formula $\exists_{g\in\mathbb{R}}\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|a_{n}-g|<\frac{\epsilon}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Pokażemy, że 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+jest ciągiem Cauchyego, tzn 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n,m\ge n_{0}}|a_{n}-a_{m}|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $|a_{n}-a_{m}|=|a_{n}-g+(-a_{n}+g)|\le|a_{n}-g|+|a_{m}-g|<^{n,m\ge n_{0}}\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Zatem pokazaliśmy, że 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{1}\in\mathbb{N},n_{1}=n_{0}}\forall_{n,m\ge n_{1}}|a_{n}-a_{m}|\le\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\impliedby$
+\end_inset
+
+pomijamy bo długi dowód
+\end_layout
+
+\begin_layout Enumerate
+Przykład: Ciąg 
+\begin_inset Formula $a_{n}=1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}$
+\end_inset
+
+ nie jest zbieżny, bo nie jest ciągiem Cauchyego.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $\neg(\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n,m\ge n_{0}}|a_{n}-a_{m}|<\epsilon)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Chcemy pokazać, że 
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{n_{0}\in\mathbb{N}}\exists_{n,m\ge n_{0}}|a_{n}-a_{m}|\ge\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: 
+\begin_inset Formula $|a_{2n}-a_{n}|=|1+\frac{1}{2}+\dots+\frac{1}{n}+\frac{1}{n+1}+\dots+\frac{1}{2n}-1-\frac{1}{2}-\frac{1}{3}-\dots-\frac{1}{n}|=|\frac{1}{n+1}+\frac{1}{n+2}+\dots+\frac{1}{2n}|$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{n+1}+\dots\frac{1}{2n}\ge\frac{1}{2n}+\dots\frac{1}{2n}=n\cdot\frac{1}{2n}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+: Zatem pokazaliśmy, że 
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{n_{0}\in\mathbb{N}}\exists_{n,m\ge n_{0}}|a_{n}-a_{m}|\ge\epsilon$
+\end_inset
+
+ - zachodzi dla 
+\begin_inset Formula $\epsilon=\frac{1}{2},\thinspace n=2n_{0},\thinspace m=n_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_body
+\end_document
