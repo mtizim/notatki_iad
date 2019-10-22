@@ -500,9 +500,20 @@ więc
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $r_{i}(AB)=r_{i}(A)B$
+\begin_inset Formula $r_{j}(AB)=r_{j}(A)B$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c^{i}(AB)=A\cdot c^{i}(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 
 \end_layout
 
