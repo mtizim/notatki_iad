@@ -1,0 +1,1164 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+23.10.2019
+\end_layout
+
+\begin_layout Standard
+Granica górna i dolna ciągu
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Mówimy, że 
+\begin_inset Formula $g\in\mathbb{R}\cup\{-\infty,+\infty\}$
+\end_inset
+
+ jest punktem skupienia ciągu 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ jeśli istnieje podciąg 
+\begin_inset Formula $\{a_{n_{k}}\}$
+\end_inset
+
+ ciągu 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $\lim_{k\rightarrow\infty}a_{n_{k}}=g$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: Wyznaczamy punkt skupienia ciagu 
+\begin_inset Formula $a_{n}=\sqrt{\frac{1+4n}{2+n}}\cdot(-1)^{\frac{n(n+1)}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $b_{n}=\sqrt{\frac{1+4n}{2+n}}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{n}=(-1)^{\frac{n(n+1)}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=\sqrt{4}=2$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+bo 
+\begin_inset Formula $s_{n}\rightarrow s\implies(s_{n})^{q}\rightarrow s^{q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ pierwsze wyrazy 
+\begin_inset Formula $\{c_{n}\}$
+\end_inset
+
+ - 
+\begin_inset Formula $c_{1}=-1,c_{2}=-1,c_{3}=1$
+\end_inset
+
+ - może się powtarza?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $c_{4k}=(-1)^{2k(4k+1)}=1,\,c_{4k+1}=(-1)^{\frac{(4k+1)(4k+2)}{2}}=(-1)^{(4k+1)(2k+1)}=-1$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $c_{4k+2}=(-1)\frac{(4k+2)(4k+3)}{2}=(-1)^{(2k+1)(4k+3)}=-1,\,c_{4k+3}=(-1)^{\frac{(4k+3)(4k+4)}{2}}=(-1)^{(4k+3)(2k+2)}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ a więc 
+\begin_inset Formula $a_{4k}=b_{4k}c_{4k}=b_{4k}\overset{k\rightarrow\infty}{\longrightarrow}2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{4k+1}=b_{4k+1}c_{4k+1}=b_{4k+1}\overset{k\rightarrow\infty}{\longrightarrow}-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{4k+2}=b_{4k+2}c_{4k+2}=b_{4k+2}\overset{k\rightarrow\infty}{\longrightarrow}-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{4k+3}=b_{4k+3}c_{4k+3}=b_{4k+3}\overset{k\rightarrow\infty}{\longrightarrow}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ Więc punkty skupienia ciągu 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ to 
+\begin_inset Formula $-2$
+\end_inset
+
+ i 
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Granicą dolną ciągu 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+, oznaczaną 
+\begin_inset Formula $\liminf_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+ lub 
+\begin_inset Formula $\underbar{\lim}_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+ nazywamy kres dolny zbioru wszystkich punktów skupienia ciągu 
+\begin_inset Formula $\{a_{n}\}:$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\liminf_{a\rightarrow\infty}=inf\{g:\,\exists_{\{a_{n_{k}}\}}\lim_{n\rightarrow\infty}a_{n_{k}}=g\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Granicą górną ciągu 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+, oznaczaną 
+\begin_inset Formula $\limsup_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+ lub 
+\begin_inset Formula $\overline{\lim}{}_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+ nazywamy kres górny zbioru wszystkich punktów skupienia ciągu 
+\begin_inset Formula $\{a_{n}\}:$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\limsup_{a\rightarrow\infty}=inf\{g:\,\exists_{\{a_{n_{k}}\}}\lim_{n\rightarrow\infty}a_{n_{k}}=g\}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Wtedy, dla 
+\begin_inset Formula $a_{n}=\sqrt{\frac{1+4n}{2+n}}\cdot(-1)^{\frac{n(n+1)}{2}}$
+\end_inset
+
+: 
+\begin_inset Formula $\liminf_{n\rightarrow\infty}a_{n}=2,$
+\end_inset
+
+ 
+\begin_inset Formula $\limsup_{n\rightarrow\infty}=-2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 2.16: Dla dowolnego 
+\begin_inset Formula $g\in\mathbb{R}\cup\{-\infty,+\infty\}$
+\end_inset
+
+ mamy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=g\iff\liminf_{n\rightarrow\infty}a_{n}=\limsup_{n\rightarrow\infty}a_{n}=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+GRANICA FUNKCJI
+\end_layout
+
+\begin_layout Standard
+Przez cały wykład będziemy zakładać, że 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R},$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $D\subset\mathbb{R}$
+\end_inset
+
+.
+ Ponadto, 
+\begin_inset Formula $\widetilde{\mathbb{R}}=\mathbb{R}\cup\{-\infty,+\infty\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Mówimy, że 
+\begin_inset Formula $a\in\widetilde{\mathbb{R}}$
+\end_inset
+
+ jest punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+ jeśli istnieje ciąg 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ taki,że 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{n}\in D\setminus\{a\}$
+\end_inset
+
+ (inaczej 
+\begin_inset Formula $\{a_{n}\}\subset D\setminus\{a\}$
+\end_inset
+
+ i 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykłady: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\{0\}\cup[1,2)$
+\end_inset
+
+ - punkty skupienia - 
+\begin_inset Formula $[1,2]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ - punkt skupienia 
+\begin_inset Formula $\{+\infty\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Z}\,$
+\end_inset
+
+- punkty skupienia 
+\begin_inset Formula $\{-\infty,+\infty\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+- nie ma punktów skupienia
+\begin_inset Newline newline
+\end_inset
+
+Ogólniej, dowolny zbiór skończony nie ma punktów skupienia
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ - punkty skupienia - 
+\begin_inset Formula $\widetilde{\mathbb{R}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ (Heinego granicy funkcji): Niech 
+\begin_inset Formula $a\in\widetilde{\mathbb{R}}$
+\end_inset
+
+ będzie punktem skupienia zbioru D i 
+\begin_inset Formula $g\in\widetilde{\mathbb{R}}.$
+\end_inset
+
+ Mówimy, że g jest granicą funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ w punkcie 
+\begin_inset Formula $a\,$
+\end_inset
+
+(jeśli 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+) lub w 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+(jeśli 
+\begin_inset Formula $a=\pm\infty)$
+\end_inset
+
+ i zapisujemy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g$
+\end_inset
+
+ lub 
+\begin_inset Formula $f(x)\overset{x\rightarrow a}{\longrightarrow}g\iff\underbar{\forall_{\{a_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}a_{n}=a\implies\lim_{n\rightarrow\infty}f(a_{n})=g}$
+\end_inset
+
+ - (H)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład 
+\begin_inset Formula $f(x)=\begin{cases}
+0 & \text{dla }x=1\\
+1 & \text{dla }x\neq1
+\end{cases}$
+\end_inset
+
+ - 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x)=1$
+\end_inset
+
+ .
+ W szczególności 
+\begin_inset Formula $\lim_{x\rightarrow1}f(x)$
+\end_inset
+
+ nie zależy od wartości funkcji w punkcie 
+\begin_inset Formula $x_{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 4.1: Granica funkcji jest wyznaczona jednoznacznie, tzn.
+ jeśli 
+\begin_inset Formula $\lim_{x\rightarrow a}f(g)=g_{1}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g_{2}$
+\end_inset
+
+ , to 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód: Zakładamy, że 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g_{1}$
+\end_inset
+
+ i 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{\{a_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}a_{n}=a\implies\lim_{n\rightarrow\infty}f(a_{n})=g_{1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Weźmy dowolny ciąg 
+\begin_inset Formula $\{a_{n}\}\subset D\setminus\{a\}$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(a_{n})=g_{1}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(a_{n})=g_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tw 2.2, otrzymujemy, że 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow-\infty}\frac{\sqrt{x^{2}+2x+5}}{2x-1}$
+\end_inset
+
+, 
+\begin_inset Formula $D=\mathbb{R}\setminus\{\frac{1}{2}\}$
+\end_inset
+
+
+\begin_inset Formula $\infty k$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Weźmy ciąg 
+\begin_inset Formula $\{a_{n}\}\subset D\setminus\{-\infty\}=\mathbb{R}\setminus\{\frac{1}{2}\}$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=-\infty.$
+\end_inset
+
+ Wtedy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1}{a_{n}}=0$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(a_{n})=\frac{|a_{n}|}{a_{n}}\overset{a_{n}<0}{=}\frac{-a_{n}}{2a_{n}}=-\frac{1}{2}$
+\end_inset
+
+, więc 
+\begin_inset Formula $\lim_{x\rightarrow-\infty}=-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Granica 
+\begin_inset Formula $\lim_{x\rightarrow0}\sin\frac{1}{x}$
+\end_inset
+
+ nie istnieje.
+ Weźmy dwa ciągi, 
+\begin_inset Formula $\{a_{n}\}\subset\mathbb{R}\setminus\{0\}$
+\end_inset
+
+,
+\begin_inset Formula $\{x_{n}\}\subset\mathbb{R}\setminus\{0\}$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{n}=\frac{1}{2n\pi}\overset{n\rightarrow\infty}{\longrightarrow}0,$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}=\frac{1}{2n\pi+\frac{\pi}{2}}\overset{n\rightarrow\infty}{\longrightarrow}0$
+\end_inset
+
+.
+ Wtedy:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(a_{n})=\lim_{n\rightarrow\infty}\sin\frac{1}{a_{n}}=\lim_{n\rightarrow\infty}\sin(2n\pi)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})=\lim_{n\rightarrow\infty}\sin(2n\pi+\frac{\pi}{2})=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Granica musi być jednoznaczna - więc 
+\begin_inset Formula $\lim_{x\rightarrow0}\sin\frac{1}{x}$
+\end_inset
+
+ nie istnieje 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ (Cauchy'ego granicy skonczonej (właściwej) funkcji w punkcie): Niech 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ będzie punktem skupienia 
+\begin_inset Formula $D$
+\end_inset
+
+ i niech 
+\begin_inset Formula $g\in\mathbb{R}$
+\end_inset
+
+.
+ Wtedy:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g\iff\underbar{\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies|f(x)-g|<\epsilon}$
+\end_inset
+
+ - (C)
+\begin_inset Newline newline
+\end_inset
+
+Dla 
+\begin_inset Formula $x$
+\end_inset
+
+ bliskich 
+\begin_inset Formula $a$
+\end_inset
+
+ i różnych od 
+\begin_inset Formula $a$
+\end_inset
+
+ odległość 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ od 
+\begin_inset Formula $g$
+\end_inset
+
+ jest dowolnie mała.
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 4.2 : Definicje Cauchy'ego i Heinego granicy włąściwej funkcji
+ w punkcie są równoważne.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód: (H)
+\begin_inset Formula $\implies$
+\end_inset
+
+(C) Dowód nie wprost.
+ Zakładamy, że (H) i 
+\begin_inset Formula $\neg$
+\end_inset
+
+(C)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{\delta>0}\exists_{x\in D}0<|x-a|<\delta\land|f(x)-g|\ge\epsilon$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\neg$
+\end_inset
+
+(C)
+\begin_inset Newline newline
+\end_inset
+
+W szczególności dla 
+\begin_inset Formula $\delta=\frac{1}{n},n\in\mathbb{N}$
+\end_inset
+
+ otrzymujemy 
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{n\in\mathbb{N}}\exists_{x_{n}\in D}0<|x_{n}-a|<\frac{1}{n}\land|f(x_{n})-g|\ge\epsilon$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Z tw.
+ o trzech ciągach 
+\begin_inset Formula $\lim_{n\rightarrow\infty}|x_{n}-a|=0\iff\lim_{n\rightarrow\infty}(x_{n}-a)=0\iff\lim_{n\rightarrow\infty}x_{n}=a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Pokazaliśmy, że 
+\begin_inset Formula $\exists_{\epsilon>0}\exists_{\{x_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}x_{n}\land\forall_{n\in\mathbb{N}}|f(x)-g|\ge\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{\{x_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}x_{n}=a\land\lim_{n\rightarrow\infty}f(x_{n})\neq g\iff\neg(H)$
+\end_inset
+
+ - sprzecznosc z zał.
+ że zachodzi (H)
+\end_layout
+
+\begin_layout Enumerate
+(C)
+\begin_inset Formula $\implies$
+\end_inset
+
+(H): Zakładamy, że zachodzi (C), tzn 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies|f(x)-g|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Chcemy pokazać, że (H), czyli 
+\begin_inset Formula $\forall_{\{a_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}a_{n}=a\implies\lim_{n\rightarrow\infty}f(a_{n})=g$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|f(a_{n})-g|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Weźmy dowolny ciąg 
+\begin_inset Formula $\{a_{n}\}\subset D\setminus\{a\}$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+ i weźmy dowolny 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ Wtedy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{n_{1}\in\mathbb{N}}\forall_{n\ge n_{1}}0<|a_{n}-a|<\delta\overset{\text{(C)}}{\implies}|f(a_{n})-g|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zatem pokazalismy 
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|f(a_{n})-g|<\epsilon$
+\end_inset
+
+ (
+\begin_inset Formula $n_{0}=n_{1}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Cauchy'ego niewłaściwych granic funkcji w punkcie: Niech 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ będzie punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=+\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies f(x)>G$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=-\infty\iff$
+\end_inset
+
+
+\begin_inset Formula $\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies f(x)<-G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Cauchy'ego właściwej granicy w 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+: Niech 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+ będzie punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+ i 
+\begin_inset Formula $g\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=g\iff\forall_{\epsilon>0}\exists_{G>0}\forall_{x\in D}x>G\implies|f(x)-g|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow-\infty}f(x)=g\iff\forall_{\epsilon>0}\exists_{G>0}\forall_{x\in D}x<-G\implies|f(x)-g|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def Cauchy'ego niewłaściwych granic funkcji w 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+: Niech 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+ będzie punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=+\infty\iff\forall_{G>0}\exists_{L>0}\forall_{x\in D}x>L\implies f(x)>G$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=-\infty\iff\forall_{G>0}\exists_{L>0}\forall_{x\in D}x>L\implies f(x)<-G$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow-\infty}f(x)=+\infty\iff\forall_{G>0}\exists_{L>0}\forall_{x\in D}x<-L\implies f(x)>G$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow-\infty}f(x)=-\infty\iff\forall_{G>0}\exists_{L>0}\forall_{x\in D}x<-L\implies f(x)<-G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 4.3: Powyższe dwie definicje Cauchy'ego grainc funkcji są równowazne
+ odpowiednim definicjom Heinego
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 4.4: (tw.
+ o trzech funkcjach): Jeśli:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f,p,h:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\in\widetilde{\mathbb{R}}$
+\end_inset
+
+ jest punktem skupienia 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\in\mathbb{R}$
+\end_inset
+
+ i 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}h(x)=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in D\text{ i x bliskiego a}}f(x)\le p(x)\le h(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ To 
+\begin_inset Formula $\lim_{x\rightarrow a}p(x)=g$
+\end_inset
+
+ - (dowód z def Heinego i tw o trzech ciągach)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzeie 4.5 (tw o dwóch funkcjach): Jeśli:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f,h:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\in\widetilde{\mathbb{R}}$
+\end_inset
+
+ jest punktem skupienia D
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=+\infty$
+\end_inset
+
+ (ewentualnie 
+\begin_inset Formula $\lim_{x\rightarrow a}h(x)=-\infty)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in D\text{ i x bliskie a}}f(x)\le h(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ To 
+\begin_inset Formula $\lim_{x\rightarrow a}h(x)=+\infty$
+\end_inset
+
+ (ewentualnie 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=-\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $\lim_{x\rightarrow0}x\cdot\sin\frac{1}{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $0\le|x\cdot\sin\frac{1}{x}|=|x||\sin\frac{1}{x}|\le|x|$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\overset{\text{tw.o 3 funkcjach}}{\implies}\lim_{x\rightarrow0}|x\cdot\sin\frac{1}{x}|=0\iff$
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow0}x\cdot\sin\frac{1}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,898 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+23.10.2019
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ - zbiór (przestrzeń)
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Dopełnieniem zbioru 
+\begin_inset Formula $A$
+\end_inset
+
+ w przestrzeni 
+\begin_inset Formula $X$
+\end_inset
+
+ nazywamy zbiór 
+\begin_inset Formula $-A=\{x\in X:\,x\notin A\}$
+\end_inset
+
+ - na mocy aksjomatu wyróżniania
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Własności dopełnienia:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-(A\cup B)=-A\cap-B$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $x\in-(A\cap B)\overset{\text{def. dopełnienia}}{\iff}x\notin(A\cap B)\overset{\text{def.}\notin}{\iff}\neg x\in A\cap B\overset{\text{def. iloczynu}}{\iff}\neg(x\in A\land x\in B)\overset{\text{prawo de Morgana}}{\iff}\not$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\iff x\notin A\lor x\notin B\iff x\in-A\cup-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-(A\cap B)=-A\cup-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\emptyset=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap\emptyset=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\setminus\emptyset=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\setminus A=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-\emptyset=X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-X=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup-A=X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap-A=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-(-A)=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\setminus B=A\cap-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap X=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup X=X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq B\iff A\cap B=A\iff A\cup B=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq C\land B\subseteq C\iff A\cup B\subseteq C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\subseteq A\land C\subseteq B\iff C\subseteq A\cap B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Przykład: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\subseteq\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{\emptyset\}\subseteq\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{\emptyset\}\notin\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in\{\emptyset,\{\emptyset\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ - jedyny element zbioru 
+\begin_inset Formula $\{\emptyset\},$
+\end_inset
+
+ale 
+\begin_inset Formula $\emptyset\neq\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Aksjomat zbioru potegowego: 
+\series default
+Dla każdego zbioru istnieje zbiór (potegowy) wszystkich jego podzbiorów.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ - zbiór, 
+\begin_inset Formula $P(A)$
+\end_inset
+
+ (lub 
+\begin_inset Formula $2^{A})$
+\end_inset
+
+ - zbiór potęgowy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $P(A)=\{B:\,B\subseteq A\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\emptyset,A\in P(A)$
+\end_inset
+
+ zawsze
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: 
+\begin_inset Formula $A=\{a,b\},\,P(A)=\{\emptyset,\{a\},\{b\},\{a,b\}\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Aksjomat pary nieuporządkowanej:
+\series default
+ Dla dowolnych zbiorów 
+\begin_inset Formula $A$
+\end_inset
+
+ i 
+\begin_inset Formula $B$
+\end_inset
+
+ istnieje zbiór, którego elementami są dokładnie zbiory 
+\begin_inset Formula $A$
+\end_inset
+
+ oraz 
+\begin_inset Formula $B$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\{A,B\}=\{x:\,x=A\lor x=B\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\{A\}=\{A,A\}$
+\end_inset
+
+ - Singleton, zbiór 1-elementowy
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ 
+\series bold
+Parą uporządkowaną
+\series default
+ 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+ nazywamy zbiór 
+\begin_inset Formula $\{\{a\},\{a,b\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $<a,a>=\{\{a\},\{a,a\}\}=\{\{a\},\{a\}\}=\{\{a\}\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie: 
+\begin_inset Formula $<a,b>=<c,d>\iff a=c\land b=d$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\impliedby$
+\end_inset
+
+: 
+\begin_inset Formula $a=c\land b=d$
+\end_inset
+
+, więc 
+\begin_inset Formula $\{\{a\},\{a,b\}\}=\{\{c\},\{c,d\}$
+\end_inset
+
+} więc 
+\begin_inset Formula $<a,b>=<c,d>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\implies:$
+\end_inset
+
+ Dla 
+\begin_inset Formula $a=b$
+\end_inset
+
+, 
+\begin_inset Formula $<a,b>=\{\{a\}\},<c,d>=\{\{c\},\{c,d\}\}$
+\end_inset
+
+ więc 
+\begin_inset Formula $\{\{a\}\}=\{\{c\},\{c,d\}\}$
+\end_inset
+
+ tylko gdy 
+\begin_inset Formula $c=d$
+\end_inset
+
+, a wtedy 
+\begin_inset Formula $\{\{a\}\}=\{\{c\}\},$
+\end_inset
+
+ więc z tego wynika że 
+\begin_inset Formula $a=c\land b=d$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dla 
+\begin_inset Formula $a\neq b:$
+\end_inset
+
+ 
+\begin_inset Formula $\{\{a\},\{a,b\}\}=\{\{c\},\{c,d\}\}$
+\end_inset
+
+ tylko gdy 
+\begin_inset Formula $(\{a\}=\{c\}\lor\{a\}=\{c,d\})\land(\{a,b\}=\{c,d\}\lor\{a,b\}=\{d\})$
+\end_inset
+
+.
+ Ponieważ 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\{c,d\}$
+\end_inset
+
+ są dwuelementowe, bo 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+, to 
+\begin_inset Formula $\{a\}=\{c\}\land\{a,b\}=\{c,d\}$
+\end_inset
+
+ z czego 
+\begin_inset Formula $a=b$
+\end_inset
+
+ oraz 
+\begin_inset Formula $c=d$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Implikacja zachodzi w dwie strony, więc jest równoważność
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ 
+\series bold
+Iloczynem kartezjańskim 
+\series default
+zbiorów 
+\begin_inset Formula $A$
+\end_inset
+
+ i 
+\begin_inset Formula $B$
+\end_inset
+
+ nazywamy zbiór 
+\begin_inset Formula $A\times B=\{<a,b>:\,a\in A\land b\in B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykłady
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\{1,2\}\times\{3,4\}=\{<1,3>,<1,4>,<2,3>,<2,4>\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}\times\mathbb{R}$
+\end_inset
+
+ - płaszczyzna 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[1,3]\times[1,2]$
+\end_inset
+
+ - prostokąt o wierzchołkach 
+\begin_inset Formula $<1,1>,<1,2>,<3,1>,<3,2>$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Def.
+ 
+\series bold
+Uporządkowaną trójką 
+\begin_inset Formula $<a,b,c>$
+\end_inset
+
+
+\series default
+nazywamy zbiór 
+\begin_inset Formula $<<a,b>,c>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ 
+\series bold
+Uporządkowaną n-tką 
+\begin_inset Formula $<x_{1},\dots,x_{n}>$
+\end_inset
+
+
+\series default
+nazywamy zbiór 
+\begin_inset Formula $<<x_{1},\dots,x_{n-1}>,x_{n}>$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Twierdzenie: Dla 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+, 
+\begin_inset Formula $<x_{1},\dots,x_{n}>=<y_{1},\dots,y_{n}>\iff\forall_{i\in\{1,\dots,n\}}x_{i}=y_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód indukcyjny: Dla 
+\begin_inset Formula $n=2$
+\end_inset
+
+ prawda
+\begin_inset Newline newline
+\end_inset
+
+Założenie indukcyjne: 
+\begin_inset Formula $<x_{1},\dots,x_{n-1}>=<y_{1},\dots,y_{n-1}>\iff\forall_{i\in\{1,\dots,n-1\}}x_{i}=y_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a=<x_{1},\dots,x_{n-1}>,b=<y_{1},\dots,y_{n-1}>$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Wtedy z definicji uporządkowanej n-tki 
+\begin_inset Formula $<x_{1},\dots,x_{n}>=<a,x_{n}>$
+\end_inset
+
+,oraz 
+\begin_inset Formula $<y_{1},\dots,y_{n}>=<b,y_{n}>$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tego, że dla 
+\begin_inset Formula $n=2,$
+\end_inset
+
+ to 
+\begin_inset Formula $<a,x_{n}>=<b,y_{n}>\iff a=b\land x_{n}=y_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z założenia indukcyjnego, 
+\begin_inset Formula $a=b\iff$
+\end_inset
+
+
+\begin_inset Formula $\forall_{i\in\{1,\dots,n-1\}}x_{i}=y_{i}$
+\end_inset
+
+, więc 
+\begin_inset Formula $<a,x_{n}>=<b,y_{n}>\iff\forall_{i\in\{1,\dots,n\}}x_{i}=y_{i}$
+\end_inset
+
+ co kończy dowód.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Aksjomat sumy zbiorów rodziny: 
+\begin_inset Formula $\mathcal{A}-$
+\end_inset
+
+
+\series default
+rodzina zbiorów - zbiór którego elementami są zbiory
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dla dowolnej rodziny zbiorów 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ istnieje zbiór:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcup\mathcal{A}:=\{x:\,\exists_{A}(A\in\mathcal{A}\land x\in A)\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+do którego należą te elementy, które należa do co najmniej jednego zbioru
+ rodziny 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Iloczynem (przecięciem) rodziny zbiorów 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ nazywamy zbiór
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcap\mathcal{A}:=\{x\in\bigcup\mathcal{A}:\,\forall_{A}(A\in\mathcal{A}\implies x\in A)\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Istnieje na mocy aksjomatu wyróżniania i aksjomatu sumy rodziny zbiorów
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $I$
+\end_inset
+
+ - zbiór indeksów, 
+\begin_inset Formula $X-$
+\end_inset
+
+zbiór przestrzeni
+\begin_inset Newline newline
+\end_inset
+
+Def.
+ Funkcję 
+\begin_inset Formula $A:\,I\rightarrow P(X)$
+\end_inset
+
+ i 
+\begin_inset Formula $\mapsto A(i)\subseteq X$
+\end_inset
+
+ nazywamy 
+\series bold
+indeksowaną rodziną zbiorów 
+\series default
+(będziemy pisać 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ zamiast 
+\begin_inset Formula $A(i)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ - zbiór wartości funkcji 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $R=\{B\in P(X):\,\exists_{i\in I}B=A(I)\}=\{A_{i}:\,i\in I\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def.
+ 
+\series bold
+Sumą indeksowanej rodziny zbiorów 
+\begin_inset Formula $A:\,I\rightarrow P(X)$
+\end_inset
+
+ 
+\series default
+nazywamy sumę rodziny 
+\begin_inset Formula $R$
+\end_inset
+
+, czyli 
+\begin_inset Formula $\bigcup R=\bigcup\{A_{i}:\,i\in I\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Oznaczenie 
+\begin_inset Formula $\bigcup_{i\in I}A_{i}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x\in\bigcup_{i\in I}A_{i}\iff\exists_{i\in I}x\in A_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Iloczynem rodziny indeksowanej 
+\begin_inset Formula $A:\,I\rightarrow P(X)$
+\end_inset
+
+ nazywamy zbiór 
+\begin_inset Formula $\bigcap R=\bigcap\{A_{i}:\,i\in I\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Oznaczamy 
+\begin_inset Formula $\bigcap_{i\in I}A_{i,}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x\in\bigcap_{i\in I}A_{i}\iff\forall_{i\in I}x\in A_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
