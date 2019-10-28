@@ -745,5 +745,12 @@ D: Trzeba pokazać, że implikacje zachodzą w obie strony.
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\div B=(A\cup B)\setminus(A\cap B)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

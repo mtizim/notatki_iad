@@ -946,14 +946,14 @@ Przykład: Przykład, że implikacja odwrotna nie zachodzi
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\exists_{x}(\phi(x)\lor\psi(x))\iff\exists_{x}\phi(x)\lor\forall_{x}\psi(x)$
+\begin_inset Formula $\exists_{x}(\phi(x)\lor\psi(x))\iff\exists_{x}\phi(x)\lor\exists_{x}\psi(x)$
 \end_inset
 
  -forall-koniunkcja/ exists-alternatywa
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\exists_{x}(\phi(x)\land\psi(x))\implies\exists_{x}\phi(x)\land\forall_{x}\psi(x)$
+\begin_inset Formula $\exists_{x}(\phi(x)\land\psi(x))\implies\exists_{x}\phi(x)\land\exists_{x}\psi(x)$
 \end_inset
 
  
@@ -1164,5 +1164,19 @@ W logice pierwszego rzędu też były modele, tylko nazywaliśmy je każdym moż
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x_{\alpha(x)}}\phi(x)\overset{def.}{=}\forall_{x}\alpha(x)\implies\phi(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists_{x_{a(x)}}\phi(x)\overset{def.}{=}\exists_{x}\phi(x)\land\alpha(x)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
