@@ -437,7 +437,7 @@ Jeśli
 \end_inset
 
 
-\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=+\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{-\delta<x-a<0}}\implies|f(x)-g|>G$
+\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=+\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{-\delta<x-a<0}}\implies f(x)>G$
 \end_inset
 
 
@@ -449,7 +449,7 @@ Jeśli
 \end_inset
 
 
-\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=-\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{-\delta<x-a<0}}\implies|f(x)-g|<-G$
+\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=-\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{-\delta<x-a<0}}\implies f(x)<-G$
 \end_inset
 
 
@@ -487,7 +487,7 @@ Jeśli
 \end_inset
 
 
-\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=+\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{0<x-a<\delta}}\implies|f(x)-g|>G$
+\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=+\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{0<x-a<\delta}}\implies f(x)>G$
 \end_inset
 
 
@@ -499,7 +499,7 @@ Jeśli
 \end_inset
 
 
-\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=-\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{\ensuremath{0<x-a<\delta}}}\implies|f(x)-g|<-G$
+\begin_inset Formula $\lim_{x\rightarrow a^{-}}f(x)=-\infty\iff\forall_{G>0}\exists_{\delta>0}\forall_{x\in D}\underbar{\ensuremath{\ensuremath{0<x-a<\delta}}}\implies f(x)<-G$
 \end_inset
 
 
