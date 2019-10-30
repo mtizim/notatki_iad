@@ -1,0 +1,510 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+30.10.2019
+\end_layout
+
+\begin_layout Enumerate
+Własności dla 
+\begin_inset Formula $X$
+\end_inset
+
+ - przestrzeń, 
+\begin_inset Formula $A:\,I\rightarrow P(X),\,B:\,I\rightarrow P(X),$
+\end_inset
+
+
+\begin_inset Formula $C-$
+\end_inset
+
+zbiór
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $i_{0}\in I,$
+\end_inset
+
+ to 
+\begin_inset Formula $A_{i_{0}}\subseteq\bigcup_{i\in I}A_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $i_{0}\in I,$
+\end_inset
+
+ to 
+\begin_inset Formula $\bigcap_{i\in I}A_{i}\subseteq A_{i_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeżeli 
+\begin_inset Formula $\forall_{i\in I}A_{i}\subseteq C,$
+\end_inset
+
+to 
+\begin_inset Formula $\bigcup_{i\in I}A_{i}\subseteq C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeżeli 
+\begin_inset Formula $\forall_{i\in I}C\subseteq A_{i},$
+\end_inset
+
+to 
+\begin_inset Formula $C\subseteq\bigcap_{i\in I}A_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D: Niech 
+\begin_inset Formula $x\in C\implies\forall_{i\in I}x\in A_{i}\implies x\in\bigcap_{i\in I}A_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{i\in I}(A_{i}\cup B_{i})=(\bigcup_{i\in I}A_{i})\cup(\bigcup_{i\in I}B_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcap_{i\in I}(A_{i}\cap B_{i})\subseteq(\bigcap_{i\in I}A_{i})\cap(\bigcap_{i\in I}B_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D:
+\begin_inset Formula $x\in\bigcap_{i\in I}(A_{i}\cap B_{i})\iff\forall_{i\in I}x\in A_{i}\cap B_{i}\iff\forall_{i\in I}(x\in A\land x\in B)\iff(x\in\bigcap_{i\in I}A_{i})\land(x\in\bigcap_{i\in I}B_{i})\iff x\in(\bigcap_{i\in I}A_{i}\cap\bigcap_{i\in I}B_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{i\in I}(A_{i}$
+\end_inset
+
+
+\begin_inset Formula $\cap B_{i})\subseteq(\bigcup_{i\in I}A_{i})\cap(\bigcup_{i\in I}B_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D:
+\begin_inset Formula $x\in\bigcup_{i\in I}(A_{i}\cap B_{i})\implies\exists_{i\in I}x\in A_{i}\cap B_{i}\implies\exists_{i\in I}(x\in A_{i}\land x\in B_{i})\implies(\exists_{i\in I}a\in A_{i})\land(\exists_{i\in I}x\in B_{i})\implies x\in\bigcup_{i\in I}A_{i}\land x\in\bigcup_{i\in I}B_{i}\implies x\in(\bigcup_{i\in I}A_{i})\cap(\bigcup_{i\in I}B_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\bigcap_{i\in I}A_{i})\cup(\bigcap_{i\in I}B_{I})\subseteq\bigcap_{i\in I}(A_{i}\cup B_{i})$
+\end_inset
+
+, Inkluzja przeciwna nie zachodzi
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-\bigcup_{i\in I}A_{i}=\bigcap_{i\in I}-A_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D:
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $x\in-\bigcup_{i\in I}A_{i}\iff x\notin\bigcup_{i\in I}A_{i}\iff\neg(x\in\bigcup_{i\in I}A_{i})\iff\neg(\exists_{i\in I}x\in A_{i})\iff\forall_{i\in I}\neg(x\in A_{i})\iff x\in\bigcap_{i\in I}-A_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-\bigcap_{i\in I}A_{i}=\bigcup_{i\in I}-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeżeli 
+\begin_inset Formula $\forall_{i\in I}A_{i}\subseteq B_{i}$
+\end_inset
+
+to 
+\begin_inset Formula $\bigcup_{i\in I}A_{i}\subseteq\bigcup_{i\in I}B_{i}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\bigcap_{i\in I}A_{i}\subseteq\bigcap_{i\in I}B_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{i\in I}(C\cap A_{i})=C\cap\bigcup_{i\in I}A_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D:
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $x\in\bigcup_{i\in I}(C\cap A_{i})\iff\exists_{i\in I}x\in C\cap A_{i}\iff\exists_{i\in I}(x\in C\land x\in A_{i})\iff x\in C\land\exists_{i\in I}x\in A_{i}\iff x\in C\land x\in\bigcup_{i\in I}A_{i}\iff x\in C\cap\bigcup_{i\in I}A_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcap_{i\in I}(C\cup A_{i})=C\cup(\bigcap_{i\in I}A_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeżeli 
+\begin_inset Formula $J\subseteq I$
+\end_inset
+
+ to 
+\begin_inset Formula $\bigcup_{j\in J}A_{j}\subseteq\bigcup_{i\in I}A_{i}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\bigcap_{i\in I}A_{i}\subseteq\bigcap_{j\in J}A_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D: 
+\begin_inset Formula $x\in\bigcap_{i\in I}A_{i}\implies\forall_{i\in I}x\in A_{i}\implies\forall_{j\in J}x\in A_{j}\implies x\in\bigcap_{j\in J}A_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{i\in\emptyset}A_{i}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D: Przypuśćmy, że istnieje 
+\begin_inset Formula $x\in\bigcup_{i\in\emptyset}A_{i}$
+\end_inset
+
+, to 
+\begin_inset Formula $\exists_{i\in\emptyset}x\in A_{i}\iff\exists_{i}i\in\emptyset\land x\in A_{i}$
+\end_inset
+
+, ale 
+\begin_inset Formula $i\in\emptyset$
+\end_inset
+
+ to zdanie fałszywe stąd sprzeczność
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcap_{i\in\emptyset}A_{i}=X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $x\in\bigcap_{i\in I}A_{i}\iff\forall_{i\in\emptyset}x\in A_{i}\iff\forall_{i}i\in\emptyset\implies x\in A_{i}\iff x\in X$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Indeksowanie dwoma indeksami 
+\begin_inset Formula $I,J$
+\end_inset
+
+ - zbiory indeksów
+\begin_inset Formula $C:\,I\times J\rightarrow P(X),(i,j)\mapsto c_{ij}=C(i,j)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x\in\bigcup_{j\in J}\bigcap_{i\in I}C_{ij}\iff\exists_{j\in J}x\in\bigcap_{i\in I}C_{ij}\iff\exists_{j\in J}\forall_{i\in I}x\in C_{ij}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Analogicznie definiujemy 
+\begin_inset Formula $\bigcap_{j\in J}\bigcup_{i\in I}C_{ij}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\bigcup_{j\in J}\bigcup_{i\in I}C_{ij}$
+\end_inset
+
+ oraz
+\begin_inset Formula $\bigcap_{j\in J}\bigcap_{i\in I}C_{ij}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Własności: 
+\begin_inset Formula $C:\,I\times J\rightarrow P(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{j\in J}\bigcup_{i\in I}C_{ij}=\bigcup_{i\in I}\bigcup_{j\in J}C_{ij}\overset{\text{def.}}{=}\bigcup_{\begin{array}{c}
+i\in I\\
+j\in J
+\end{array}}C_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcap_{j\in J}\bigcap_{i\in I}C_{ij}=\bigcap_{i\in I}\bigcap_{j\in J}C_{ij}\overset{\text{def.}}{=}\bigcap_{\begin{array}{c}
+i\in I\\
+j\in J
+\end{array}}C_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{i\in I}\bigcap_{j\in J}C_{ij}\subseteqq\bigcap_{j\in J}\bigcup_{i\in I}C_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\in\bigcup_{i\in I}\bigcap_{j\in J}C_{ij}\iff\exists_{i\in I}\forall_{j\in J}x\in C_{ij}\implies\forall_{j\in J}\exists_{i\in I}x\in C_{ij}\iff x\in\bigcap_{j\in J}\bigcup_{i\in I}C_{ij}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Nieskończone rodziny indeksowane.
+ 
+\begin_inset Formula $I=J=\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $X=\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dla każdego 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+, niech 
+\begin_inset Formula $C_{ab}=\{<x,y>\in\mathbb{R}^{2}:\,y\le ax+b\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+
+\begin_inset Formula $\bigcup_{a\in\mathbb{R}}C_{ab}=\mathbb{R}^{2}\setminus\{0\}\times(b,+\infty)$
+\end_inset
+
+
+\bar default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcup_{b\in\mathbb{R}}C_{ab}=\mathbb{R}^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcap_{a\in\mathbb{R}}C_{ab}=\{0\}\times(-\infty,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcap_{b\in\mathbb{R}}C_{ab}=\emptyset$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcap_{b\in\mathbb{R}}\bigcup_{a\in\mathbb{R}}C_{ab}=\bigcap_{b\in\mathbb{R}}(\mathbb{R}^{2}\setminus\{0\}\times(b,+\infty))=\mathbb{R}^{2}\setminus\{0\}\times\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcup_{b\in\mathbb{R}}\bigcap_{a\in\mathbb{R}}C_{ab}=\bigcup_{b\in\mathbb{R}}(\{0\}\times(-\infty,b))=\{0\}\times\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
