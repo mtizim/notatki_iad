@@ -507,5 +507,605 @@ Jeśli
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+Twierdzenie 5.2: Jeśli 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ jest punktem skupienia 
+\begin_inset Formula $D\cap(-\infty,a)$
+\end_inset
+
+ i 
+\begin_inset Formula $D\cap(a,+\infty)$
+\end_inset
+
+ oraz 
+\begin_inset Formula $g\in\widetilde{\mathbb{R}}$
+\end_inset
+
+, to
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a^{-}}f(x)=\lim_{x\rightarrow a^{+}}f(x)=g$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $[\frac{1}{0^{+}}]=+\infty,$
+\end_inset
+
+
+\begin_inset Formula $[\frac{1}{0^{-}}]=-\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Asymptoty
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ Prosta 
+\begin_inset Formula $x=a$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ jest
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Asymptotą pionową lewostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow a^{-}}f(x)=\pm\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą pionową prawostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow a^{+}}f(x)=\pm\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą pionową obustronną gdy jest asymptotą pionową lewostronną i prawostron
+ną
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Prosta 
+\begin_inset Formula $y=b$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $b\in\mathbb{R}$
+\end_inset
+
+ jest
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Asymptotą poziomą lewostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow-\infty}f(x)=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą poziomą prawostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow+\infty}f(x)=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą poziomą obustronną gdy jest asymptotą poziomą ^lewostronną i prawostro
+nną
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def.
+ Prosta 
+\begin_inset Formula $y=mx+k$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $m,k\in\mathbb{R}$
+\end_inset
+
+ jest
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Asymptotą ukośną lewostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow-\infty}[f(x)-(mx+k)]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą ukośną prawostronną (wykresu) funkcji 
+\begin_inset Formula $y=f(x)\iff\lim_{x\rightarrow+\infty}[f(x)-(mx+k)]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Asymptotą ukośną obustronną gdy jest asymptotą poziomą lewostronną i prawostronn
+ą
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 5.3: Prosta 
+\begin_inset Formula $y=mx+k$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $m\in\mathbb{R}\setminus\{0\}$
+\end_inset
+
+ i 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+ jest asymptotą ukośną prawo/lewostronnną
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\iff m=\lim_{x\rightarrow\pm\infty}\frac{f(x)}{x}\land k=\lim_{x\rightarrow\pm\infty}[f(x)-mx]$
+\end_inset
+
+ - (dowód na ćwiczeniach)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: Wyznaczmy asymptoty funkcji 
+\begin_inset Formula $y=\frac{\sqrt{x^{2}+1}}{x}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D=\mathbb{R}\setminus\{0\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow0^{-}}\frac{\sqrt{x^{2}+1}}{x}=[\frac{1}{0^{-}}]=-\infty,\lim_{x\rightarrow0^{+}}\frac{\sqrt{x^{2}+1}}{x}=[\frac{1}{0^{+}}]=+\infty$
+\end_inset
+
+, Więc 
+\begin_inset Formula $x=0$
+\end_inset
+
+ to asymptota pionowa obustronna
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow-\infty}\frac{\sqrt{x^{2}+1}}{x}=\lim_{x\rightarrow-\infty}\frac{|x|\sqrt{1+\frac{1}{x^{2}}}}{x}=\lim_{x\rightarrow-\infty}\frac{-x\sqrt{1+\frac{1}{x^{2}}}}{x}=-1,\lim_{x\rightarrow+\infty}\frac{x\sqrt{1+\frac{1}{x^{2}}}}{x}=1$
+\end_inset
+
+ - asymptota pozioma lewostronna to 
+\begin_inset Formula $y=-1,$
+\end_inset
+
+ prawostronna 
+\begin_inset Formula $y=1$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Brak asymptot ukośnych, bo są asymptoty poziome
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ciągłość
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przypomnienie: 
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=g\overset{\text{(H)}}{\iff}\forall_{\{x_{n}\}\subset D\setminus\{a\}}\lim_{x\rightarrow\infty}x_{n}=a\implies\lim_{n\rightarrow\infty}f(x_{n})=g\text{\overset{\text{\text{(C)}}}{\iff}}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies|f(x)-g|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ (Heinego ciągłości funkcji w punkcie):
+\begin_inset Newline newline
+\end_inset
+
+Funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła w punkcie 
+\begin_inset Formula $\underbar{a\in D\text{ (musi być w dziedzinie)}}\iff$
+\end_inset
+
+
+\begin_inset Formula $\forall_{\{x_{n}\}\subset D}\lim_{n\rightarrow\infty}x_{n}=a\implies\lim_{n\rightarrow\infty}f(x_{n})=f(a)$
+\end_inset
+
+ -
+\series bold
+ (CH)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+W przypadku funkcji ciągłej 
+\begin_inset Formula $f$
+\end_inset
+
+ mamy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})=f(\lim_{n\rightarrow\infty}x_{n})$
+\end_inset
+
+, tzn.
+ z granicą można wejść pod symbol funkcji.
+\end_layout
+
+\begin_layout Enumerate
+Uwaga: Jeśli 
+\begin_inset Formula $a\in D$
+\end_inset
+
+ nie jest punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+, to 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\underset{*}{\underbar{\forall_{\{x_{n}\}\subset D}\lim_{n\rightarrow\infty}x_{n}=a}}\implies\lim_{n\rightarrow\infty}f(x_{n})=f(a)$
+\end_inset
+
+ - (*) jest spełnione jedynie przez ciągi 
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+ takie, że dla wszystkich dalszych 
+\begin_inset Formula $n:$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}=a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+dla wszystkich dużych 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $f(x_{n})=f(a)\overset{n\rightarrow\infty}{\longrightarrow}f(a)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zatem warunek (CH) jest spełniony i funkcja jest ciągła w 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Na przykład każda 
+\begin_inset Formula $f:\,\mathbb{N}\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła w każdym punkcie z 
+\begin_inset Formula $D=\mathbb{N}$
+\end_inset
+
+, bo każdy taki punkt nie jest punktem skupienia dziedziny
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 5.4 (def.
+ Cauchy'ego ciągłości funkcji w punkcie).
+\begin_inset Newline newline
+\end_inset
+
+Funkcja 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ jest ciągła w pkt.
+ 
+\begin_inset Formula $a\in D\iff\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon$
+\end_inset
+
+ -
+\series bold
+ (CC)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D (gdy 
+\begin_inset Formula $a$
+\end_inset
+
+ jest punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+): Chcemy pokazać, że (CH)
+\begin_inset Formula $\iff$
+\end_inset
+
+(CC)
+\begin_inset Newline newline
+\end_inset
+
+(CH)
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $\forall_{\{x_{n}\}\subset D}\lim_{n\rightarrow\infty}x_{n}=a\implies\lim_{n\rightarrow\infty}f(x_{n})=f(a)\iff\forall_{\{x_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}x_{n}=a\implies\lim_{n\rightarrow\infty}f(x_{n})=f(a)\iff\lim_{x\rightarrow a}f(x)=f(a)\iff$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\iff\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies|f(x)-f(a)|<\epsilon\iff$
+\end_inset
+
+(CC) 
+\end_layout
+
+\begin_layout Enumerate
+Przy okazji udowodniliśmy nastepujące twierdzenie:
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 5.5: Jeśli 
+\begin_inset Formula $a\in D$
+\end_inset
+
+ jest punktem skupienia zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+, to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ jest ciagła w punkcie 
+\begin_inset Formula $a\iff\lim_{x\rightarrow a}f(x)=f(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Funkcja 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ jest ciągła 
+\begin_inset Formula $\iff f(x)$
+\end_inset
+
+ jest ciągła w każdym punkcie swojej dziedziny, tzn.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon\iff f(x)$
+\end_inset
+
+ jest ciągła w 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Funkcja stała 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=c$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|c-c|=0<\epsilon$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+więc jest ciagła
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+ jest ciągła:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|x-a|<\epsilon$
+\end_inset
+
+, co zachodzi dla 
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+ jest ciągła:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies||x|-|a||\le|x-a|<\epsilon,$
+\end_inset
+
+co zachodzi dla 
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sin\alpha-\sin\beta=2\sin\frac{\alpha-\beta}{2}\cos\frac{\alpha+b}{2}$
+\end_inset
+
+ - przydatne do nastepnego
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sin\alpha+\sin\beta=2\sin\frac{\alpha-\beta}{2}\cos\frac{\alpha-b}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sin\alpha-\cos\beta=2\sin\frac{\alpha-\beta}{2}\sin\frac{\alpha+b}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sin\alpha+\cos\beta=2\cos\frac{\alpha-\beta}{2}\cos\frac{\alpha+b}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f,g:\,\mathbb{R}\rightarrow\mathbb{R},$
+\end_inset
+
+
+\begin_inset Formula $f(x)=\sin(x)$
+\end_inset
+
+,
+\begin_inset Formula $g(x)=\cos(x)$
+\end_inset
+
+ są ciągłe, bo:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|\sin x-\sin a|=2|\sin\frac{x-a}{2}|\cdot|\cos\frac{x+a}{2}|\le2\cdot|\frac{x-a}{2}|\cdot|1|\le|x-a|<\epsilon$
+\end_inset
+
+ (
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|\cos x-\cos a|=2|\sin\frac{x-a}{2}|\cdot|\sin\frac{x+a}{2}|\le2\cdot|\frac{x-a}{2}|\cdot|1|\le|x-a|<\epsilon$
+\end_inset
+
+ (
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document

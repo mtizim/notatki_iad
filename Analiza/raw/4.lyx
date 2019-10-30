@@ -495,7 +495,9 @@ Def.
 \begin_inset Formula $f(x)\overset{x\rightarrow a}{\longrightarrow}g\iff\underbar{\forall_{\{a_{n}\}\subset D\setminus\{a\}}\lim_{n\rightarrow\infty}a_{n}=a\implies\lim_{n\rightarrow\infty}f(a_{n})=g}$
 \end_inset
 
- - (H)
+ - 
+\series bold
+(H)
 \end_layout
 
 \begin_deeper
@@ -722,7 +724,11 @@ Def.
 \begin_inset Formula $\lim_{x\rightarrow a}f(x)=g\iff\underbar{\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-a|<\delta\implies|f(x)-g|<\epsilon}$
 \end_inset
 
- - (C)
+ - 
+\series bold
+(C)
+\series default
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1075,7 +1081,7 @@ Twierdzenie 4.4: (tw.
 
 \end_deeper
 \begin_layout Enumerate
-Twierdzeie 4.5 (tw o dwóch funkcjach): Jeśli:
+Twierdzenie 4.5 (tw o dwóch funkcjach): Jeśli:
 \end_layout
 
 \begin_deeper
