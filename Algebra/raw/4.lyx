@@ -802,5 +802,25 @@ Rozwiązania układu równań są przestrzenią wektorową
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $V$
+\end_inset
+
+ - przestrzeń liniowa nad 
+\begin_inset Formula $K$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a\cdot v=\mathbb{O}\iff a=0\,\lor\,v=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
