@@ -1,0 +1,718 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+06.11.2019
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+6 Funkcje Ciągłe
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Funkcja 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $D\subset\mathbb{R}$
+\end_inset
+
+ jest ciągła w punkcie 
+\begin_inset Formula $a\in D\overset{\text{(CH)}}{\iff}\forall_{\{x_{n}\}\in D}\lim_{n\rightarrow\infty}x_{n}=a\implies\lim_{n\rightarrow\infty}f(x_{n})=f(a)\overset{\text{(CC)}}{\iff}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+T: Jeśli 
+\begin_inset Formula $a\in D$
+\end_inset
+
+ jest punktem skupienia 
+\begin_inset Formula $D$
+\end_inset
+
+ , to 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła w punkcie 
+\begin_inset Formula $a\iff\lim_{x\rightarrow a}f(x)=f(a)\iff\lim_{x\rightarrow0^{-}}f(x)=\lim_{x\rightarrow0^{+}}f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Funkcje 
+\begin_inset Formula $c,x,|x|,\sin x,\cos x$
+\end_inset
+
+ są ciągłe
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 6.1: Jeśli funkcje 
+\begin_inset Formula $f,g:\,D\rightarrow\mathbb{R},$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $D\subset\mathbb{R}$
+\end_inset
+
+ są ciągłe w punkcie 
+\begin_inset Formula $a\in D$
+\end_inset
+
+, to 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f+g,f-g,fg$
+\end_inset
+
+ też są ciągłe w punkcie 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+ też jest ciągła w punkcie 
+\begin_inset Formula $a$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $\forall_{x\in D}g(x)\neq0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Twierdzenie to wynika z def.
+ Heinego ciągłości funkcji i z tw.
+ o ciągłości działań arytmetycznych
+\begin_inset Newline newline
+\end_inset
+
+Wnioski:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Każdy wielomian 
+\begin_inset Formula $w(x)=\sum_{k=0}^{n}a_{k}x^{k}$
+\end_inset
+
+ jest funkcją ciągłą
+\end_layout
+
+\begin_layout Enumerate
+Każda funkcja wymierna 
+\begin_inset Formula $\frac{w_{1}(x)}{w_{2}(x)}$
+\end_inset
+
+ jest funkcją ciągłą
+\end_layout
+
+\begin_layout Enumerate
+Funkcje 
+\begin_inset Formula $\tan x$
+\end_inset
+
+ i 
+\begin_inset Formula $\cot$
+\end_inset
+
+x są ciągłe
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 6.2: Złożenie funkcji ciągłych jest funkcją ciągłą.
+ Dokładniej, jeśli 
+\begin_inset Formula $D_{1},D_{2}\subset\mathbb{R}$
+\end_inset
+
+ i 
+\begin_inset Formula $f:\,D_{1}\rightarrow D_{2}$
+\end_inset
+
+ jest ciągła w punkcie 
+\begin_inset Formula $a\in D_{1}$
+\end_inset
+
+ i 
+\begin_inset Formula $g:\,D_{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła w punkcie 
+\begin_inset Formula $f(a)$
+\end_inset
+
+, to złożenie 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ 
+\begin_inset Formula $(g\circ f(x):=g(f(x)))$
+\end_inset
+
+ jest ciągłe w punkcie 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Przykład Funkcja 
+\begin_inset Formula $f(x)=\sin|x|$
+\end_inset
+
+ jest ciągła
+\begin_inset Newline newline
+\end_inset
+
+Funkcja odwrotna do funkcji ciągłej nie musi być funkcją ciągłą - musi być
+ odwracalna
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 6.3 (o ciągłości funkcji odwrotnej): Jeśli 
+\begin_inset Formula $P$
+\end_inset
+
+ to przedział i 
+\begin_inset Formula $f:$
+\end_inset
+
+
+\begin_inset Formula $P\rightarrow Y\subset\mathbb{R}$
+\end_inset
+
+ jest ciągła i odwracalna, to funkcja odwrotna 
+\begin_inset Formula $f^{-1}:\,Y\rightarrow P$
+\end_inset
+
+ też jest funkcją ciągłą.
+\begin_inset Newline newline
+\end_inset
+
+Wniosek: Funkcja cyklometryczne, tzn 
+\begin_inset Formula $\arcsin x,\arccos x,\arctan x$
+\end_inset
+
+,arccot
+\begin_inset Formula $x$
+\end_inset
+
+ to funkcje ciągłe jako funkcje odwrotne
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Do funkcji elementarnych będziemy zaliczać:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+wielomiany 
+\begin_inset Formula $w(x)=\sum_{k=0}^{n}a_{k}x^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+funkcje wymierne 
+\begin_inset Formula $\frac{w_{1}(x)}{w_{2}(x)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+funkcja pierwiastek 
+\begin_inset Formula $\sqrt[n]{x},$
+\end_inset
+
+ 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+funkcje trygonometryczne i cyklometryczne
+\end_layout
+
+\begin_layout Enumerate
+funkcje wykładniczą 
+\begin_inset Formula $a^{x}$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Jak rozumieć 
+\begin_inset Formula $a^{x}$
+\end_inset
+
+ gdy 
+\begin_inset Formula $a>0$
+\end_inset
+
+ i 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dla 
+\begin_inset Formula $x=0,a^{x}=a^{0}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dla 
+\begin_inset Formula $x\in\mathbb{N},$
+\end_inset
+
+
+\begin_inset Formula $a^{x}=a\cdot\dots\cdot a$
+\end_inset
+
+ (
+\begin_inset Formula $x$
+\end_inset
+
+ czynników)
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ i 
+\begin_inset Formula $x<0$
+\end_inset
+
+ to 
+\begin_inset Formula $a^{x}=\frac{1}{a^{-x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $x\in\mathbb{Q},$
+\end_inset
+
+ czyli 
+\begin_inset Formula $x=\frac{n}{m}$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, to 
+\begin_inset Formula $a^{x}=a^{\frac{n}{m}}=\sqrt[m]{a^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A co jeśli 
+\begin_inset Formula $x\notin\mathbb{Q}?$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Def.
+ Jeśli 
+\begin_inset Formula $a\in[1,\infty),$
+\end_inset
+
+to 
+\begin_inset Formula $a^{x}:=\sup\{a^{q}:\,q\in\mathbb{Q}\land q\le x\}$
+\end_inset
+
+ - zbiór niepusty i ograniczony z góry, np.
+ przez 
+\begin_inset Formula $a^{\lfloor x\rfloor+1}$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ ma skończony kres górny
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $a\in(0,1),$
+\end_inset
+
+to 
+\begin_inset Formula $a^{x}:=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{(\frac{1}{a})^{x}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+funkcję logarytmiczną 
+\begin_inset Formula $\log_{a}x$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 6.4 (własności potęgowania):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jesli 
+\begin_inset Formula $a,b>0,\,x,y,\in\mathbb{R},$
+\end_inset
+
+ to 
+\begin_inset Formula $a^{x+y}=a^{x}\cdot a^{y},(a^{x})^{y}=a^{xy},(ab)^{x}=a^{x}\cdot b^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $a\in(1,\infty),$
+\end_inset
+
+ to funkcja 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+ jest rosnąca i jej zbiór wartości to 
+\begin_inset Formula $(0,\infty)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $a\in(0,1),$
+\end_inset
+
+ to funkcja 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+ jest malejąca i jej zbiór wartości to 
+\begin_inset Formula $(0,\infty)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 6.5: Funkcja 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $a>0$
+\end_inset
+
+ jest ciągła, tzn 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{x_{0}\in\mathbb{R}}\lim_{x\rightarrow x_{0}}a^{x}=a^{x_{0}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Niech 
+\begin_inset Formula $a\in(0,1)\cup(1,\infty).$
+\end_inset
+
+ Funkcją logarytmiczną nazywamy funkcję 
+\begin_inset Formula $f:\,(0,\infty)\rightarrow\mathbb{R},\,f(x)=\log_{a}x$
+\end_inset
+
+, która jest funkcją odwrotną do funkcji 
+\begin_inset Formula $g:\,\mathbb{R}\rightarrow(0,\infty),\,g(x)=a^{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga: Funkcja logarytmiczna jest funkcją ciągłą jako funkcja odwrotna do
+ funkcji ciągłej określonej na przedziale
+\end_layout
+
+\begin_layout Enumerate
+Funkcja pierwiastek: Na ćwiczeniach, pokazalismy, że 
+\begin_inset Formula $\forall_{g\ge0}\forall_{\{x_{n}\}\in[0,\infty)}\lim_{x\rightarrow\infty}x_{n}=g\iff\lim_{x\rightarrow\infty}\sqrt[4]{x_{n}}=\sqrt[4]{g}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Analogicznie mozna wykazać, że powyższy fakt zachodzi nie tylko dla pierwiastka
+ stopnia 4 ale dowolnego stopnia 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Warunek ten oznacza, że 
+\begin_inset Formula $f(x)=\sqrt[k]{x}$
+\end_inset
+
+ jest funkcją ciągłą w dowolnym punkcie 
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 6.6: Każda funkcja elementarna jest funkcją ciągłą.
+\end_layout
+
+\begin_layout Enumerate
+Def (funkcje hyperboliczne):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sinh x:=\frac{e^{x}-e^{-x}}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cosh x:=\frac{e^{x}+e^{-x}}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\tanh x:=\frac{\sinh x}{\cosh x}=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\coth x:=$
+\end_inset
+
+
+\begin_inset Formula $\frac{\cosh x}{\sinh x}=\frac{e^{x}+e^{-x}}{e^{x}-e^{-x}}$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\mathbb{R}\setminus\{0\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Uwagi:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pomiędzy funkcjami hiberbolicznymi zachodzą 
+\series bold
+podobne 
+\series default
+związki jak pomiędzy funkcjami trygonometrycznymi, np:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sinh2x=\frac{e^{2x}-e^{-2x}}{2}=2\cdot\frac{e^{x}+e^{-x}}{2}\cdot\frac{e^{x}-e^{-x}}{2}=2\sinh x\cosh x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\cosh^{2}x-\sinh^{2}x=\frac{e^{2x}+2+e^{-2x}}{4}-\frac{e^{2x}-2+e^{-2x}}{4}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Funkcje hiperboliczne są ciągłe, np 
+\begin_inset Formula $\sinh x=\frac{1}{2}(e^{x}-e^{-x})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
