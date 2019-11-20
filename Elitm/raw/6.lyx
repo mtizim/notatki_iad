@@ -386,6 +386,218 @@ Relacja
 \begin_inset Newline newline
 \end_inset
 
+Relacja dla par wektorów 
+\begin_inset Formula $R$
+\end_inset
+
+ taka że 
+\begin_inset Formula $<a,b>R<c,d>$
+\end_inset
+
+ gdy 
+\begin_inset Formula $b-a=d-c$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Relacja 
+\begin_inset Formula $\iff$
+\end_inset
+
+, relacja 
+\begin_inset Formula $a\,R\,b\,:=a\implies b\land b\implies a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def: Niech 
+\begin_inset Formula $\sim\subseteq X\times X$
+\end_inset
+
+ będzie relacją równoważności i 
+\begin_inset Formula $a\in X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zbiór 
+\begin_inset Formula $[a]_{\sim}=\{x\in X:\,x\sim a\}$
+\end_inset
+
+ nazywamy klasą 
+\series bold
+abstrakcji (równoważności) 
+\series default
+dla elementu 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a$
+\end_inset
+
+ nazywamy reprezentantem klasy abstrakcji 
+\begin_inset Formula $[a]_{\sim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własności klas abstrakcji
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a\in X}a\in[a]_{\sim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a,b\in X}b\in[a]_{\sim}\implies a\in[b]_{\sim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a,b\in X}[a]_{\sim}=[b]_{\sim}\iff a\sim b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{a,b\in X}([a]_{\sim}=[b]_{\sim})\lor[a]_{\sim}\cap[b]_{\sim}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup_{a\in X}[a]_{\sim}=X$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Podziałem zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\series default
+nazywamy rodzinę 
+\begin_inset Formula $\{A_{i}:i\in I\}$
+\end_inset
+
+ taką, że 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{i\in I}A_{i}\neq\emptyset$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{i,j\in I}(i\neq j\implies A_{j}\cap A_{i}=\emptyset)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcup_{i\in I}A_{i}=X$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Wniosek : Rodzina klas abstrakcji relacji równoważności 
+\begin_inset Formula $\sim\subseteq X^{2}$
+\end_inset
+
+ jest podziałem x
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def: 
+\begin_inset Formula $\sim$
+\end_inset
+
+- relacja równoważności na 
+\begin_inset Formula $X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zbiór klas abstrakcji relacji 
+\begin_inset Formula $\sim$
+\end_inset
+
+ nazywamy 
+\series bold
+zbiorem ilorazowym
+\series default
+ i oznaczamy 
+\begin_inset Formula $X_{/\sim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie: Niech 
+\begin_inset Formula $\{A_{i}:i\in I\}$
+\end_inset
+
+ będzie podziałem zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Wtedy istineje relacja równoważności 
+\begin_inset Formula $\sim$
+\end_inset
+
+ na 
+\begin_inset Formula $X$
+\end_inset
+
+ taka, że 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X_{/\sim}=\{A_{i}:\,i\in I\}$
+\end_inset
+
 
 \end_layout
 

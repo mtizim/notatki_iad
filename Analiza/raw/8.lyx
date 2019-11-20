@@ -1,0 +1,611 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+Własności funkcji ciągłych:
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 7.1 : Każda funkcja ciągła 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ ma własność Darboux, to znaczy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f(a)\neq f(b)\implies\forall_{c\,\text{między }f(a),f(b)}\exists_{x_{0}\in(a,b)}f(x_{0})=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 7.1: (twierdzenie Weierstrassa I)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli funkcja 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła, to jest ograniczona
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 7.2: (twierdzenie Weierstrassa II)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli funkcja 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła, to przyjmuje wartość najmniejszą i największą - osiąga swoje
+ kresy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{x_{m},x_{M}\in<a,b>}f(x_{m})=\underset{x\in<a,b>}{\inf}f(x)\,i\,f(x_{M})=\underset{x\in<a,b>}{\sup}f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga - z przedziału otwartego to niekoniecznie prawda
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód: 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ - funkcja ciągła 
+\begin_inset Formula $\overset{\text{tw.Weierstrassa\,I}}{\implies}$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ jest ograniczona, tzn ograniczony jest zbiór wartości tej funkcji 
+\begin_inset Formula $Y=\{f(x):\,x\in<a,b>\}.$
+\end_inset
+
+ Ponadto 
+\begin_inset Formula $Y\neq\emptyset.$
+\end_inset
+
+ Zatem istnieją skończone kresy zbioru 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ Oznaczmy 
+\begin_inset Formula $m=\inf Y=\underset{x\in<a,b>}{\inf}f(x)$
+\end_inset
+
+ i 
+\begin_inset Formula $M=\sup Y=\underset{x\in<a,b>}{\sup}f(x)$
+\end_inset
+
+.
+ Pokażemy, że 
+\begin_inset Formula $\exists_{x_{M}\in<a,b>}f(x_{m})=M$
+\end_inset
+
+.
+ Dowód tego, że 
+\begin_inset Formula $\exists_{x_{m}\in<a,b>}f(x_{m})=m$
+\end_inset
+
+ przebiega analogicznie.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Dowód nie wprost: Zakładamy, że 
+\begin_inset Formula $\forall_{x\in<a,b>}f(x)\neq M$
+\end_inset
+
+, więc 
+\begin_inset Formula $f(x)<M$
+\end_inset
+
+ bo 
+\begin_inset Formula $M=\underset{x\in<a,b>}{\sup}f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zdefiniujmy funkcję 
+\begin_inset Formula $F:\,<a,b>\rightarrow\mathbb{R},\,F(x)=\frac{1}{M-f(x)}$
+\end_inset
+
+.
+ Funkcja ta jest dobrze zdefiniowana, bo mianownik się nie zeruje.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $F:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją ciągłą 
+\begin_inset Formula $\overset{\text{tw. Weierstrassa I}}{\implies}$
+\end_inset
+
+ jest ograniczona, tzn.
+ 
+\begin_inset Formula $\exists_{K>0}\forall_{x\in<a,b>}0<F(x)<K$
+\end_inset
+
+ tzn 
+\begin_inset Formula $\exists_{K>0}\forall_{x\in<a,b>}0<\frac{1}{M-f(x)}<K\implies\exists_{K>0}\forall_{x\in<a,b>}M-f(x)>\frac{1}{K}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies\exists_{K>0}\forall_{x\in<a,b>}f(x)<M-\frac{1}{K}$
+\end_inset
+
+, co oznacza że M nie jest największym ograniczeniem 
+\begin_inset Formula $Y$
+\end_inset
+
+, czyli 
+\begin_inset Formula $M\neq\underset{x\in<a,b>}{\sup}f(x)$
+\end_inset
+
+ - sprzeczność
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Jednostajna ciągłość funkcji
+\end_layout
+
+\begin_layout Standard
+Do końca wykładu będziemy zakładać, że 
+\begin_inset Formula $D\subset\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Przypomnienie: 
+\end_layout
+
+\begin_layout Standard
+Funkcja 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła 
+\begin_inset Formula $\iff\forall_{a\in D}\text{funkcja \ensuremath{f} jest ciągła w \ensuremath{a}}\iff\forall_{a\in D}\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon$
+\end_inset
+
+ - 
+\begin_inset Formula $\delta$
+\end_inset
+
+ może zależeć od 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $\delta$
+\end_inset
+
+ nie zależy od 
+\begin_inset Formula $a$
+\end_inset
+
+, tzn jest taka sama dla każdego 
+\begin_inset Formula $a$
+\end_inset
+
+, to wtedy mówimy, że funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest jednostajnie ciągła, tzn spełnia warunek:
+\end_layout
+
+\begin_layout Enumerate
+Def: Funkcja 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ jest jednostajnie ciągła 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{\delta>0}\forall_{a\in D}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uwaga 7.1: Każda funkcja jednostajnie ciagła jest ciągła.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Przykłady: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f:\,(0,+\infty)\rightarrow\mathbb{R},\,f(x)=\frac{1}{x}$
+\end_inset
+
+ nie jest jednostajnie ciągła
+\begin_inset Newline newline
+\end_inset
+
+Dowód nie wprost.
+ Zakładamy, że 
+\begin_inset Formula $f$
+\end_inset
+
+ jest jednostajnie ciągła, czyli 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{\delta>0}\forall_{a\in D}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W szczególności dla 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+ ptrzymujemy 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x,y\in(0,\infty)}|x-y|<\delta\implies|f(x)-f(a)|<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Weżmy 
+\begin_inset Formula $x_{n}=\frac{1}{n},t_{n}=\frac{1}{n+1},n\in\mathbb{N}$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $|x_{n}-y_{n}|=|\frac{1}{n}-\frac{1}{n+1}|\overset{n\rightarrow\infty}{\longrightarrow}0.$
+\end_inset
+
+ Stąd dla dostatecznie dużego 
+\begin_inset Formula $n$
+\end_inset
+
+ mamy 
+\begin_inset Formula $|x_{n}-y_{n}|<\delta\implies|f(x_{n})-f(y_{n})|<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z drugiej strony, 
+\begin_inset Formula $|f(x_{n})-f(y_{n})|=|n-n-1|=1$
+\end_inset
+
+ - skąd sprzeczność.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R},$
+\end_inset
+
+
+\begin_inset Formula $f(x)=\cos x,$
+\end_inset
+
+ jest jednostajnie ciągła - 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{\delta>0}\forall_{a\in D}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|=|\cos x-\cos a|=|-2\sin\frac{x-a}{2}\sin\frac{x+a}{2}|=2|sin\frac{x-y}{2}||\sin\frac{x+y}{2}|\le2|\frac{x+y}{2}|\cdot1=|x-y|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Więc wystarczy wybrać 
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 7.4: (twierdzenie Cantora):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła, to jest jednostajnie ciągła.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dowód nie wprost: Zakładamy, że 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła ale nie jest jednostajnie ciągła.
+ Wtedy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{\delta>0}\exists_{a\in D}\exists_{x\in D}|x-y|<\delta\land|f(x)-f(y)|\ge\epsilon$
+\end_inset
+
+.
+ W szczególności biorąc 
+\begin_inset Formula $\delta=\frac{1}{n},n\in\mathbb{N}$
+\end_inset
+
+ otrzymujemy
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{n\in\mathbb{N}}\exists_{x_{n},y_{n}\in<a,b>}|x_{n}-y_{n}|<\frac{1}{n}\,\text{i}\,|f(x_{n})-f(y_{n})|\ge\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W ten sposób otrzymaliśmy dwa ciągi 
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+ i 
+\begin_inset Formula $\{y_{n}\}.$
+\end_inset
+
+ Ciąg 
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+ jest ograniczony, bo 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}x_{n}\in[a,b]\overset{\text{tw.Bolzano-Weierstrassa}}{\implies}\{x_{n}\}$
+\end_inset
+
+ zawiera podciąg zbieżny; oznaczmy 
+\begin_inset Formula $x_{n_{k}}\overset{k\rightarrow\infty}{\longrightarrow}x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z twierdzenia o przechodzeniu do granicy w nierównościach, mamy 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{n\in\mathbb{N}}|x_{n}-y_{n}|<\frac{1}{n}\implies\forall_{n\in\mathbb{N}}x_{n}-\frac{1}{n}<y_{n}<x_{n}+\frac{1}{n}\implies\forall_{k\in\mathbb{N}}x_{n_{k}}-\frac{1}{n_{k}}<y_{n_{k}}<x_{n_{k}}+\frac{1}{n_{k}}$
+\end_inset
+
+ lewa i prawa strona zbiegają do 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, więc z tw o 3 ciągach 
+\begin_inset Formula $y_{n_{k}}\overset{k\rightarrow\infty}{\longrightarrow}x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z ciągłości funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ w punkcie 
+\begin_inset Formula $x_{0},$
+\end_inset
+
+ 
+\begin_inset Formula $f(x_{n_{k}})\overset{k\rightarrow\infty}{\longrightarrow}f(x_{0})\,\text{i}\,f(y_{n_{k}})\overset{k\rightarrow\infty}{\longrightarrow}f(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $|f(x_{n_{k}})-f(y_{n_{k}})|\overset{k\rightarrow\infty}{\longrightarrow}0,$
+\end_inset
+
+co jest sprzeczne z 
+\begin_inset Formula $\boldsymbol{\exists}_{\boldsymbol{\epsilon>0}}\forall_{n\in\mathbb{N}}\exists_{x_{n},y_{n}\in<a,b>}\boldsymbol{|f(x_{n})-f(y_{n})|\ge\epsilon}$
+\end_inset
+
+, bo z drugiej strony 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{\epsilon>0}\forall_{n\in\mathbb{N}}\exists_{x_{n},y_{n}\in<a,b>}|f(x_{n})-f(y_{n})|\ge\epsilon\implies\exists_{\epsilon>0}\forall_{n\in\mathbb{N}}\exists_{x_{n},y_{n}\in<a,b>}|f(x_{n_{k}})-f(y_{n_{k}})|\ge\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def: Funkcja 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ spełnia warunek Lipschitza na 
+\begin_inset Formula $D\iff\exists_{L>0}\forall_{x,y\in D}|f(x)-f(y)|\le L|x-y|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Przykład: Funkcja 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R},\,f(x)=\cos x$
+\end_inset
+
+ spełnia warunek Lipschitza, bo już dzisiaj pokazaliśmy, że 
+\begin_inset Formula $\forall_{x,y\in\mathbb{R}}|f(x)-f(y)|=|\cos x-\cos y|\le|x-y|,$
+\end_inset
+
+ tzn istnieje 
+\begin_inset Formula $L$
+\end_inset
+
+ spełniające warunek Lipschitza (
+\begin_inset Formula $L=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 7.5: Jeśli 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ spełnia warunek Lipschitza, to jest jednostajnie ciągła.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Dowód: Niech 
+\begin_inset Formula $f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ spełnia warunek Lipschitza.
+ Wtedy 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{\delta>0}\forall_{a\in D}\forall_{x\in D}|x-a|<\delta\implies|f(x)-f(a)|\le L|x-y|<\epsilon$
+\end_inset
+
+ (
+\begin_inset Formula $\delta=\frac{\epsilon}{L}$
+\end_inset
+
+) , co oznacza, że 
+\begin_inset Formula $f$
+\end_inset
+
+ jest jednostajnie ciągła.
+\end_layout
+
+\end_body
+\end_document
