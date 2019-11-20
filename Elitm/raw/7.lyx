@@ -1,0 +1,405 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Def: 
+\series bold
+Relację 
+\series default
+
+\begin_inset Formula $R\subseteq X\times Y$
+\end_inset
+
+ nazywamy 
+\series bold
+funkcją
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x\in X}\forall_{y_{1},y_{2}\in Y}xRy_{1}\land xRy_{2}\implies y_{1}=y_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Gdy relacja jest funkcją
+\begin_inset space ~
+\end_inset
+
+często zamiasy 
+\begin_inset Formula $xRy$
+\end_inset
+
+ piszemy 
+\begin_inset Formula $y=R(x).$
+\end_inset
+
+ Element 
+\begin_inset Formula $x$
+\end_inset
+
+ nazywamy 
+\series bold
+argumentem funkcji 
+\series default
+R, zaś 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\series bold
+wartością R dla argumentu 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def: Zbiór 
+\begin_inset Formula $D_{r}=\{x\in X:\,\exists_{y\in Y}R(x)=y\}$
+\end_inset
+
+ nazywamy 
+\series bold
+dziedziną
+\series default
+ funkcji R.
+ Jeśli 
+\begin_inset Formula $D_{R}=X,$
+\end_inset
+
+ to oznaczamy 
+\begin_inset Formula $R:\,X\rightarrow Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def: Jeśli przeciwdziedzina jest równa zbiorowi wartosci, to mówimy, że
+ funkcja jest 
+\begin_inset Quotes eld
+\end_inset
+
+na
+\begin_inset Quotes erd
+\end_inset
+
+, lub że jest 
+\series bold
+surjekcją
+\end_layout
+
+\begin_layout Enumerate
+Twiedzenie - Złożenie dwóch funkcji jest funkcją
+\end_layout
+
+\begin_layout Enumerate
+Uwaga: Relacja odwrotna do funkcji nie musi być funkcją
+\end_layout
+
+\begin_layout Enumerate
+Def: Funkcję 
+\begin_inset Formula $f:\,X\rightarrow Y$
+\end_inset
+
+ nazywamy 
+\series bold
+różnowartościową
+\series default
+, lub 
+\series bold
+iniekcją
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x_{1},x_{2}\in X}x_{1}\neq x_{2}\implies f(x_{1})\neq f(x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie: Jeśli 
+\begin_inset Formula $f:\,X\rightarrow Y$
+\end_inset
+
+jest iniekcją to jej relacja odwrotna jest funkcją
+\end_layout
+
+\begin_layout Enumerate
+Uwaga: Jeśli funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest 
+\series bold
+na 
+\series default
+zbiór 
+\begin_inset Formula $Y$
+\end_inset
+
+, to piszemy 
+\begin_inset Formula $f^{-1}:\,Y\rightarrow X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie: Niech 
+\begin_inset Formula $f:\,X\rightarrow Y$
+\end_inset
+
+ oraz 
+\begin_inset Formula $f^{-1}:\,Y\rightarrow X$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $f\circ f^{-1}=id_{Y}=\{(y,y):\,y\in Y\},\,f^{-1}\circ f=id_{X}=\{(x,x):\,x\in X\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Funkcja która jest iniekcją i surjekcją
+\begin_inset space ~
+\end_inset
+
+nazywamy 
+\series bold
+bijekcją
+\end_layout
+
+\begin_layout Enumerate
+Niech 
+\begin_inset Formula $f:\,X\rightarrow Y$
+\end_inset
+
+ oraz 
+\begin_inset Formula $Z\subseteq X.$
+\end_inset
+
+ Funkcję 
+\begin_inset Formula $g=f_{/Z}=f\cap Z\times Y$
+\end_inset
+
+ nazywamy obcięciem funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ do zbioru 
+\begin_inset Formula $Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Niech 
+\begin_inset Formula $f_{i}:\,X_{i}\rightarrow Y$
+\end_inset
+
+ dla 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ oraz dla każdego 
+\begin_inset Formula $i\neq j\in I\,\,X_{i}\cap X_{j}=\emptyset.$
+\end_inset
+
+Wtedy 
+\begin_inset Formula $f=f_{1}\cup\dots\cup f_{n}$
+\end_inset
+
+ jest funkcją i 
+\begin_inset Formula $f:\,\bigcap_{i\in I}X_{i}\rightarrow Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+niech 
+\begin_inset Formula $X,Y,Z,T$
+\end_inset
+
+ - zbiory oraz 
+\begin_inset Formula $f:\,X\rightarrow Y,\,g:\,Y\rightarrow Z\,h:\,Z\rightarrow T$
+\end_inset
+
+ - funkcje
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f:\,X\overset{1-1}{\rightarrow}Y,g:\,Y\overset{1-1}{\rightarrow}Z\implies g\circ f:\,X\overset{1-1}{\rightarrow}Z$
+\end_inset
+
+ - 
+\begin_inset Formula $(1-1$
+\end_inset
+
+) - różnowartościowe
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,X\overset{na}{\rightarrow}Y,g:\,Y\overset{na}{\rightarrow}Z\implies g\circ f:\,X\overset{na}{\rightarrow}Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,X\overset{bijekcja}{\rightarrow}Y,g:\,Y\overset{bijekcja}{\rightarrow}Z\implies g\circ f:\,X\overset{bijekcja}{\rightarrow}Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h\circ(g\circ f)=(h\circ g)\circ f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Składanie funkcji nie jest przemienne 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\circ id_{x}=f,\,id_{y}\circ f=f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(g\circ f)^{-1}=f^{-1}\circ g^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def: Niech 
+\begin_inset Formula $f:\,X\rightarrow Y,\,A\subseteq X,\,B\subseteq Y$
+\end_inset
+
+.
+ Zbiór 
+\begin_inset Formula $f[A]=\{y\in Y:\,\exists_{x\in A}y=f(x)\}=\{f(x):\,x\in A\}\subseteq Y$
+\end_inset
+
+ nazywamy 
+\series bold
+obrazem
+\series default
+ zbioru 
+\begin_inset Formula $A$
+\end_inset
+
+ funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zbiór 
+\begin_inset Formula $f^{-1}[B]=\{x\in X:\,f(x)\in B\}\subseteq X$
+\end_inset
+
+ nazywamy 
+\series bold
+przeciwobrazem 
+\series default
+funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

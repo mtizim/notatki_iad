@@ -1,0 +1,6 @@
+#!/bin/bash
+find ~/Notatki  -path '*/raw/*.lyx'| xargs lyx -e pdf2
+find ~/Notatki  -path '*/#*' | xargs rm
+find ~/Notatki  -path '*/*~' | xargs rm
+find ~/Notatki  -path '*/raw/*.pdf' -exec bash -c 'mv {} "$(dirname $(dirname {}))"' \;
+
