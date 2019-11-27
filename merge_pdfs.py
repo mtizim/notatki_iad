@@ -29,7 +29,7 @@ def merge_pdfs_from_path(path):
     pdfs = [name for name in os.listdir(path[:-1]) if is_numbered_pdf(name)]
     pdfs = sorted(pdfs,key=lambda s: int(s.split(".")[0]))
     pdfs = [path + name for name in pdfs]
-    merge_pdfs(pdfs,path+"merged")
+    merge_pdfs(pdfs,path+"merged.pdf")
 
 for folder in folders:
     merge_pdfs_from_path(NOTEPATH +"/"+ folder + "/")

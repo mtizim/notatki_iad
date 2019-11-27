@@ -118,6 +118,10 @@ Przez cały wykład będziemy zakładać, że (o ile nie będzie powiedziane ina
 \begin_layout Enumerate
 Def.
  Jeśli istnieje skończona granica
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Formula $\lim_{h\rightarrow0}\frac{f(x_{0}+h)-f(x_{0})}{h}=\lim_{x\rightarrow x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}$
 \end_inset
 
@@ -255,7 +259,7 @@ Wyznaczymy równanie prostej stycznej do wykresu funkcji
 \end_layout
 
 \begin_layout Enumerate
-Twierdzenie 8.1: Warunek konieczny różniczkowalności)
+Twierdzenie 8.1: Warunek konieczny różniczkowalności
 \begin_inset Newline newline
 \end_inset
 
@@ -298,5 +302,697 @@ Jeśli funkcja
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+D:(egzamin)
+\begin_inset space ~
+\end_inset
+
+Z założenia 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+jest punktem wewnętrznym 
+\begin_inset Formula $D\implies x_{0}$
+\end_inset
+
+ jest punktem skupienia zbioru 
+\begin_inset Formula $D\implies(f$
+\end_inset
+
+ jest ciągła w 
+\begin_inset Formula $x_{0}\iff\lim_{x\rightarrow x_{0}}f(x)=f(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z różniczkowalnośći funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+mamy 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}=f'(x_{0})\in\mathbb{R}.$
+\end_inset
+
+ Stąd 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=\lim_{x\rightarrow x_{0}}(\frac{f(x)-f(x_{0})}{x-x_{0}}\cdot(x-x_{0})+f(x))=0+f(x)=f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Uwaga
+\begin_inset space ~
+\end_inset
+
+8.1:
+\begin_inset space ~
+\end_inset
+
+Twierdzenie odwrotne do 8.1 nie jest prawdziwe, tzn nie każda funkcja ciągła
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Przykład: 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R},f(x)=|x|$
+\end_inset
+
+ jest ciągła, ale nie jest różniczkowalna w 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def: Funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest różniczkowalna w zbiorze 
+\begin_inset Formula $D\iff\forall_{x_{0}\in D}f$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wtedy możemy mówic o funkcji 
+\begin_inset Formula $f':D\rightarrow\mathbb{R},x\mapsto f'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 8.2: (o działainach arytmetycznych na pochodnych)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f,g\,:D\rightarrow\mathbb{R}$
+\end_inset
+
+ są różniczkowalne w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, to:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\pm g$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i 
+\begin_inset Formula $(f\pm g)'(x_{0})=f'(x_{0})\pm g'(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $fg$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i 
+\begin_inset Formula $(fg)'(x_{0})=f'(x_{0})g(x_{0})+f(x_{0})g'(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i 
+\begin_inset Formula $(\frac{f}{g})'(x_{0})=\frac{f'(x_{0})g(x_{0})-f(x_{0})g'(x_{0})}{(g(x))^{2}}\,$
+\end_inset
+
+jeśli tylko 
+\begin_inset Formula $\forall_{x\in D}g(x)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+D:
+\begin_inset space ~
+\end_inset
+
+Z założenia 
+\begin_inset Formula $f,g$
+\end_inset
+
+ są różniczkowalne w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Z warunku koniecznego różniczkowalności 
+\begin_inset Formula $f,g$
+\end_inset
+
+ są ciągłe w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Dowód (a) jest trywialny więc pomijam
+\begin_inset Newline newline
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $(fg)'(x_{0})=\lim_{x\rightarrow x_{0}}\frac{f(x)g(x)-f(x_{0})g(x_{0})}{x-x_{0}}=\lim_{x\rightarrow x_{0}}\frac{f(x)g(x)-f(x_{0})g(x)+f(x_{0})g(x)-f(x_{0})g(x_{0})}{x-x_{0}}=\lim_{x\rightarrow x_{0}}g(x)\cdot\frac{f(x)-f(x_{0})}{x-x_{0}}+f(x)\cdot\frac{g(x)-g(x_{0})}{x-x_{0}}=f'(x_{0})g(x_{0})+f(x_{0})g'(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(c):
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $(\frac{f}{g})'(x_{0})=\lim_{x\rightarrow x_{0}}\frac{(\frac{f}{g})(x)-(\frac{f}{g})(x_{0})}{x-x_{0}}=\lim_{x\rightarrow x_{0}}\frac{\frac{f(x)}{g(x)}-\frac{f(x_{0})}{g(x_{0})}}{x-x_{0}}=\lim_{x\rightarrow x_{0}}\frac{f(x)g(x_{0})-f(x_{0})g(x)}{(x-x_{0})\cdot(g(x)g(x_{0}))}=$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)g(x_{0})-f(x_{0})g(x_{0})+f(x_{0})g(x_{0})-f(x_{0})g(x)}{(x-x_{0})\cdot(g(x)g(x_{0}))}=\lim_{x\rightarrow x_{0}}\frac{1}{g(x)g(x_{0})}\cdot(g(x_{0})\frac{f(x)-f(x_{0})}{x-x_{0}}-f(x_{0})\frac{g(x)-g(x_{0})}{x-x_{0}})=\frac{f'(x)g(x)-f(x)g'(x)}{g^{2}(x)}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 8.3 (o różniczkowaniu złożenia):
+\begin_inset Newline newline
+\end_inset
+
+jeśli 
+\begin_inset Formula $D_{1},D_{2}\in\mathbb{R}$
+\end_inset
+
+ i 
+\begin_inset Formula $f:\,D_{1}\rightarrow D_{2}$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}\in D_{1}$
+\end_inset
+
+ i 
+\begin_inset Formula $g:\,D_{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $f(x_{0})\in D_{2},$
+\end_inset
+
+to złożenie 
+\begin_inset Formula $g\circ f:\,D_{1}\rightarrow\mathbb{R}$
+\end_inset
+
+ jest rózniczkowalne w punkcie 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i 
+\begin_inset Formula $(g\circ f)'(x_{0})=g'(f(x_{0}))\cdot f'(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+D:
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $(g\circ f)'(x_{0})=\lim_{h\rightarrow0}\frac{g(f(x_{0}+g))-g(f(x_{0})}{h}=\lim_{h\rightarrow0}\frac{g(f(x_{0}+g)-f(x_{0})+f(x_{0}))-g(f(x_{0}))}{h}$
+\end_inset
+
+ oznaczmy 
+\begin_inset Formula $\Delta=f(x_{0}+h)-f(x_{0})\overset{h\rightarrow0}{\longrightarrow}f(x_{0})-f(x_{0})=0$
+\end_inset
+
+ bo 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\lim_{h\rightarrow0}\frac{g(f(x_{0})+\Delta)-g(f(x_{0}))}{h}=\lim_{h\rightarrow0}\frac{g(f(x_{0})+\Delta)-g(f(x_{0}))}{\Delta}\cdot\frac{\overset{\Delta}{f(x_{0}+h)-f(x_{0})}}{h}=$
+\end_inset
+
+
+\begin_inset Formula $\lim_{\Delta\rightarrow0}\frac{g(f(x_{0})+\Delta)-g(f(x_{0})}{\Delta}\cdot\lim_{h\rightarrow0}\frac{f(x_{0}+h)-f(x_{0})}{h}=g'(f(x_{0}))\cdot f'(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 8.4 (o różniczkowaniu funkcji odwrotnej):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła i ściśle monotiniczna w pewnym 
+\series bold
+otoczeniu punktu 
+\begin_inset Formula $\boldsymbol{x_{0}}$
+\end_inset
+
+ 
+\series default
+(tzn w zbiorze 
+\begin_inset Formula $(x-\delta,x+\delta),$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+gdzie 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+) i istnieje pochodna 
+\begin_inset Formula $f'(x_{0})\neq0,$
+\end_inset
+
+ to funkcja odwrotna 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ jest różniczkowalna w punkcie 
+\begin_inset Formula $y_{0}=f(x_{0})$
+\end_inset
+
+ i 
+\begin_inset Formula $(f^{-1})'(y_{0})=\frac{1}{f'(x_{0})}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dowód: Wiemy, że 
+\begin_inset Formula $f:\,(x_{0}-\delta,x_{0}+\delta)\rightarrow(y_{0}-\eta_{1},y_{0}+\eta_{2})$
+\end_inset
+
+ (
+\begin_inset Formula $\delta,\eta_{1},\eta_{2}>0$
+\end_inset
+
+) jest ciągła i ściśle monotoniczna (
+\begin_inset Formula $\implies1-1\implies\text{odwracalna}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f^{-1}:\,(y_{0}-\eta_{1},y_{0}+\eta_{2})\rightarrow(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+ Z tw o ciągłości funkcji odwrotnej wynika, że 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+jest funkcją ciągłą.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(f^{-1})'(y_{0})=\lim_{y\rightarrow y_{0}}\frac{f^{-1}(y)-f^{-1}(y_{0})}{y-y_{0}}=\lim_{x\rightarrow x_{0}}\frac{x-x_{0}}{f(x)-f(x_{0})}=\frac{1}{f'(x_{0})}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 8.5 (o pochodnych funkcji elementarnych):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f:\,$
+\end_inset
+
+funkcja stała, tzn 
+\begin_inset Formula $\forall_{x\in D}f(x)=c,c\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\implies\forall_{x\in D}f'(x)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}=\lim_{x\rightarrow x_{0}}\frac{0}{x-x_{0}}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wniosek: Z twierdzenia 8.2 i (a), 
+\begin_inset Formula $(cf(x))'=c'f(x)+cf'(x)=0+cf'(x)=f'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Formula $(x^{n})=nx^{n-1},$
+\end_inset
+
+
+\series default
+ dla 
+\begin_inset Formula $(x,n)\in(\mathbb{R\times\mathbb{N}})\setminus(0,1)$
+\end_inset
+
+(dla
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+definiujemy 
+\begin_inset Formula $x'=1$
+\end_inset
+
+ bo 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{x-x_{0}}{x-x_{0}}=\lim_{x\rightarrow x_{0}}1=1$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(x^{n})'=\lim_{h\rightarrow0}\frac{(x+h)^{n}-x^{n}}{h}=\lim_{h\rightarrow0}\frac{x^{n}+\sum_{k=1}^{n}{n \choose k}x^{n-k}h^{k}\,\,-x^{n}}{h}=\lim_{h\rightarrow0}\sum_{k=1}^{n}{n \choose k}x^{n-k}h^{k-1}=nx^{n-1}+0=nx^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(x^{-n})'$
+\end_inset
+
+ dla 
+\begin_inset Formula $n\in\mathbb{N},x\in\mathbb{R}\setminus\{0\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(x^{-n})'=((\frac{1}{x})^{n})'=\frac{0\cdot x^{n}-1\cdot(x^{n})'}{(x^{n})^{2}}=\frac{-nx^{n-1}}{x^{2n}}=-nx^{-n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\sin x)'=\cos x$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\sin x)'=\lim_{h\rightarrow0}\frac{\sin(x+h)-\sin(x)}{h}=\lim_{h\rightarrow0}\frac{2\sin\frac{h}{2}\cos\frac{2x+h}{2}}{h}=\lim_{h\rightarrow0}\frac{\sin\frac{h}{2}}{\frac{h}{2}}\cdot\cos(x+h)=\cos(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\cos x)'=-\sin x$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\tan x)'=\frac{1}{\cos x}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}\setminus\{\frac{\pi}{2}+k\pi,k\in\mathbb{Z}\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\tan x)'=(\frac{\sin x}{\cos x})'=\frac{(\sin x)'\cos x-\sin x(\cos x)'}{(\cos x)^{2}}=\frac{\cos^{2}x+\sin^{2}x}{(\cos x)^{2}}=\frac{1}{\cos^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\cot x)'=\frac{-1}{\sin x}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}\setminus\{k\pi,k\in\mathbb{Z}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\ln x)'=\frac{1}{x}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in(0,\infty)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\ln x)'=\lim_{h\rightarrow0}\frac{\ln(x+h)-\ln(x)}{h}=\lim_{h\rightarrow0}\frac{1}{h}\cdot\ln(1+\frac{h}{x})=\lim_{h\rightarrow0}\ln(1+\frac{\frac{1}{x}}{\frac{1}{h}})^{\frac{1}{h}}=\ln e^{\frac{1}{x}}=\frac{1}{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ogólniej: 
+\begin_inset Formula $(\ln|x|)'=\frac{1}{x}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}\setminus\{0\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Dla 
+\begin_inset Formula $x<0$
+\end_inset
+
+, 
+\begin_inset Formula $(\ln|x|)'=(\ln-x)'=\frac{1}{-x}\cdot-1=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(e^{x})'=e^{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f:\,(0,\infty)\rightarrow\mathbb{R},f(x)=\ln(x)$
+\end_inset
+
+ - funkcja ciągła i ściśle rosnąca i 
+\begin_inset Formula $\forall_{x\in(0,\infty)}f'(x)=\frac{1}{x}\neq0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tw o pochodnej funkcji odwrotnej, 
+\begin_inset Formula $(e^{\ln x})'=x\implies(e^{\ln e^{x}})'=e^{x}\implies(e^{x})'=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(x^{\alpha})'=\alpha x^{\alpha-1}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in(0,\infty),\alpha\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(x^{\alpha})'=(e^{\alpha\ln x})'=e^{\alpha\ln x}\cdot(\alpha\ln x)'=x^{\alpha}\cdot\alpha\cdot\frac{1}{x}=\alpha x^{\alpha-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\arcsin x)'=\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in(-1,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\arccos x)'=\frac{-1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in(-1,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\arctan x)'=\frac{1}{1+x^{2}}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\text{arccot}\,x)'=\frac{-1}{1+x^{2}}$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dowody (k)-(n) wynikają bezpośrednio z twierdzenia o różniczkowaniu funkcji
+ odwrotnej
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
