@@ -75,6 +75,12 @@
 
 \begin_body
 
+\begin_layout Standard
+
+\series bold
+Funkcje
+\end_layout
+
 \begin_layout Enumerate
 Def: 
 \series bold
@@ -297,7 +303,7 @@ Wtedy
 \end_layout
 
 \begin_layout Enumerate
-niech 
+Niech 
 \begin_inset Formula $X,Y,Z,T$
 \end_inset
 
@@ -401,5 +407,131 @@ funkcji
 
 \end_layout
 
+\begin_layout Enumerate
+Twierdzenie: 
+\begin_inset Formula $f:\,X\rightarrow Y\,\,A_{1},A_{2}\subseteq X\,A:\,I\rightarrow P(X)$
+\end_inset
+
+ (rodzina indeksowana).
+ Wtedy:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f[\emptyset]=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A_{1}\subseteq A_{2}\implies f[A_{1}]\subseteq f[A_{2}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f[\bigcup_{i\in I}A_{i}]=\bigcup_{i\in I}f[A_{i}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f[\bigcap_{i\in I}A_{i}]\subseteq\bigcap_{i\in I}f[A_{i}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest iniekcją to we własności (d) mamy równość
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie: 
+\begin_inset Formula $f:\,X\rightarrow Y,B_{1},B_{2}\subseteq Y,\,B:\,I\rightarrow P(Y)$
+\end_inset
+
+ (rodzina indeksowana).
+ Wtedy:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}[\emptyset]=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B_{1}\subseteq B_{2}\implies f^{-1}[B_{1}]\subseteq f^{-1}[B_{2}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}[\bigcup_{i\in I}B_{i}]=\bigcup_{i\in I}f^{-1}[B_{i}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}[\bigcap_{i\in I}B_{i}]=\bigcap_{i\in I}f^{-1}[B_{i}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie: 
+\begin_inset Formula $f:\,X\rightarrow Y,\,A\subseteq X,\,B\subseteq Y$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq f^{-1}[f[A]]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f[f^{-1}[B]]\subseteq B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest iniekcją to w 1 zachodzi równość
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest surjekcją to w 2 zachodzi równość 2
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
