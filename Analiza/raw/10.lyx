@@ -1,0 +1,943 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+9.
+ Pochodne jednostronne
+\end_layout
+
+\begin_layout Enumerate
+Na poprzednim wykładzie zakładaliśmy, że 
+\begin_inset Formula $D\subset\mathbb{R},\,f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ i 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ jest punktem wewnętrznym 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ W pozostałych dwóch definicjach 
+\series bold
+nie 
+\series default
+wymagamy by 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ był punktem wewnętrznym 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ (pochodnej lewostronnej):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $\exists_{\delta>0}(x_{0}-\delta,x_{0}]\subset D$
+\end_inset
+
+ i istnieje skończona granica 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}^{\boldsymbol{-}}}\frac{f(x)-f(x_{0})}{x-x_{0}}=\lim_{h\rightarrow0^{-}}\frac{f(x_{0}+h)-f(x_{0})}{h}$
+\end_inset
+
+ to nazywamy ją pochodną
+\begin_inset space ~
+\end_inset
+
+lewostronną 
+\begin_inset Formula $f$
+\end_inset
+
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i oznaczamy 
+\begin_inset Formula $f'_{-}(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ (pochodnej prawostronnej):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $\exists_{\delta>0}[x_{0},x_{0}+\delta]\subset D$
+\end_inset
+
+ i istnieje skończona granica 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}^{\boldsymbol{+}}}\frac{f(x)-f(x_{0})}{x-x_{0}}=\lim_{h\rightarrow0^{+}-}\frac{f(x_{0}+h)-f(x_{0})}{h}$
+\end_inset
+
+ to nazywamy ją pochodną
+\begin_inset space ~
+\end_inset
+
+prawostronną 
+\begin_inset Formula $f$
+\end_inset
+
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ i oznaczamy 
+\begin_inset Formula $f'_{+}(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 9.1 (warunek konieczny i dostateczny różniczkowalności):
+\begin_inset Newline newline
+\end_inset
+
+Funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}\iff$
+\end_inset
+
+istnieją 
+\begin_inset Formula $f'_{-}(x_{0})$
+\end_inset
+
+ i 
+\begin_inset Formula $f'_{+}(x_{0})$
+\end_inset
+
+ oraz 
+\begin_inset Formula $f'_{-}(x_{0})=f'_{+}(x_{0})$
+\end_inset
+
+.
+ W przypadku różniczkowalności 
+\begin_inset Formula $f'(x_{0})=f'_{-}(x_{0})=f'_{+}(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pochodne wyższych rzędów
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Pochodną 
+\begin_inset Formula $n$
+\end_inset
+
+-tego rzędu funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ definiujemy rekurencyjnie:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & f^{(0)}=f(x)\\
+ & f^{(n)}(x_{0})=(f^{(n-1)})'(x_{0})
+\end{align*}
+
+\end_inset
+
+Aby istniała pochodna 
+\begin_inset Formula $n$
+\end_inset
+
+-tego rzędu 
+\begin_inset Formula $f$
+\end_inset
+
+ w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ musi istnieć pochodna rzędu 
+\begin_inset Formula $n-1$
+\end_inset
+
+ w pewnym otoczeniu 
+\begin_inset Formula $x_{0}\implies$
+\end_inset
+
+muszą istnieć wszystkie poprzednie pochodne w pewnym otoczeniu punktu 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Do oznaczanie 
+\begin_inset Formula $f^{(n)}(x_{0})$
+\end_inset
+
+ używa się także 
+\begin_inset Formula $\frac{d^{n}f}{dx^{n}}(x_{0}$
+\end_inset
+
+) lub 
+\begin_inset Formula $D^{n}f(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Funkcję, która ma 
+\begin_inset Formula $n$
+\end_inset
+
+-tą pochodną
+\begin_inset space ~
+\end_inset
+
+w penwym przedziale będzemy nazywać
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+-krotnie różniczkowalną w tym przedziale
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Twierdzenie Rolle'a i twierdzenie Lagrange'a
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 9.2 (Rolle'a):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ i różniczkowalna w 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ i 
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+ to 
+\begin_inset Formula $\exists_{c\in(a,b)}f'(c)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretacja geometryczna: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img2xkdc.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+D: Z założenia 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\begin_inset Formula $\overset{\text{tw.Weierstrassa II}}{\implies}\text{\ensuremath{f} osiąga swoje kresy na \ensuremath{[a,b]}}$
+\end_inset
+
+,tzn 
+\begin_inset Formula $\exists_{x_{m}\in[a,b]}f(x_{m})=\underset{x\in[a,b]}{\inf}f(x)$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\exists_{x_{M}\in[a,b]}f(x_{M})=\underset{x\in[a,b]}{\sup}f(x)$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies\forall_{x\in[a,b]}f(x_{m})\le f(x)\le f(x_{M})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f(x_{m})=f(x_{M}),$
+\end_inset
+
+to 
+\begin_inset Formula $\forall_{x\in[a,n]}f(x_{m})=f(x)=f(x_{M}),$
+\end_inset
+
+tzn 
+\begin_inset Formula $f$
+\end_inset
+
+ jest stała w na 
+\begin_inset Formula $[a,b]\implies\forall_{x\in(a,b)}f'(x)=0\implies$
+\end_inset
+
+za 
+\begin_inset Formula $c$
+\end_inset
+
+ możemy wziąć dowolny punkt z 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f(x_{m})\neq f(x_{M})$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x_{m})\neq f(a)$
+\end_inset
+
+ lub 
+\begin_inset Formula $f(x_{n})\neq f(a)\implies f(x_{m})<f(a)$
+\end_inset
+
+ lub 
+\begin_inset Formula $f(x_{n})>f(a)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Załózmy, że 
+\begin_inset Formula $f(x_{m})<f(a),$
+\end_inset
+
+ (dowód gdy 
+\begin_inset Formula $f(x_{M})>f(a)$
+\end_inset
+
+ przebiega analogicznie)
+\begin_inset Newline newline
+\end_inset
+
+Mamy zatem 
+\begin_inset Formula $f(x_{m})<f(a)=f(b)\implies x_{m}\in(a,b)\implies f$
+\end_inset
+
+ jest różniczkowalna w punkcie 
+\begin_inset Formula $x_{m}$
+\end_inset
+
+ 
+\begin_inset Formula $\overset{\text{tw 9.1}}{\implies}$
+\end_inset
+
+ istnieją 
+\begin_inset Formula $f'_{-}(x_{m})$
+\end_inset
+
+ i 
+\begin_inset Formula $f'_{+}x(m)$
+\end_inset
+
+ i 
+\begin_inset Formula $f'(x_{m})=f'_{-}(x_{m})=f'_{+}(x_{m})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f'_{-}(x_{m})=\lim_{h\rightarrow0^{-}}\frac{f(x_{0}+h)-f(x_{0})}{h}\le0$
+\end_inset
+
+ bo 
+\begin_inset Quotes eld
+\end_inset
+
+góra
+\begin_inset Quotes erd
+\end_inset
+
+ jest zawsze 
+\begin_inset Formula $\ge0$
+\end_inset
+
+ a dół 
+\begin_inset Formula $<0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f'_{+}(x_{m})=\lim_{h\rightarrow0^{+}}\frac{f(x_{0}+h)-f(x_{0})}{h}\ge0$
+\end_inset
+
+ bo 
+\begin_inset Quotes eld
+\end_inset
+
+góra
+\begin_inset Quotes erd
+\end_inset
+
+ jest zawsze 
+\begin_inset Formula $\ge0$
+\end_inset
+
+ a dół 
+\begin_inset Formula $>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wtedy 
+\begin_inset Formula $f'(x_{m})=0$
+\end_inset
+
+ bo 
+\begin_inset Formula $0\le f'_{+}(x_{m})=f'(x_{m})=f'_{+}(x_{m})\le0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 9.3 (tw.
+ Lagrange'a o wartości średniej).
+ Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła w 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ i rózniczkowalna w 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ to 
+\begin_inset Formula $\exists_{c\in(a,b)}f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Weźmy 
+\begin_inset Formula $g(x)=f(x-f(a)-\frac{f(x)-f(a)}{b-a}(x-a)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g(a)=0,g(b)=0\implies g(a)=g(b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Funkcja 
+\begin_inset Formula $g$
+\end_inset
+
+ jest ciągła w 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ i różniczkowalna w 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Zatem 
+\begin_inset Formula $g$
+\end_inset
+
+ spełnia założenia tw.
+ Rolle'a i używając tego twierdzenia otrzymujemy 
+\begin_inset Formula $\exists_{c\in(a,b)}g'(c)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g'(x)=f'(x)-\frac{f(b)-f(a)}{b-a}\cdot1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies\exists_{c\in(a,b)}f'(c)=\frac{f(b)-f(a)}{b-1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wnioski:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)=0\iff$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ jest funkcją stałą na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\impliedby$
+\end_inset
+
+Już na poprzednim wykładzie udowodniliśmy że pochodna stałej 
+\begin_inset Formula $=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ Zakładamy, że 
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)=0.$
+\end_inset
+
+ Weźmy dowolne 
+\begin_inset Formula $x_{1},x_{2}\in(a,b)$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $x_{1}<x_{2}.$
+\end_inset
+
+ Pokażemy, że 
+\begin_inset Formula $f(x_{1})=f(x_{2}),$
+\end_inset
+
+a z tego już będzie łatwo wykazać że 
+\begin_inset Formula $f$
+\end_inset
+
+ jest stała na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z założenia 
+\begin_inset Formula $f$
+\end_inset
+
+ jest różniczkowalna na 
+\begin_inset Formula $(a,b)\implies$
+\end_inset
+
+jest ciągła na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W szczególności 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[x_{1},x_{2}]$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $\exists_{c\in(x_{1},x_{2})}\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}=f'(c)=0\implies f(x_{2})-f(x_{1})=0\implies f(x_{1})=f(x_{2})$
+\end_inset
+
+ co zachodzi dla dowolnego 
+\begin_inset Formula $x_{1},x_{2},$
+\end_inset
+
+ więc 
+\begin_inset Formula $f$
+\end_inset
+
+ jest stała.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)>0\implies f$
+\end_inset
+
+ jest rosnąca na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ (nie zachodzi w drugą stronę, bo na przykład 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}\,x\mapsto x^{3}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+D: Weźmy dowolne 
+\begin_inset Formula $x_{1},x_{2}\in(a,b)$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+.
+ Powtarzamy rozumowanie z dowodu powyżej, otrzymujemy 
+\begin_inset Formula $\exists_{c\in(x_{1},x_{2})}\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}=f'(c)>0\implies f(x_{2})-f(x_{1})>0\implies f(x_{2})>f(x_{1})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)<0\implies f$
+\end_inset
+
+ jest malejąca na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ (nie zachodzi w drugą stronę, bo na przykład 
+\begin_inset Formula $f:\,\mathbb{R}\rightarrow\mathbb{R}\,x\mapsto-x^{3}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+D: Analogicznie do poprzedniego.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 9.4: 
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)\ge0\iff f$
+\end_inset
+
+ jest rosnąca (niemalejąca) i różniczkowalna na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Niech 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+.
+ Z założenia 
+\begin_inset Formula $f$
+\end_inset
+
+ jest rózniczkowalna w 
+\begin_inset Formula $x_{0}\overset{\text{tw 9.1}}{\implies}$
+\end_inset
+
+istnieje 
+\begin_inset Formula $f'_{+}(x)$
+\end_inset
+
+ i 
+\begin_inset Formula $f'(x)=f'_{+(x)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f'(x)=f'_{+}(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}\ge0$
+\end_inset
+
+ bo góra i dół 
+\begin_inset Formula $>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+f\,\text{jest rosnąca}\\
+h>0\implies x+h>x
+\end{cases}\implies f(x+h)>f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 9.5: 
+\begin_inset Formula $\forall_{x\in(a,b)}f'(x)\le0\iff f$
+\end_inset
+
+ jest malejąca (nierosnąca) i różniczkowalna na 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wnioski 2.(a-c) oraz twierdzenia 3,4 pozostają prawdziwe, gdy przedział ograniczo
+ne 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ zamienimy na nieograniczone 
+\begin_inset Formula $(a,+\infty),(-\infty,b),(-\infty,+\infty)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reguła De L'Hospitala
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Twierdzenie 9.6 (tw.
+ de l'Hospitala):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula 
+\begin{align*}
+1. & x_{0}\in(a,b)\\
+2. & f,g:\,(a,b)\setminus\{x_{0}\}\rightarrow\mathbb{R}\\
+3. & \forall_{x\in(a,b)\setminus\{x_{0}\}}g(x)\neq0\,\text{i\,}g'(x)\neq0\\
+4. & \lim_{x\rightarrow x_{0}}f(x)=\lim_{x\rightarrow x_{0}}g(x)=0\,\text{lub\,}\lim_{x\rightarrow x_{0}}=\pm\infty\\
+5. & \text{istnieje granica (skończona lub nie ) }\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}
+\end{align*}
+
+\end_inset
+
+To istnieje granica 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W skrócie 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}=[\frac{0}{0}\,\text{lub}\,\frac{\text{coś}}{\pm\infty}]\text{\overset{\text{H}}{=}}\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}$
+\end_inset
+
+ istnieje
+\begin_inset Newline newline
+\end_inset
+
+Uwaga: Twierdzenie de l'Hostpitala jest także prawdziwe dla granic jednostronnyc
+h i granic w 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+, z tym że w przypadku granicy w 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ musimy założyć 
+\begin_inset Formula $f,g:(0,+\infty)\rightarrow\mathbb{R}$
+\end_inset
+
+ są różniczkowalne w 
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\forall_{x\in(0,\infty)}g(x)\neq0\,\text{i}\,g'(x)\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
