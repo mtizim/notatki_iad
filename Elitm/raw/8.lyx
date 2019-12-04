@@ -297,5 +297,360 @@ Diagramem Hassego
 
 \end_layout
 
+\begin_layout Enumerate
+Def: Niech 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ będzie zbiorem częściowo uporządkowanym
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a\in p$
+\end_inset
+
+ nazywamy:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+maksymalnym
+\series default
+, jeśli 
+\begin_inset Formula $\neg(\exists_{x\in P}a\prec x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+minimalnym
+\series default
+, jeśli 
+\begin_inset Formula $\neg(\exists_{x\in P}x\prec a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+największym
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x\in P}x\preceq a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+najmniejszym
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x\in P}a\preceq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Maksymalne elementy to wierzchołki diagramu Hassego bez połączeń z góry
+\begin_inset Newline newline
+\end_inset
+
+Minimalne - wierzchołki bez połączeń w dół
+\begin_inset Newline newline
+\end_inset
+
+Największy 
+\begin_inset Formula $\implies$
+\end_inset
+
+ jedyny element maksymalny (równoważność dla skończonych zbiorów)
+\begin_inset Newline newline
+\end_inset
+
+Najmniejszy 
+\begin_inset Formula $\implies$
+\end_inset
+
+ jedyny element minimalny 
+\end_layout
+
+\begin_layout Enumerate
+Dowód (e): 
+\begin_inset Formula $a$
+\end_inset
+
+ - element najmniejszy.
+ Pokażemy, że 
+\begin_inset Formula $a$
+\end_inset
+
+ jest minimalny.
+ Załóżmy, że 
+\begin_inset Formula $a$
+\end_inset
+
+ nie jest minimalny.
+ Stąd 
+\begin_inset Formula $\exists_{y\in P}y\prec a$
+\end_inset
+
+.
+ Wtedy nieprawdą jest, że 
+\begin_inset Formula $\forall_{x\in\mathbb{R}}a\preceq x$
+\end_inset
+
+ (bo 
+\begin_inset Formula $y\prec a$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+Załóżmy, że w 
+\begin_inset Formula $P$
+\end_inset
+
+ jest inny element 
+\begin_inset Formula $b\neq a$
+\end_inset
+
+, który jest minimalny.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+- najmniejszy, 
+\begin_inset Formula $\begin{cases}
+a\preceq b\\
+a\neq b
+\end{cases}\implies a\prec b\implies\exists_{x\in P}x\prec b\implies b$
+\end_inset
+
+ nie jest minimalny
+\end_layout
+
+\begin_layout Enumerate
+W 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ istnieje co najwyżej jeden element najmniejszy
+\begin_inset Newline newline
+\end_inset
+
+D(nie wprost): 
+\begin_inset Formula $a,b$
+\end_inset
+
+ elemeny najmniejsze, 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\forall_{x\in P}a\preceq x\implies a\preceq b\\
+\forall_{x\in P}b\preceq x\implies b\preceq a
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+, sprzeczność
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Def: 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ - zbiór częściowo uporządkowany, 
+\begin_inset Formula $X\subseteq P$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ jest 
+\series bold
+ograniczeniem górnym 
+\series default
+zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+, jeśli 
+\begin_inset Formula $\forall_{x\in X}x\preceq a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ jest 
+\series bold
+ograniczeniem dolnym 
+\series default
+zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+, jeśli 
+\begin_inset Formula $\forall_{x\in X}a\preceq x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X^{*}\overset{\text{def.}}{=}\{a\in P:\,\forall_{x\in X}x\preceq a\}$
+\end_inset
+
+ - zbiór wszystkich ograniczeń górnych zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X_{*}\overset{\text{def}}{=}\{a\in P:\,\forall_{x\in X}a\preceq X\}$
+\end_inset
+
+ - zbiór wszystkich ograniczeń dolnych zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def: 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ - zbiór częsciowo uporządkoany, 
+\begin_inset Formula $X\subseteq P$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ jest 
+\series bold
+kresem górnym
+\series default
+ zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+ jeśli jest najmniejszym ograniczeniem górnym dla 
+\begin_inset Formula $X$
+\end_inset
+
+ ( tzn.
+ jest elementem najmniejszym w 
+\begin_inset Formula $X^{*}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+Oznaczenie: 
+\begin_inset Formula $\sup X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Element 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ jest 
+\series bold
+kresem dolnym 
+\series default
+zbioru 
+\begin_inset Formula $X$
+\end_inset
+
+ jeśli jest największym ograniczeniem dolnemy dla 
+\begin_inset Formula $X$
+\end_inset
+
+ ( tzn.
+ jest elementem największym w 
+\begin_inset Formula $X_{*}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+Oznaczenie: 
+\begin_inset Formula $\inf X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zbiór częściowo uporządkowany 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ jest 
+\series bold
+kratą
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x,y\in P}\sup\{x,y\}$
+\end_inset
+
+ i 
+\begin_inset Formula $\forall_{x,y\in P}\inf\{x,y\}$
+\end_inset
+
+ istnieją
+\end_layout
+
 \end_body
 \end_document
