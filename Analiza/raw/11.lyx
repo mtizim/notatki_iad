@@ -1,0 +1,645 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+10.
+ Wzór Taylora
+\end_layout
+
+\begin_layout Standard
+Przypomnienie tw.
+ Lagrange'a : Jeśli funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[x_{0},x]$
+\end_inset
+
+ i różniczkowalna na 
+\begin_inset Formula $(x_{0},x)$
+\end_inset
+
+ to 
+\begin_inset Formula $\exists_{c\in(x_{0},x)}f'(c)=\frac{f(x)-f(x_{0})}{x-x_{0}}\implies\exists_{c\in(x_{0},x)}f(x)=f(x_{0})+f'(x-x_{0})$
+\end_inset
+
+ - wzór ten można uogólnić
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 10.1 ( wzór Taylora z resztą Lagrange'a):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f^{(n)}$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[x_{0},x]$
+\end_inset
+
+ i istnieje 
+\begin_inset Formula $f^{(n+1)}$
+\end_inset
+
+ na 
+\begin_inset Formula $(x_{0},x)$
+\end_inset
+
+ to 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{c\in(x_{0},x)}f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})^{1}+\frac{f''(x_{0})}{2!}(x-x_{0})^{2}+\dots+\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_{0})^{n+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ostatni wyraz to 
+\begin_inset Formula $R_{n}(x)-$
+\end_inset
+
+reszta w postaci Lagrange'a, suma reszty wyrazów to wielomian Taylora 
+\begin_inset Formula $T_{n}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Szkic dowodu: Korzystamy z tw.
+ Rolle'a dla funkcji 
+\begin_inset Formula $h:<x_{0},x>\rightarrow\mathbb{R},$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h(t)=f(x)-(f(t)+\frac{f'(t)}{1!}(x-t)^{1}+\frac{f''(t)}{2!}(x-t)^{2}+\dots+\frac{f^{(n)}(t}{n!}(x-t)^{n})-\frac{f(x)-T_{n}(x)}{(x-x_{0})^{n+1}}\cdot(x-t)^{n+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h$
+\end_inset
+
+ spełnia założenia tw.
+ Rolle'a : 
+\begin_inset Formula $h(x_{0})=f(x)-T_{n}(x)-(f(x)-T_{n}(x))=0$
+\end_inset
+
+, 
+\begin_inset Formula $h(x)=f(x)-f(x)=0$
+\end_inset
+
+ - 
+\begin_inset Formula $h(x_{0})=h(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $<x_{0},x>$
+\end_inset
+
+, bo z założenia 
+\begin_inset Formula $f^{(n+1)}$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $[x_{0},x]$
+\end_inset
+
+, więc wszystkie poprzednie pochodne muszą być różniczkowalne - a więc ciągłe
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h$
+\end_inset
+
+ jest różniczkowalna na 
+\begin_inset Formula $(x_{0},x)$
+\end_inset
+
+ bo każdy wyraz sumowania jest różniczkowalny na 
+\begin_inset Formula $(x_{0},x)$
+\end_inset
+
+ - z założenia istnieją pochodne 
+\begin_inset Formula $f',\dots,f^{(n+1)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h'(t)=-\frac{f^{(n+1)}(t)}{n!}(x-t)^{n}+\frac{f(x)-T_{n}(x)}{(x-x_{0})^{n+1}}\cdot(n+1)(x-t)^{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tw Rolle'a otrzymujemy 
+\begin_inset Formula $\exists_{c\in(x_{0},x)}h'(c)=0\implies\exists_{c\in(x_{0},x)}\frac{f(x)-T_{n}(x)}{(x-x_{0})^{n+1}}(n+1)(x-t)^{n}=\frac{f^{(n+1)}(c)}{n!}(x-t)^{n}\implies\exists_{c\in(x_{0},x)}f(x)=T_{n}+\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_{0})^{n+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga: Wzór Taylora jest także prawdziwy dla przedziału 
+\begin_inset Formula $<x,x_{0}>$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga: Jeśli we wzorze Taylora podstawimy 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ to dostaniemy wzór Maclaurina.
+\begin_inset Newline newline
+\end_inset
+
+Wzór Taylora jest przydatny do liczenia przybliżonych wartości wyrażeń
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Przykład: Wyznaczmy przybliżenie 
+\begin_inset Formula $e$
+\end_inset
+
+ wzorem Maclaurina:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f(x)=e^{x}$
+\end_inset
+
+ - ma pochodne dowolnego rzędu, ciągła na 
+\begin_inset Formula $[0,\infty)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wtedy 
+\begin_inset Formula $f(x)=1+\frac{x}{1!}+\frac{x}{2!}+\dots+R_{n}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $e=1+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+...$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dla pierwszych 6 wyrazów suma wynosi 
+\begin_inset Formula $\sim2.717$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 10.2 (wzór Taylora z resztą Peano):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli istnieje 
+\begin_inset Formula $f^{(n)}(x_{0})$
+\end_inset
+
+ 
+\begin_inset Formula $(\implies\exists_{\delta>0}f',\dots,f^{(n-1)}\,\text{istnieją w \ensuremath{(x-\delta,x+\delta)}})$
+\end_inset
+
+, to
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f(x)=T_{n}(x)+R_{n}(x)$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $R_{n}(x)$
+\end_inset
+
+ to reszta w postaci Peano, gdzie 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{R_{n}(x)}{(x-x_{0})^{n}}=0$
+\end_inset
+
+, co zapiusjemy 
+\begin_inset Formula $R_{n}(x)=o((x-x_{0})^{n})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dowód: 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{R_{n}(x)}{(x-x_{0})^{n}}=\lim_{x\rightarrow x_{0}}\frac{f(x)-T_{n}(x)}{(x-x_{9})^{n}}=[\frac{0}{0}]$
+\end_inset
+
+ - lecimy l'Hopitalem aż do 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{f^{(n-1)}(x)-(f^{(n-1)}(x_{0})+f^{(n)}(x-x_{0})}{n(n-1)\cdot2\cdot(x-x_{0)}}=\lim_{x\rightarrow x_{0}}\frac{1}{n(n-1)}\cdot(\frac{f^{(n-1)}(x)-f^{(n-1)}(x_{0})}{x-x_{0}}-f^{(n)}(x_{0}))=\frac{1}{n(n-1)}(f^{(n)}(x_{0})-f^{(n)}(x_{0}))=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wzór Taylora z resztą Peano może być wygoniejszy do liczenia granic niż
+ tw.
+ de l'Hopitala.
+\begin_inset Newline newline
+\end_inset
+
+Rozwijamy wtedy wielomian Taylora odpowiednio żeby skorzystać
+\begin_inset space ~
+\end_inset
+
+z faktu, że 
+\begin_inset Formula $R_{n}(x)=o((x-x_{0})^{n})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Badanie przebiegu zmienności funkcji
+\end_layout
+
+\begin_layout Standard
+W tej części wykładu będziemy zakładać, że 
+\begin_inset Formula $D\subset\mathbb{R},f:\,D\rightarrow\mathbb{R}$
+\end_inset
+
+ i 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ jest punktem wewnętrznym 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Def (ekstremów lokalnych):
+\begin_inset Newline newline
+\end_inset
+
+Funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ ma w punkcie 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+maksimum lokalne, jeśli 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x\in(x_{0}-\delta,x_{0}+\delta)}f(x_{0})\ge f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+maksimum lokalne właściwe, jeśli 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x\in(x_{0}-\delta,x_{0}+\delta)\setminus\{x_{0}\}}f(x_{0})>f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+minimumlokalne, jeśli 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x\in(x_{0}-\delta,x_{0}+\delta)}f(x_{0})\le f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+minimumlokalne właściwe, jeśli 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x\in(x_{0}-\delta,x_{0}+\delta)\setminus\{x_{0}\}}f(x_{0})<f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 11.1 (warunek konieczny ekstremum lokalnego):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli funkcja 
+\begin_inset Formula $f$
+\end_inset
+
+ osiąga w punkcie 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ekstremum lokalne i jest w tym punkcie różcniczkowalna, to 
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Przeprowadzamy dla maksimum lokalnego, dla minimum dowód przebiega analogiczn
+ie)
+\begin_inset Newline newline
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $f$
+\end_inset
+
+ osiąga w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ maksimum lokalne.
+ Wtedy 
+\begin_inset Formula $f'_{-}(x_{0})=\lim_{x\rightarrow x_{0}^{-}}\frac{f(x)-f(x_{0})}{x-x_{0}}\ge0,\,f'_{+}(x_{0})=\lim_{x\rightarrow x_{0}^{+}}\frac{f(x)-f(x_{0})}{x-x_{0}}\le0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z założenia 
+\begin_inset Formula $f$
+\end_inset
+
+ jest różniczkowalna w 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, więc 
+\begin_inset Formula $0\le f'_{-}(x_{0})=f'(x_{0})=f'_{+}(x_{0})\le0\implies f'(x_{0})=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga - to nie jest warunek dostateczny ekstremum lokalnego - przykładowo
+ 
+\begin_inset Formula $x^{3}$
+\end_inset
+
+ nie osiąga ekstremum w 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 11.3 (coś się zepsuło w numeracji)(drugi warunek dostateczny
+ istnienia ekstremum lokalnego)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+ i 
+\begin_inset Formula $f''(x_{0})\neq0$
+\end_inset
+
+ to w punkcie 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ jest osiągane ekstremum lokalne właściwe.
+\begin_inset Newline newline
+\end_inset
+
+Ponadto, jeśli 
+\begin_inset Formula $f''(x_{0})>0$
+\end_inset
+
+ to jest to minimum lokalne właściwe, a jeśli 
+\begin_inset Formula $f''(x_{0})<0$
+\end_inset
+
+ to jest to maksimum lokalne właściwe
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:Korzystając ze wzoru Taylora z resztą Peano i 
+\begin_inset Formula $n=2$
+\end_inset
+
+, otrzymujemy 
+\begin_inset Formula $f(x)=f(x_{0})+f'(x_{0})(x-x_{0})+\frac{f''(x_{0})}{2}(x-x_{0})^{2}+R_{2}(x)$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\frac{R_{2}(x)}{(x-x_{0})^{2}}=0$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pokażemy, że 
+\begin_inset Formula $f(x)=f(x_{0})+\frac{f''(x_{0})}{2}(x-x_{0})^{2}+R_{2}(x)>f(x_{0})$
+\end_inset
+
+ dla 
+\begin_inset Formula $x\in(x-\delta,x+\delta)\setminus\{x_{0}\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wystarczy pokazać, że 
+\begin_inset Formula $\frac{f''(x_{0})}{2}(x-x_{0})^{2}+R_{2}(x)>0,$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\frac{f''(x_{0})}{2}+\frac{R_{2}(x)}{(x-x_{0})^{2}}>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{R_{2}(x)}{(x-x_{0})^{2}}>0\iff\forall_{\epsilon>0}\exists_{\delta>0}\forall_{x\in D}0<|x-x_{0}|<\delta\implies|\frac{R_{2}(x)}{(x-x_{0})^{2}}-0|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W szczególności dla 
+\begin_inset Formula $\epsilon=\frac{f''(x_{0})}{4}$
+\end_inset
+
+ 
+\begin_inset Formula $\exists_{\delta>0}\forall_{x\in(x-\delta,x+\delta)\setminus\{x_{0}\}}-\frac{f''(x_{0})}{4}<\frac{R_{2}(x)}{(x-x_{0})^{2}}<\frac{f''(x_{0})}{4},$
+\end_inset
+
+ więc 
+\begin_inset Formula $\frac{f''(x_{0})}{2}-\frac{R_{2}(x)}{(x-x_{0})^{2}}>\frac{f''(x_{0})}{2}-\frac{f''(x_{0})}{4}=\frac{f''(x_{0})}{4}>0$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
