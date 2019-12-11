@@ -77,6 +77,416 @@
 
 \begin_layout Standard
 
+\series bold
+Zbiory częściowo uporządkowane
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(P,\preceq),x,y,\in P$
+\end_inset
+
+, 
+\begin_inset Formula $x,y$
+\end_inset
+
+ są porównywalne jeśli 
+\begin_inset Formula $x\preceq y$
+\end_inset
+
+ lub 
+\begin_inset Formula $y\preceq x$
+\end_inset
+
+, nieporównywalne jeśli 
+\begin_inset Formula $\neg$
+\end_inset
+
+porównywalne, (
+\begin_inset Formula $x\parallel y$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Łańcuchem 
+\series default
+w zbiorze częściowo uporządkowanym jest każdy podzbiór parami porównywalnych
+ elementów
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Antyłańcuchem
+\series default
+ jest każdy podzbiór parami nieporównywalnych elementów
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie(Lemat Kuratowskiego- Zorna):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli w zbiorze częściowo uporządkowanym każdy łańcuch ma ograniczenie górne
+ (dolne), to na 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ istnieje element maksymalny (minimalny)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wniosek: W dowolnym zbiorze częściowo uporządkowanym każdy łańcuch można
+ rozszerzyć do łańuccha maksymalnego (w sensie inkluzji)
+\begin_inset Newline newline
+\end_inset
+
+Dowód: 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ - zbiór częsciowo uporządkowany.
+ 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+-łańcuch w 
+\begin_inset Formula $(P,\preceq),$
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ - zbiór łańcuchów w 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ rozszerzających 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\mathcal{P},\subseteq)$
+\end_inset
+
+ - zbiór częsciowo uporządkowany
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ - łańcuch w 
+\begin_inset Formula $(\mathcal{P},\subseteq)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Skoro 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ jest łańcuchem,to 
+\begin_inset Formula $C_{1},C_{2}\in\mathcal{C},$
+\end_inset
+
+ więc 
+\begin_inset Formula $C_{1}\subseteq C_{2}$
+\end_inset
+
+ lub 
+\begin_inset Formula $C_{2}\subseteq C_{1.}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\bigcup\mathcal{C}=\{x\in P:\,\exists_{c\in\mathcal{C}}x\in C\}=\{x\in P:\,\exists_{c}c\in\mathcal{C}\land x\in C\}$
+\end_inset
+
+ Powiemy, że 
+\begin_inset Formula $\bigcup\mathcal{C}\in\mathcal{\mathcal{P}}$
+\end_inset
+
+ i że 
+\begin_inset Formula $\bigcup\mathcal{C}$
+\end_inset
+
+ jest ograniczeniem górnym dla zbioru 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x,y\in\mathcal{C}\implies\exists_{C_{1}\in\mathcal{C}}x\in C_{1}\land\exists_{C2\in\mathcal{C}}y\in C_{2}$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $C_{1}\subseteq C_{2}$
+\end_inset
+
+ lub 
+\begin_inset Formula $C_{2}\subseteq C_{2}$
+\end_inset
+
+ ponieważ 
+\begin_inset Formula $C_{1},C_{2}\in\mathcal{C}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $\bigcup\mathcal{C}\in\mathcal{P}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{C\in\mathcal{C}}c\subseteq\bigcup\mathcal{C}=\bigcup_{C\in\mathcal{C}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $\bigcup\mathcal{C}$
+\end_inset
+
+ jest ograniczeniem górnym zbioru 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ w 
+\begin_inset Formula $(\mathcal{P},\subseteq)$
+\end_inset
+
+.
+ Stosujemy Lemat Kuratowskiego-Zorna dla 
+\begin_inset Formula $(\mathcal{P},\subseteq)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+W zbiorze 
+\begin_inset Formula $(\mathcal{P},\subseteq)$
+\end_inset
+
+ istnieje element maksymalny, czyli maksymalny w sensie inkluzji łańcuch
+ w 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ rozszerzający 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+def:
+\series default
+ Zbiór częściowo uporządkowany 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ jest 
+\series bold
+liniowo uporządkowany
+\series default
+, jeśli 
+\begin_inset Formula $\forall_{x,y\in P}x\preceq y$
+\end_inset
+
+ lub 
+\begin_inset Formula $y\preceq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+def: 
+\series default
+Zbiór liniowo uporządkowany jest dobrze uporządkowany jeśli w każdym niepustym
+ jego podzbiorze jest element najmniejszy
+\begin_inset Newline newline
+\end_inset
+
+Każdy skończony zbiór liniowo uporządkowany jest dobrze uporządkowany
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+def: 
+\series default
+Zbiór liniowo uporządkowany 
+\begin_inset Formula $(P,\preceq)$
+\end_inset
+
+ jest 
+\series bold
+gęsto uporządkowany
+\series default
+ jeśli 
+\begin_inset Formula $\forall_{x,y\in P}x\prec y\implies\exists_{z\in P}x\prec z\prec y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Konstrukcja (von Neumanna) zbioru liczb naturalnych
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+def:
+\series default
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ - zbiór 
+\series bold
+Następnikiem
+\series default
+ zbioru 
+\begin_inset Formula $A$
+\end_inset
+
+ jest zbiór 
+\begin_inset Formula $A'=\{A\}\cup A$
+\end_inset
+
+ Następnik jest zbiorem, bo 
+\begin_inset Formula $\{A\}$
+\end_inset
+
+ jest zbiorem z aksjomatu sumy uporządkowanej.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Możemy wtedy zdefiniować 
+\begin_inset Formula $0:=\emptyset,1=0'=\emptyset\cup\{\emptyset\},2=1'=0''=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Fakt: 
+\begin_inset Formula $n\in n'$
+\end_inset
+
+ oraz 
+\begin_inset Formula $n\subseteq n'$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Aksjomat nieskończoności: 
+\series default
+Istnieje zbiór 
+\begin_inset Formula $X$
+\end_inset
+
+ (tzw.
+ zbiór induktywny), taki, że:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\emptyset\in X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{y}(y\in X\implies y'\in X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Twierdzenie
+\series default
+ o indukcji matematycznej
+\begin_inset Newline newline
+\end_inset
+
+Dla dowolnego zbioru 
+\begin_inset Formula $P$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $P\subseteq\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\emptyset\in P,$
+\end_inset
+
+
+\begin_inset Formula $\forall_{y}(y\in P\implies y'\in P)$
+\end_inset
+
+ to P=
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+
 \end_layout
 
 \end_body
