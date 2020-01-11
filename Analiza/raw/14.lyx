@@ -1,0 +1,528 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+07.01.2020 13 i 14 Funkcja pierwotna i całka nieoznaczona
+\end_layout
+
+\begin_layout Standard
+Przez cały wykład 
+\begin_inset Formula $p$
+\end_inset
+
+ będzie oznaczać przedział
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Funkcja 
+\begin_inset Formula $F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją pierwotną funkcji 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}\iff F$
+\end_inset
+
+ jest różniczkowalna i 
+\begin_inset Formula $\forall_{x\in P}F'(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+np
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ jest funkcją pierwotną funkcji 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.1:
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $F_{0}:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją pierwotną 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ to 
+\begin_inset Formula $F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ też jest funkcją pierwotną 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}\iff\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Formula $\implies$
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $F_{0},F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ to funkcje pierwotne 
+\begin_inset Formula $f,$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+tzn.
+ 
+\begin_inset Formula $\begin{cases}
+\forall_{x\in P}F'_{0}(x)=f(x)\\
+\forall_{x\in P}F'(x)=f(x)
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula $\implies\forall_{x\in P}(F(x)-F_{0}(x))'=0\implies$
+\end_inset
+
+funkcja 
+\begin_inset Formula $F(x)-F_{0}(xb)$
+\end_inset
+
+ jest stała na 
+\begin_inset Formula $P$
+\end_inset
+
+ czyli 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Formula $\impliedby$
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+ i 
+\begin_inset Formula $F_{0}$
+\end_inset
+
+ jest funkcją pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $F'=f+0=f$
+\end_inset
+
+ więc 
+\begin_inset Formula $F$
+\end_inset
+
+ też jest funkcją pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Nie każda funkcja ma funkcję pierwotną, na przykład 
+\begin_inset Formula $f(x)=\begin{cases}
+0 & x\neq0\\
+1 & x=0
+\end{cases}$
+\end_inset
+
+.
+ Można poprowadzić dowód nie wprost z którego wynika że 
+\begin_inset Formula $F$
+\end_inset
+
+ musiałaby być stała ale wtedy 
+\begin_inset Formula $F'$
+\end_inset
+
+ musiałoby być wszędzie 0 skąd sprzeczność
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.2: Każda funkcja ciągła 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ ma funkcję pierwotną
+\end_layout
+
+\begin_layout Enumerate
+Def: Całką nieoznaczoną funkcji 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ oznaczaną 
+\begin_inset Formula $\int f(x)dx$
+\end_inset
+
+ nazywamy zbiór wszystkich funkcji pierwotncy funkcji 
+\begin_inset Formula $f.$
+\end_inset
+
+ Zapisujemy 
+\begin_inset Formula $\int f(x)dx=F(x)+C$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $F$
+\end_inset
+
+ to dowolna funkcja pierwotna 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Podstawowe wzory na całki:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int0dx=C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int1dx=x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{n}dx=\frac{1}{n+1}x^{n+1}+C$
+\end_inset
+
+ dla 
+\begin_inset Formula $n\neq=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x}dx=\ln|x|+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{x}dx=e^{x}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\sin x\,dx=-\cos x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\cos x\,dx=\sin x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\cos^{2}x}dx=\tan x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sin^{2}x}dx=-\cot x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sqrt{1-x^{2}}}=\arcsin x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{1+x^{2}}dx=\text{arccot \ensuremath{x+C}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ i 
+\begin_inset Formula $g$
+\end_inset
+
+ mają funkcjie pierwotne, to 
+\begin_inset Formula $f+g$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int(f(x)+g(x))dx=\int f(x)dx+\int g(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Niech 
+\begin_inset Formula $F$
+\end_inset
+
+ i 
+\begin_inset Formula $G$
+\end_inset
+
+ to funkcje pierwotne odpowiednio 
+\begin_inset Formula $f$
+\end_inset
+
+ i 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $(F+G)'=F'+G'=f+g\implies\int(f(x)+g(x))dx=F+G+C=\int f(x)dx+\int g(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ ma funkcję pierwotną i 
+\begin_inset Formula $A\in\mathbb{R}$
+\end_inset
+
+, to 
+\begin_inset Formula $Af$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int Af(x)dx=\begin{cases}
+A\int f(x)dx+C & A\neq0\\
+C & A=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{3\sqrt{x}+8}{x}dx=3\int\frac{1}{\sqrt{x}}dx+8\int\frac{1}{x}dx=3\int x^{-\nicefrac{1}{2}}+8\int\frac{1}{x}dx=8\ln|x|+6x^{\nicefrac{1}{2}}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int(\cot^{2}x+1)dx=\int\frac{\cos^{2}x}{\sin^{2}x}+\frac{\sin^{2}x}{\sin^{2}x}=\int\frac{1}{\sin^{2}x}=-\cot x+C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 13.3(o całkowaniu przez części)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f,g:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ są różniczkowalne i 
+\begin_inset Formula $f'g$
+\end_inset
+
+ ma funkcje pierwotną, to 
+\begin_inset Formula $fg'$
+\end_inset
+
+ też ma funkcję pierwotną
+\begin_inset space ~
+\end_inset
+
+i 
+\begin_inset Formula $\int f(x)g'(x)dx=f(x)g(x)-\int f'(x)g(x)dx$
+\end_inset
+
+ z wzoru na pochodną
+\begin_inset space ~
+\end_inset
+
+iloczynu
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.4(o całkowaniu przez podstawienie)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $g:\,P_{1}\rightarrow P_{2}$
+\end_inset
+
+ jest różniczkowalna i 
+\begin_inset Formula $f:\,P_{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ ma funkcję pierwotną, to 
+\begin_inset Formula $f\circ g\cdot g'$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int f(g(x))g'(x)dx$
+\end_inset
+
+, (wtedy wstawiamy 
+\begin_inset Formula $t=g(x),dt=g'(x)dx$
+\end_inset
+
+ i) = 
+\begin_inset Formula $\int f(t)dt$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
