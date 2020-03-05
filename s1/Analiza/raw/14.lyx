@@ -1,0 +1,1007 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+07.01.2020 13 i 14 Funkcja pierwotna i całka nieoznaczona
+\end_layout
+
+\begin_layout Standard
+Przez cały wykład 
+\begin_inset Formula $p$
+\end_inset
+
+ będzie oznaczać przedział
+\end_layout
+
+\begin_layout Enumerate
+Def.
+ Funkcja 
+\begin_inset Formula $F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją pierwotną funkcji 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}\iff F$
+\end_inset
+
+ jest różniczkowalna i 
+\begin_inset Formula $\forall_{x\in P}F'(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+np
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ jest funkcją pierwotną funkcji 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.1:
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $F_{0}:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ jest funkcją pierwotną 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ to 
+\begin_inset Formula $F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ też jest funkcją pierwotną 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}\iff\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Formula $\implies$
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $F_{0},F:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ to funkcje pierwotne 
+\begin_inset Formula $f,$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+tzn.
+ 
+\begin_inset Formula $\begin{cases}
+\forall_{x\in P}F'_{0}(x)=f(x)\\
+\forall_{x\in P}F'(x)=f(x)
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula $\implies\forall_{x\in P}(F(x)-F_{0}(x))'=0\implies$
+\end_inset
+
+funkcja 
+\begin_inset Formula $F(x)-F_{0}(xb)$
+\end_inset
+
+ jest stała na 
+\begin_inset Formula $P$
+\end_inset
+
+ czyli 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Formula $\impliedby$
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $\exists_{C\in\mathbb{R}}\forall_{x\in P}F(x)=F_{0}(x)+C$
+\end_inset
+
+ i 
+\begin_inset Formula $F_{0}$
+\end_inset
+
+ jest funkcją pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $F'=f+0=f$
+\end_inset
+
+ więc 
+\begin_inset Formula $F$
+\end_inset
+
+ też jest funkcją pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Nie każda funkcja ma funkcję pierwotną, na przykład 
+\begin_inset Formula $f(x)=\begin{cases}
+0 & x\neq0\\
+1 & x=0
+\end{cases}$
+\end_inset
+
+.
+ Można poprowadzić dowód nie wprost z którego wynika że 
+\begin_inset Formula $F$
+\end_inset
+
+ musiałaby być stała ale wtedy 
+\begin_inset Formula $F'$
+\end_inset
+
+ musiałoby być wszędzie 0 skąd sprzeczność
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.2: Każda funkcja ciągła 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ ma funkcję pierwotną
+\end_layout
+
+\begin_layout Enumerate
+Def: Całką nieoznaczoną funkcji 
+\begin_inset Formula $f:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ oznaczaną 
+\begin_inset Formula $\int f(x)dx$
+\end_inset
+
+ nazywamy zbiór wszystkich funkcji pierwotncy funkcji 
+\begin_inset Formula $f.$
+\end_inset
+
+ Zapisujemy 
+\begin_inset Formula $\int f(x)dx=F(x)+C$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $F$
+\end_inset
+
+ to dowolna funkcja pierwotna 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Podstawowe wzory na całki:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int0dx=C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int1dx=x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{n}dx=\frac{1}{n+1}x^{n+1}+C$
+\end_inset
+
+ dla 
+\begin_inset Formula $n\neq=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x}dx=\ln|x|+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{x}dx=e^{x}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\sin x\,dx=-\cos x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\cos x\,dx=\sin x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\cos^{2}x}dx=\tan x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sin^{2}x}dx=-\cot x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sqrt{1-x^{2}}}=\arcsin x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{1+x^{2}}dx=\text{arccot \ensuremath{x+C}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ i 
+\begin_inset Formula $g$
+\end_inset
+
+ mają funkcjie pierwotne, to 
+\begin_inset Formula $f+g$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int(f(x)+g(x))dx=\int f(x)dx+\int g(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Niech 
+\begin_inset Formula $F$
+\end_inset
+
+ i 
+\begin_inset Formula $G$
+\end_inset
+
+ to funkcje pierwotne odpowiednio 
+\begin_inset Formula $f$
+\end_inset
+
+ i 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $(F+G)'=F'+G'=f+g\implies\int(f(x)+g(x))dx=F+G+C=\int f(x)dx+\int g(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ ma funkcję pierwotną i 
+\begin_inset Formula $A\in\mathbb{R}$
+\end_inset
+
+, to 
+\begin_inset Formula $Af$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int Af(x)dx=\begin{cases}
+A\int f(x)dx+C & A\neq0\\
+C & A=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{3\sqrt{x}+8}{x}dx=3\int\frac{1}{\sqrt{x}}dx+8\int\frac{1}{x}dx=3\int x^{-\nicefrac{1}{2}}+8\int\frac{1}{x}dx=8\ln|x|+6x^{\nicefrac{1}{2}}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int(\cot^{2}x+1)dx=\int\frac{\cos^{2}x}{\sin^{2}x}+\frac{\sin^{2}x}{\sin^{2}x}=\int\frac{1}{\sin^{2}x}=-\cot x+C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 13.3(o całkowaniu przez części)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f,g:\,P\rightarrow\mathbb{R}$
+\end_inset
+
+ są różniczkowalne i 
+\begin_inset Formula $f'g$
+\end_inset
+
+ ma funkcje pierwotną, to 
+\begin_inset Formula $fg'$
+\end_inset
+
+ też ma funkcję pierwotną
+\begin_inset space ~
+\end_inset
+
+i 
+\begin_inset Formula $\int f(x)g'(x)dx=f(x)g(x)-\int f'(x)g(x)dx$
+\end_inset
+
+ z wzoru na pochodną
+\begin_inset space ~
+\end_inset
+
+iloczynu
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $(f(x)g(x))'=f'(x)g(x)+f(x)g'(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int(f(x)g(x))'dx=\int f'(x)g(x)dx+\int f(x)g'(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f(x)g(x)-\int f'(x)g(x)dx=\int f(x)g'(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 13.4(o całkowaniu przez podstawienie)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $g:\,P_{1}\rightarrow P_{2}$
+\end_inset
+
+ jest różniczkowalna i 
+\begin_inset Formula $f:\,P_{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ ma funkcję pierwotną, to 
+\begin_inset Formula $f\circ g\cdot g'$
+\end_inset
+
+ też ma funkcję pierwotną i 
+\begin_inset Formula $\int f(g(x))g'(x)dx$
+\end_inset
+
+, (wtedy wstawiamy 
+\begin_inset Formula $t=g(x),dt=g'(x)dx$
+\end_inset
+
+) = 
+\begin_inset Formula $\int f(t)dt$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset space ~
+\end_inset
+
+Niech 
+\begin_inset Formula $F$
+\end_inset
+
+ oznacza funkcję pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+, tzn 
+\begin_inset Formula $\forall_{x\in P_{2}}F'(x)=f(x)$
+\end_inset
+
+.
+ Chcemy pokazać, że 
+\begin_inset Formula $F(t)=F(g(x))$
+\end_inset
+
+ to funkcja pierwotna 
+\begin_inset Formula $f(g(x))g'(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Rzeczywiście 
+\begin_inset Formula $\forall_{x\in P_{2}}(F(g(x)))'=F'(g(x)g'(x)=f(g(x)g'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{\arctan x}{1+x^{2}}dx=t=\begin{cases}
+t=\arctan x\\
+dt=\frac{1}{1+x^{2}}dx
+\end{cases}=\int tdt=\frac{1}{2}t^{2}=\frac{1}{2}\arctan^{2}x+C$
+\end_inset
+
+ (dla uproszczenia zapisu 
+\begin_inset Formula $+C$
+\end_inset
+
+ tylko na końcu)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{2}\arcsin x\,dx=\begin{cases}
+f(x)=\arcsin x & f'(x)=\frac{1}{\sqrt{1-x^{2}}}\\
+g'(x)=x^{2} & g(x)=\int x^{2}dx=\frac{1}{3}x^{3}
+\end{cases}=\frac{1}{3}x^{3}\arcsin x-\frac{1}{3}\int\frac{x^{3}}{\sqrt{1-x^{2}}}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{x^{3}}{\sqrt{1-x^{2}}}dx=\int\frac{x^{2}\cdot x}{\sqrt{1-x^{2}}}=\begin{cases}
+t=1-x^{2}\implies x^{2}=1-5\\
+dt=-2xdx\implies-\frac{1}{2}dt=xdx
+\end{cases}=-\frac{1}{2}\int\frac{1-t}{\sqrt{t}}dt=-\frac{1}{2}(\int t^{-\frac{1}{2}}dt-\int t^{\frac{1}{2}}dt)=-\frac{1}{2}(2t^{\frac{1}{2}}-\frac{2}{3}t^{\frac{3}{2}})=\frac{1}{3}\sqrt{t^{3}}-\sqrt{t}=\frac{1}{3}\sqrt{(1-x^{2})^{3}}-\sqrt{1-x^{2}}+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Więc: 
+\begin_inset Formula $\int x^{2}\arcsin x\,dx=\frac{1}{3}x^{3}\arcsin x-\frac{1}{9}\sqrt{(1-x^{2})^{3}}+\frac{1}{3}\sqrt{1-x^{2}}+C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Całki 
+\begin_inset Formula $\int e^{x^{2}}dx,\int\frac{1}{\ln x}dx,\int\frac{\sin x}{x}dx.\int\frac{\cos x}{x}dx,\int\frac{1}{\sqrt{1+x^{3}}}dx$
+\end_inset
+
+ nie dadzą się
+\begin_inset space ~
+\end_inset
+
+wyrasić
+\begin_inset space ~
+\end_inset
+
+za pomocą funkcji elementarnych
+\end_layout
+
+\begin_layout Enumerate
+Całkowanie funkcji wymiernych 
+\begin_inset Formula $\int\frac{\text{wielomian}_{1}(x)}{\text{wielomian}_{2}(x)}$
+\end_inset
+
+dx
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jeśli stopień wielomianu w liczniku jest większy od stopnia jest 
+\begin_inset Formula $\ge$
+\end_inset
+
+stopniowi wielomianu w mianowniku, to wykonujemy dzielenie.
+\end_layout
+
+\begin_layout Enumerate
+Wielomian w mianowniku rozkładamy na iloczyn wielomianów nierozkładalnych
+ stopnia pierwszego i drugiego
+\end_layout
+
+\begin_layout Enumerate
+Ułamek zamieniamy na sumę ułamków prostych: 
+\begin_inset Newline newline
+\end_inset
+
+np.
+ 
+\begin_inset Formula $\frac{x^{2}-3x-5}{(x-2)^{3}(x^{2}+1)^{2}}=\frac{A}{(x-2)^{3}}+\frac{B}{(x-2)^{2}}+\frac{C}{x-2}$
+\end_inset
+
++
+\begin_inset Formula $\frac{Dx+E}{(x^{2}+1)^{2}}+\frac{Fx+G}{x^{2}+1}$
+\end_inset
+
+ (nad liniowymi piszemy stałe, nad kwadratowymi liniowe)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x^{3}-2}{(x+1)x^{3}}=\frac{A}{x+1}+\frac{B}{x^{3}}+\frac{C}{x^{2}}+\frac{D}{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Liczymy całki z ułamków prostych
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{dx}{x+a}=\begin{cases}
+t=x+a\\
+dt=dx
+\end{cases}=\int\frac{dt}{t}=\ln|t|=\ln|x+a|+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{dx}{(x+a)^{3}}=\begin{cases}
+t=x+a\\
+dt=dx
+\end{cases}=\int\frac{dt}{t^{3}}=\int t^{-3}dt=-\frac{1}{2}t^{-2}=\frac{1}{-2(x+a)^{2}}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x^{2}+6x+13}dx=\int\frac{dx}{(x+3)^{2}+4}=\begin{cases}
+t=x+3\\
+dt=dx
+\end{cases}=\frac{1}{4}\int\frac{dt}{(\frac{t}{2})^{2}+1}=\begin{cases}
+w=\frac{t}{2}\\
+dw=\frac{1}{2}dt
+\end{cases}=\frac{1}{2}\int\frac{dw}{w^{2}+1}=\frac{1}{2}\arctan w=\frac{1}{2}\arctan\frac{x+3}{2}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{3x+5}{x^{2}+6x+13}dx=\frac{3}{2}\int\frac{2x+6}{x^{2}+6x+13}dx-4\int\frac{1}{x^{2}+6x+13}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{2x+6}{x^{2}+6x+13}=\begin{cases}
+t=x^{2}+6x+13\\
+dt=(2x+6)dx
+\end{cases}=\int\frac{dt}{t}=\ln|t|=\ln(x^{2}+6x+13)+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{(x^{2}+1)^{n}}dx=\begin{cases}
+\arctan x & \text{dla }n=1\\
+\frac{1}{2n-2}\cdot\frac{x}{(x^{2}+1)^{n-1}}+\frac{2n-3}{2n-2}\int\frac{1}{(x^{2}+1)^{n-1}}dx & \text{dla }n\ge2
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Szkic dowodu: 
+\begin_inset Formula $\int\frac{1}{(x^{2}+1)^{n}}=\int\frac{x^{2}+1-x^{2}}{(x^{2}+1)^{n}}=\text{\int}\frac{1}{(x^{2}+1)^{n-1}}dx-\int\frac{x^{2}}{(x^{2}+1)^{n}}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{x^{2}}{(x^{2}+1)^{n}}dx=\int\frac{x\cdot xdx}{(x^{2}+1)^{n}}=\begin{cases}
+f(x)=x & f'(x)=1\\
+g'(x)=\frac{x}{(x^{2}+1)^{n}} & g(x)=\int\frac{x}{(x^{2}+1)^{n}}dx=...
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{3x+5}{(x^{2}+6x+13)^{2}}dx=\int\frac{\frac{3}{2}(2x+6)-4}{(x^{2}+6x+13)^{2}}dx=\frac{3}{2}\int\frac{(2x+6)dx}{(x^{2}+6x+13)^{2}}-4\int\frac{1}{(x^{2}+6x+13)^{2}}dx$
+\end_inset
+
+ (*)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{(2x+6)dx}{(x^{2}+6x+13)^{2}}=\begin{cases}
+t=x^{2}+6x+13\\
+dt=(2x+6)dx
+\end{cases}=\int\frac{dt}{t^{2}}=\int t^{-2}dt=-1\cdot t^{-1}=-\frac{1}{x^{2}+6x+13}+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{1}{(x^{2}+6x+13)^{2}}dx=\int\frac{1}{((x+3)^{2}+4)^{2}}dx=\frac{1}{16}\int\frac{dx}{(\frac{(X+3)^{2}}{4}+1)^{2}}=\frac{1}{16}\int\frac{dx}{((\frac{x+3}{2})^{2}+1)^{2}}=\begin{cases}
+t=\frac{x+3}{2}\\
+dt=\frac{1}{2}dx
+\end{cases}=\frac{1}{16}\cdot2\int\frac{dt}{(t^{2}+1)}=\frac{1}{8}(\frac{1}{2}\frac{t}{t^{2}+1}+\frac{1}{2}\int\frac{1}{t^{2}+1}dt)=\frac{1}{16}\frac{t}{t^{2}+1}+\frac{1}{16}\arctan t=\frac{1}{16}\frac{\frac{x+3}{2}}{(\frac{x+3}{2})+1}+\frac{1}{16}\arctan\frac{x+3}{2}+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tego łatwo policzyć (*)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+przykład: 
+\begin_inset Formula $\int\frac{x^{5}+3x^{4}+3x^{3}+3x^{2}+x+2}{x^{4}+x^{3}+x^{2}}dx=\int(x+2+\frac{x^{2}+x+2}{x^{4}+x^{3}+x^{2}})dx=\frac{1}{2}x^{2}+2x+\int\frac{x^{2}+x+2}{x^{4}+x^{3}+x^{2}}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{x^{2}+x+2}{x^{4}+x^{3}+x^{2}}=\frac{x^{2}+x+2}{x^{2}(x^{2}+x+1)}=\frac{A}{x^{2}}+\frac{B}{x}+\frac{Cx+D}{x^{2}+x+1}$
+\end_inset
+
+ rozwiązujemy żeby otrzymać 
+\begin_inset Formula $A=2,B=-1,C=1,D=0$
+\end_inset
+
+ i dalej:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{x^{2}+x+2}{x^{4}+x^{3}+x^{2}}dx=\int(\frac{2}{x}-\frac{1}{x}+\frac{x}{x^{2}+x+1})dx=2\int x^{-2}dx-\int x^{-1}dx+\int\frac{x}{x^{2}+x+1}dx=2\cdot(-1\cdot x^{-1})-\ln|x|+\int\frac{x}{x^{2}+x+1}dx=\frac{-2}{x}-\ln|x|+...$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{x}{x^{2}+x+1}dx=\int\frac{\frac{1}{2}(2x+1)-\frac{1}{2}}{x^{2}+x+1}dx=\frac{1}{2}\int\frac{2x+1}{x^{2}+x+1}dx-\frac{1}{2}\int\frac{1}{x^{2}+x+1}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{2x+1}{x^{2}+x+1}dx=\begin{cases}
+t=x^{2}+x+1\\
+dt=(2x+1)dx
+\end{cases}=\int t^{-1}dt=\ln|t|=ln(x^{2}+x+1)+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{1}{x^{2}+x+1}dx=\int\frac{1}{(x+\frac{1}{2})^{2}+\frac{3}{4}}=\frac{4}{3}\int\frac{1}{\frac{(x+\frac{1}{2})^{2}}{\nicefrac{3}{4}}+1}dx=\frac{4}{3}\int\frac{1}{(\frac{2}{\sqrt{3}}(x+\frac{1}{2}))^{2}+1}dx=\begin{cases}
+t=\frac{2}{\sqrt{3}}(x+\frac{1}{2})\\
+dt=\frac{2}{\sqrt{3}}dx
+\end{cases}=\frac{\sqrt{3}}{3}\int\frac{1}{t^{2}+1}dt=\frac{2\sqrt{3}}{3}\arctan\frac{2x+1}{\sqrt{3}}+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I już mamy całki ułamków prostych i dalej mi się nie chce pisać bo to tylko
+ wpisanie ich sumy
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Całkowanie wyrażeń trygonometrycznych
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+potęga nieparzysta:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\cos^{5}x\,dx=\int\cos^{4}\cdot\cos x\,dx=\int(\cos^{2}x)^{2}\cos x\,dx=\int(1-\sin^{2}x)^{2}\cos x\,dx=\begin{cases}
+t=\sin x\\
+dt=\cos x\,dx
+\end{cases}=\int(1-t^{2)^{2}}dt=\int(1-2t^{2}+t^{4})dt=t-\frac{2}{3}t^{3}+\frac{1}{5}t^{5}=\sin x-\frac{2}{3}\sin^{3}x+\frac{1}{5}\sin x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\sin^{4}xdx=\int(\sin^{2}x)^{2}dx=\int(\frac{1-\cos2x}{2})^{2}dx=\frac{1}{4}\int(1-2\cos2x+\cos^{2}2x)dx=\frac{1}{4}(x-2\int\cos2xdx+\frac{1}{2}\int(1+\cos4x)dx)=\frac{1}{4}(x-2\int\cos2xdx+\frac{1}{2}x+\frac{1}{2}\int\cos4xdx)=\frac{1}{4}(\frac{3}{2}x-\sin2x+\frac{1}{8}\sin4x+C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\cos2xdx=\begin{cases}
+t=2x\\
+dt=2dx
+\end{cases}=\frac{1}{2}\int\cos tdt=\frac{1}{2}\sin t=\frac{1}{2}\sin2x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\cos(\alpha-\beta)-\cos(\alpha+\beta)=2\sin\alpha\sin\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int G(\sin x,\cos x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+jeśli 
+\begin_inset Formula $G(-\sin x,\cos x)=-G(\sin x,\cos x)$
+\end_inset
+
+ podstawiamy 
+\begin_inset Formula $t=\cos x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+jeśli 
+\begin_inset Formula $G(\sin x,-\cos x)=-G(\sin x,\cos x)$
+\end_inset
+
+ podstawiamy 
+\begin_inset Formula $t=\sin x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+jeśli 
+\begin_inset Formula $G(-\sin x,-\cos x)=-G(\sin x,\cos x)$
+\end_inset
+
+ podstawiamy 
+\begin_inset Formula $t=\tan x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+podstawienie uniwersalne: 
+\begin_inset Formula $t=\tan\frac{x}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int\frac{dx}{\sin^{2}x-5\sin x\cos x}=\int\frac{\frac{1}{\cos^{2}x}}{\tan^{2}x-5\tan x}dx=\begin{cases}
+t=\tan x\\
+dt=\frac{1}{\cos^{2}x}
+\end{cases}=\int\frac{dt}{t^{2}-5t}=\dots=\frac{1}{5}\ln|\frac{\tan x-5}{\tan x}|+C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

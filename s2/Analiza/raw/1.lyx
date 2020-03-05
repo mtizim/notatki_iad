@@ -1,0 +1,729 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+0 CAŁKA RIEMANNA
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ - funkcja ograniczona
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Pi_{n}=(x_{0}^{(n)},x_{1}^{(n)},\dots,x_{kn}^{(n)})$
+\end_inset
+
+ - ciąg podziałów odcinka 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+mówimy, że ten ciąg jest normalny, jeśli 
+\begin_inset Formula $\delta(\Pi_{n}):=\max_{i\in1,\dots,kn}(x_{i}^{(n)},-x)\overset{n\rightarrow\infty}{\rightarrow}0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\omega_{n}=(\xi_{1}^{(n)},\dots,\xi_{kn}^{(n)})$
+\end_inset
+
+ - ciąg wartościowań, tzn 
+\begin_inset Formula $\xi_{i}^{(n)}\in<x_{i-1}^{(n)},x_{i}^{(n)}>$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def.
+ Jeśli istnieje 
+\begin_inset Formula $\sigma\in\mathbb{R}$
+\end_inset
+
+taka, że dla dowolnego normalnego ciągu podziałów 
+\begin_inset Formula $\{\Pi_{n}\}$
+\end_inset
+
+ i dowolnego ciągu wartościowań 
+\begin_inset Formula $\{\omega_{n}\}$
+\end_inset
+
+ mamy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sum_{i=1}^{k}f(\xi_{i}^{(n)})\cdot(x_{i}^{(n)}-x_{i-1}^{(n)})=\sigma$
+\end_inset
+
+, (lewa strona równania - suma całkowa Riemanna) )to wtedy mówimy, że 
+\begin_inset Formula $f$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+.
+ W przypadku całkowalności 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ nazywamy całką Riemanna funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+ na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+ i oznaczamy 
+\begin_inset Formula $\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 0.5 (Podstawowy wzór rachunku całkowego).
+ Jeśli 
+\begin_inset Formula $f:\,<a,b>\in\mathbb{R}$
+\end_inset
+
+ jest ciągła i 
+\begin_inset Formula $F$
+\end_inset
+
+ to dowolna funkcja pierwotna 
+\begin_inset Formula $f$
+\end_inset
+
+, to (całka Riemanna) 
+\begin_inset Formula $\int_{a}^{b}f(x)dx=F(b)-F(a)=\int_{a}^{b}f(x)dx$
+\end_inset
+
+ (całka oznaczona)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Własności całki Riemanna
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def: Jeśli 
+\begin_inset Formula $-\infty<a<b<\infty,$
+\end_inset
+
+ to 
+\begin_inset Formula $\int_{a}^{a}f(x)dx=0$
+\end_inset
+
+ i 
+\begin_inset Formula $\int_{b}^{a}f(x)dx=-\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.2: Jeśli 
+\begin_inset Formula $f,g:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ są całkowalne w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+ i 
+\begin_inset Formula $\alpha,\beta\in\mathbb{R},$
+\end_inset
+
+to 
+\begin_inset Formula $\alpha f+\beta g$
+\end_inset
+
+ też jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+i 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}(\alpha f(x)+\beta g(x))dx=\alpha\int_{a}^{b}f(x)dx+\beta\int_{a}^{b}g(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.4: Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+ i 
+\begin_inset Formula $\forall_{x\in<a,b>}f(x)\ge0,$
+\end_inset
+
+to 
+\begin_inset Formula $\int_{a}^{b}f(x)dx\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.5: Jeśli 
+\begin_inset Formula $f,g:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ są całkowalne w sensie Riemanna i 
+\begin_inset Formula $\forall_{x\in<a,b>}f(x)\le g(x)$
+\end_inset
+
+, to 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}f(x)dx\le\int_{a}^{b}g(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Z założenia mamy 
+\begin_inset Formula $\forall_{x\in<a,b>}g(x)-f(x)\ge0\implies\int_{a}^{b}(g(x)-f(x))dx\ge0\implies\int_{a}^{b}g(x)dx-\int_{a}^{b}f(x)dx\ge0\iff\int_{a}^{b}g(x)dx\ge\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.6: Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+, to 
+\begin_inset Formula $|f|$
+\end_inset
+
+ też jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+i 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $|\int_{a}^{b}f(x)dx|\le\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własnosć 0.7: Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+ i 
+\begin_inset Formula $M=\sup_{x\in<a,b>}f(x),$
+\end_inset
+
+to 
+\begin_inset Formula $\int_{a}^{b}f(x)dx\le M(b-a)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $\forall_{x\in<a,b>}f(x)\le M\implies\int_{a}^{b}f(x)dx\le\int_{a}^{b}Mdx=M\int_{a}^{b}1dx=M(b-a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.8: Jeśli 
+\begin_inset Formula $g:\,<a,b>\rightarrow Y\subset\mathbb{R}$
+\end_inset
+
+ jest klasy 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ (ciągła pierwsza pochodna) i 
+\begin_inset Formula $f:\,Y\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła, to 
+\begin_inset Formula $\int_{a}^{b}f(x)dx\cdot g'(x)dx=\begin{cases}
+t=g(x)\\
+dt=g'(x)dx\\
+a\rightarrow g(a)=\alpha\\
+b\rightarrow g(b)=\beta
+\end{cases}=\int_{\alpha}^{\beta}f(t)dt$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Niech 
+\begin_inset Formula $F$
+\end_inset
+
+ będzie funkcją pierwotną 
+\begin_inset Formula $f$
+\end_inset
+
+, tzn 
+\begin_inset Formula $\forall_{x\in Y}F'(x)=f(x)$
+\end_inset
+
+.
+ Używając podstawowego wzoru rachunku całkowego, otrzymujemy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}f(x)dx=F(b)-F(a)$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{\alpha}^{\beta}f(t)dt=F(\alpha)-F(\beta)$
+\end_inset
+
+,(*) ponadto 
+\begin_inset Formula $(F(g(x))'=F'(g(x))\cdot g'(x)=f(g(x)\cdot g'(x)$
+\end_inset
+
+, co oznacza, że 
+\begin_inset Formula $F(g(x))$
+\end_inset
+
+ to funkcja pierwotna 
+\begin_inset Formula $f(g(x))g'(x)$
+\end_inset
+
+.
+ Z podstawowego wzoru rachunku całkowego otrzymujemy 
+\begin_inset Formula $\int_{a}^{b}f(g(x))\cdot g'(x)dx=F(g(b))-F(g(a))=F(\beta)-F(\alpha)$
+\end_inset
+
+.
+ Z tego i z (*) otrzymujemy tezę
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.9: (całkowanie przez części): Jeśli 
+\begin_inset Formula $f,g:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ są klasy 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, to 
+\begin_inset Formula $\int_{a}^{b}f(x)g'(x)dx=[f(x)g(x)]_{a}^{b}-\int_{a}^{b}f'(x)g(x)dx$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $[f(x)g'(x)]_{a}^{b}=f(b)g(b)-f(a)g(a)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Wzór ten wnynika ze wzoru na pochodną iloczynu.
+ 
+\begin_inset Formula $(f(x)g(x))'=f'(x)g(x)+f(x)g'(x)$
+\end_inset
+
+ więc 
+\begin_inset Formula $[f(x)g(x)]_{a}^{b}=\int_{a}^{b}f'(x)g(x)dx+\int_{a}^{b}f(x)g'(x)dx$
+\end_inset
+
+ skąd 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}f(x)g'(x)dx=[f(x)g(x)]_{a}^{b}-\int_{a}^{b}f'(x)g(x)dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Własność 0.10: (twierdzenie o wartości śreniej rachunku całkowego).
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f,g:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ są ciągłe i 
+\begin_inset Formula $g$
+\end_inset
+
+ jest nieujemna lub niedodatnia, to 
+\begin_inset Formula $\exists_{\xi\in<a,b>}\int_{a}^{b}f(x)g(x)dx=f(\xi)\int_{a}^{b}g(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dowód: (na ćwiczeniach)
+\begin_inset Newline newline
+\end_inset
+
+Wniosek: 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ - funkcja ciągła 
+\begin_inset Formula $\overset{g(x)\equiv1}{\implies}\exists_{\xi\in<a,b>}\int_{a}^{b}f(x)dx=f(\xi)\int_{a}^{b}1dx\implies\exists_{\xi\in<a,b>}f(\xi)=\frac{\int_{a}^{b}f(x)dx}{b-a}$
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+1 CAŁKI NIEWŁAŚCIWE
+\end_layout
+
+\begin_layout Enumerate
+Całki niewłaściwe pierwszego rodzaju: 
+\begin_inset Formula $\int_{a}^{\infty}f(x)dx,\int_{-\infty}^{b}f(x)dx,\int_{-\infty}^{\infty}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Def: Jeśli 
+\begin_inset Formula $f:\,<a,\infty)\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,\beta>$
+\end_inset
+
+ dla każdego 
+\begin_inset Formula $\beta>a$
+\end_inset
+
+ i istnieje granica 
+\begin_inset Formula $\lim_{\beta\rightarrow\infty}\int_{a}^{\beta}f(x)dx$
+\end_inset
+
+, to granicę tą nazywamy całką niewłaściwą pierwszego rodzaju i oznaczamy
+ 
+\begin_inset Formula $\int_{a}^{\infty}f(x)dx$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{\infty}f(x)dx=\lim_{\beta\rightarrow\infty}\int_{a}^{\beta}f(x)dx$
+\end_inset
+
+.
+ Ponadto jeśli powyższa granica istnieje i jest skończona, to całkę niewłaściwą
+ nazywamy zbieżna; w pozostałych przypadkach nazywamy ją rozbieżną.
+\end_layout
+
+\begin_layout Enumerate
+Całkę 
+\begin_inset Formula $\int_{-\infty}^{b}f(x)dx$
+\end_inset
+
+ definiujemy analogicznie, tzn 
+\begin_inset Formula $\int_{-\infty}^{b}f(x)dx=\lim_{\alpha\rightarrow-\infty}\int_{\alpha}^{b}f(x)dx$
+\end_inset
+
+ jeśli tylko 
+\begin_inset Formula $f:\,(-\infty,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<\alpha,b>$
+\end_inset
+
+ dla dowolnego 
+\begin_inset Formula $\alpha<b$
+\end_inset
+
+ i powyższa granica istnieje.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Def.: Jeśli 
+\begin_inset Formula $f:\,(-\infty,\infty)\rightarrow\mathbb{R}$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<\alpha,\beta>$
+\end_inset
+
+dla wszystkich 
+\begin_inset Formula $-\infty<\alpha<\beta<\infty$
+\end_inset
+
+ i istnieje 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ takie, że istnieje granica 
+\begin_inset Formula $\lim_{a\rightarrow-\infty}\int_{\alpha}^{c}f(x)dx$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\int_{c}^{\beta}f(x)dx$
+\end_inset
+
+, to 
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^{c}f(x)dx+\int_{c}^{\infty}f(x)dx$
+\end_inset
+
+ o ile wyrażenie po prawej stronie ma sens, tzn nie otrzymujemy 
+\begin_inset Formula $[\infty-\infty]$
+\end_inset
+
+ lub 
+\begin_inset Formula $[-\infty+\infty]$
+\end_inset
+
+.
+ Ponadto o ile te granice istnieją i są skończone, to całkę nazywamy zbieżną;
+ w pozostałych przypadkach - rozbieżną.
+\begin_inset Newline newline
+\end_inset
+
+Uwaga: Jeśli w powyższej definicji wstawimy 
+\begin_inset Formula $-\alpha=\beta\overset{\text{ozn}}{=T}$
+\end_inset
+
+, to po prawej stronie otrzymamy 
+\begin_inset Formula $\lim_{T\rightarrow\infty}\int_{-T}^{c}f(x)dx+\lim_{T\rightarrow\infty}\int_{c}^{T}f(x)dx=\underbar{\lim_{T\rightarrow\infty}}\int_{-T}^{T}f(x)dx$
+\end_inset
+
+ - tzn wartośc główna całki, to NIE to samo co 
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Przykład: 
+\begin_inset Formula $\int_{-\infty}^{\infty}\frac{x^{3}dx}{x^{4}+2}=\int_{-\infty}^{0}\frac{x^{3}dx}{x^{4}+2}+\int_{0}^{\infty}\frac{x^{3}dx}{x^{4}+2}=\lim_{\alpha\rightarrow-\infty}\int_{\alpha}^{0}\frac{x^{3}dx}{x^{4}+2}+\lim_{\beta\rightarrow\infty}\int_{0}^{\beta}\frac{x^{3}dx}{x^{4}+2}=\text{(kilka prostych kroków)}=[-\infty+\infty]$
+\end_inset
+
+ całka rozbieżna
+\begin_inset Newline newline
+\end_inset
+
+wartość głowna całki 
+\begin_inset Formula $=\lim_{T\rightarrow\infty}\int_{-T}^{T}\frac{x^{3}dx}{x^{4}+2}dx=\text{(znowu)}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Całki niewłaściwe drugiego rodzaju:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f:\,<a,b)\rightarrow\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Def: Jeśli 
+\begin_inset Formula $f:\,<a,b)\rightarrow\mathbb{R}$
+\end_inset
+
+ jest calkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,\beta>$
+\end_inset
+
+ dla każdej 
+\begin_inset Formula $a<\beta<b$
+\end_inset
+
+ i istnieje granica 
+\begin_inset Formula $\lim_{\beta\rightarrow b^{-}}\int_{a}^{\beta}f(x)dx$
+\end_inset
+
+, to granicę tą nazywamy całką niewłaściwą drugiego rodzaju i oznaczamy
+ 
+\begin_inset Formula $\int_{a}^{b}f(x)dx$
+\end_inset
+
+: 
+\begin_inset Formula $\int_{a}^{b}f(x)dx=\lim_{\beta\rightarrow b^{-}}\int_{a}^{\beta}f(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dla 
+\begin_inset Formula $f:\,(a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ definiujemy analogicznie 
+\begin_inset Formula $\int_{a}^{b}f(x)dx:\,$
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}f(x)dx=\lim_{\alpha\rightarrow a^{+}}\int_{\alpha}^{b}f(x)dx$
+\end_inset
+
+ jeśli 
+\begin_inset Formula $f$
+\end_inset
+
+ jest całkowalna w sensie Riemanna na 
+\begin_inset Formula $<\alpha,b>$
+\end_inset
+
+ dla każdej 
+\begin_inset Formula $a<\alpha<b$
+\end_inset
+
+ i granica istnieje
+\end_layout
+
+\end_body
+\end_document
