@@ -495,7 +495,7 @@ Z tego
 
 \end_deeper
 \begin_layout Enumerate
-Długośc łuku:
+Długość łuku:
 \begin_inset Newline newline
 \end_inset
 
@@ -606,6 +606,304 @@ Z tw o 3 ciągach otrzymujemy
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+SZEREGI LICZBOWE
+\end_layout
+
+\begin_layout Enumerate
+Niech 
+\begin_inset Formula $\{a_{n}\}\subseteq\mathbb{R}$
+\end_inset
+
+.
+ Rozważamy 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+\dots$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Def.
+ Ciąg 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $S_{n}=\sum_{i=1}^{n}a_{n}$
+\end_inset
+
+ nazywamy ciągiem sum częściowych szeregu 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Def.
+ Jeśli ciąg sum cześciowych ma granicę (skończoną lub nie), 
+\begin_inset Formula $\lim_{n\rightarrow\infty}S_{n}$
+\end_inset
+
+, to nazywamy ją sumą szeregu 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ i zapisujemy 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}=\lim_{n\rightarrow\infty}S_{n}$
+\end_inset
+
+.
+ Ponadto, gdy granica ta istnieje i jest skończona, to szereg 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ nazywamy zbieżnym; w pozostałych zaś przypadkach (tzn, gdy granica ta nie
+ istnieje lub istnieje i jest nieskończona) szereg ten nazywamy rozbieżnym
+\begin_inset Newline newline
+\end_inset
+
+Przykłady:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n(n+1)}$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}=\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{n}=a_{1}+\dots+a_{n}=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\frac{1}{3}+\dots+\frac{1}{n-1}-\frac{1}{n}+\frac{1}{n}-\frac{1}{n+1}=1-\frac{1}{n+1}\overset{n\rightarrow\infty}{\rightarrow}1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zatem 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n(n+1)}$
+\end_inset
+
+ jest zbieżny i 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suma szeregu geometrycznego o ilorazie 
+\begin_inset Formula $q$
+\end_inset
+
+: 
+\begin_inset Formula $1+q+q^{2}+\dots=\sum_{n=1}^{\infty}q^{n-1}$
+\end_inset
+
+ (
+\begin_inset Formula $\underbar{tutaj}$
+\end_inset
+
+ umawiamy się, że 
+\begin_inset Formula $0^{0}=1$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{n}=1+q+q^{2}+\dots+q^{n}$
+\end_inset
+
+=
+\begin_inset Formula $\begin{cases}
+n & q=1\\
+\frac{1-q^{n}}{1-q} & q\neq1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}S_{n}=\begin{cases}
+\infty & q=1\\
+\frac{1}{1-q} & |q|<1\\
+\infty & q>1\\
+\text{brak granicy} & q\leq-1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Twierdzenie 3.1: Szereg geometryczny 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n-1}\text{(=\ensuremath{\sum_{n=0}^{\infty}q^{n}})}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $|q|<1$
+\end_inset
+
+.
+ W przypadku zbieżności 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n-1}=\frac{1}{1-q}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ogólniej, 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{1}q^{n-1}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff|q|<1$
+\end_inset
+
+ lub 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+.
+ W przypadku zbieżności, 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{1}q^{n-1}=\frac{a_{1}}{1-q}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ jest rozbieżny.
+\begin_inset Newline newline
+\end_inset
+
+Dowód nie wprost: Zakładamy, że szereg jest zbieżny, tzn istnieje skończona
+ granica 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{1}{i}\overset{\text{ozn}}{=}S\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{n}=1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{2n}-S_{n}=1+\frac{1}{2}+\dots+\frac{1}{n}+\dots+\frac{1}{2n}-1-\frac{1}{2}-\dots-\frac{1}{n}=\underbrace{\frac{1}{n+1}+\frac{1}{n+2}+\dots+\frac{1}{2n}}_{\text{n wyrazów}}\geq n\cdot\frac{1}{2n}=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{n\in\mathbb{N}}S_{2n}-S_{n}\geq\frac{1}{2}\implies\lim_{n\rightarrow\infty}(S_{2n}-S_{n})\geq\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z drugiej strony 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(S_{2n}-S_{n})=S-S=0$
+\end_inset
+
+ - sprzeczność
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 3.2: Szereg 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{\alpha}}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff a>1$
+\end_inset
+
+ (rozbieżny 
+\begin_inset Formula $\iff\alpha\leq1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 3.3: (podstawowy warunek zbieżności szeregu):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny, to 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\overset{\text{def}}{\iff}\lim_{n\rightarrow\infty}S_{n}=S\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{n\geq2}a_{n}=S_{n}-S_{n-1}\overset{n\rightarrow\infty}{\longrightarrow}S-S=0$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+UWAGA: Tylko w jedną stronę
 \end_layout
 
 \end_body
