@@ -4,7 +4,7 @@ from PyPDF2 import PdfFileReader, PdfFileWriter
 NOTEPATH = "/home/mtizim/Notatki"
 assert os.getcwd()==NOTEPATH, "Wykonaj z dobrego folderu a nie"
 
-folders = ["Algebra","Analiza","Elitm"]
+folders = ["s2/Analiza","s2/Dyskretna"]
 
 def merge_pdfs(paths, output):
     pdf_writer = PdfFileWriter()

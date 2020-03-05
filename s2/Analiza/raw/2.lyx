@@ -273,5 +273,340 @@ Przykłady:
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+
+\series bold
+2.ZASTOSOWANIA GEOMETRYCZNE CAŁKI RIEMANNA
+\end_layout
+
+\begin_layout Enumerate
+Pole
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pole figury płaskiej pomiędzy wykresem funkcji 
+\begin_inset Formula $y=f(x),\,x\in<a,b>$
+\end_inset
+
+a osią 
+\begin_inset Formula $OX$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Twierdzenie 2.1: Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła i nieujemna i 
+\begin_inset Formula $D=\{(x,y)\in\mathbb{R}^{2}:\,x\in<a,b>\,\text{i\,}0\leq y\leq f(x)\}$
+\end_inset
+
+ to pole 
+\begin_inset Formula $D\overset{\text{ozn}}{=}|D|=\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Niech 
+\begin_inset Formula $\Pi_{n}=(x_{0}^{(n)},\dots x_{n}^{(n)})$
+\end_inset
+
+ będzie podziałem odcinka 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+na 
+\begin_inset Formula $n$
+\end_inset
+
+ równych kawałków.
+ Wtedy ciąg 
+\begin_inset Formula $\{\Pi_{n}\}$
+\end_inset
+
+ jest normalnym ciągiem podziałów.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m_{i}^{(n)}=\inf_{x\in<x_{i-1}^{(n)},x_{i}^{(n)}>}f(x)$
+\end_inset
+
+, 
+\begin_inset Formula $M_{i}^{(n)}=\sup_{x\in<x_{i-1}^{(n)},x_{i}^{(n)}>}f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Wtedy 
+\begin_inset Formula $|D|\leq\sum_{i=1}^{n}M_{i}\cdot(x_{i}-x_{i-1})\overset{n\rightarrow\infty}{\rightarrow}\int_{a}^{b}f(x)dx$
+\end_inset
+
+ (suma prostokątów 
+\begin_inset Quotes eld
+\end_inset
+
+przykrywających
+\begin_inset Quotes erd
+\end_inset
+
+ figurę = górna suma całkowa Darboux)
+\begin_inset Newline newline
+\end_inset
+
+ oraz 
+\begin_inset Formula $|D|\geq\sum_{i=1}^{n}m_{i}\cdot(x_{i}-x_{i-1})\overset{n\rightarrow\infty}{\rightarrow}\int_{a}^{b}f(x)dx$
+\end_inset
+
+ (suma prostokątów 
+\begin_inset Quotes eld
+\end_inset
+
+pod
+\begin_inset Quotes erd
+\end_inset
+
+ figurą = dolna suma całkowa Darboux)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła na 
+\begin_inset Formula $<a,b>\implies$
+\end_inset
+
+całkowalna w sensie Riemanna na 
+\begin_inset Formula $<a,b>$
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{b}f(x)dx\text{(dolna)}=\int_{a}^{b}f(x)dx\text{(górna)}=\int_{a}^{b}f(x)dx\text{(Riemanna)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tw o 3 ciągach otrzymujemy 
+\begin_inset Formula $|D|=\lim_{n\rightarrow\infty}|D|=\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Pole figury płaskiej pomiędzy dwoma wykresami funkcji 
+\begin_inset Newline newline
+\end_inset
+
+Twierdzenie 2.2: Jeśli 
+\begin_inset Formula $g,d:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ są ciągłe i 
+\begin_inset Formula $\forall_{x\in<a,b>}d(x)\leq g(x)$
+\end_inset
+
+ i 
+\begin_inset Formula $D=\{(x,y)\in\mathbb{R}^{2}:\,x\in<a,b>\,\text{i \ensuremath{d(x)\leq y\leq g(x)}}\}$
+\end_inset
+
+ to 
+\begin_inset Formula $|D|=\int_{a}^{b}[g(x)-d(x)]dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: 1: funkcja 
+\begin_inset Formula $d(x)$
+\end_inset
+
+ jest nieujemna.
+ 
+\begin_inset Formula $|D|=|D_{g}|-|D_{d}|\overset{\text{tw 2.1}}{=}\int_{a}^{b}g(x)dx-\int_{a}^{b}d(x)dx=\int_{a}^{b}[g(x)-d(x)]dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2: funkcja 
+\begin_inset Formula $d(x)$
+\end_inset
+
+ przyjmuje wartość ujemną, tzn 
+\begin_inset Formula $c\overset{\text{ozn}}{=}\inf_{x\in<a,b>}d(x)<0$
+\end_inset
+
+.
+ Przesuwamy wykresy funkcji 
+\begin_inset Formula $d(x)$
+\end_inset
+
+ i 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ o 
+\begin_inset Formula $c$
+\end_inset
+
+ jednostek do góry otrzymując funkcje 
+\begin_inset Formula $d(x)+c$
+\end_inset
+
+ i 
+\begin_inset Formula $g(x)+c$
+\end_inset
+
+ które są nieujemne.
+ Przesunięcie nie zmienia pola figury zawartej pomiędzy dwoma wykresami.
+ Z tego 
+\begin_inset Formula $|D|=|D_{g+c}|-|D_{d+c}|\overset{1:}{=}\int_{a}^{b}[g(x)+c-d(x)-c]=\int_{a}^{b}[g(x)-d(x)]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z tego 
+\begin_inset Formula $|D|=\int_{a}^{b}[g(x)-d(x)]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Długośc łuku:
+\begin_inset Newline newline
+\end_inset
+
+Twierdzenie 2.3: Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest klasy 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, to długość łuku opisanego równaniem 
+\begin_inset Formula $y=f(x),x\in<a,b>$
+\end_inset
+
+, dana jest wzorem 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L=\int_{a}^{b}\sqrt{1+(f'(x))^{2}}dx\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Objętość bryły obrotowej
+\begin_inset Newline newline
+\end_inset
+
+Twierdzenie 2.2: Jeśli Jeśli 
+\begin_inset Formula $f:\,<a,b>\rightarrow\mathbb{R}$
+\end_inset
+
+ jest ciągła, to objętość bryły powstałej w wyniku obrotu funkcji 
+\begin_inset Formula $y=f(x),\,x\in<a,b>,$
+\end_inset
+
+ wokół osi 
+\begin_inset Formula $OX$
+\end_inset
+
+ dana jest wzorem:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V=\pi\int_{a}^{b}(f(x))^{2}dx\\
+\end{align*}
+
+\end_inset
+
+D: Dowód analogiczny do dowodu Twierdzenia 2.1, tylko że liczymy sumę objętości
+ walców zamiast prostokątów.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m_{i}^{(n)}=\inf_{x\in<x_{i-1}^{(n)},x_{i}^{(n)}>}|f(x)|,M_{i}^{(n)}=\sup_{x\in<x_{i-1}^{(n)},x_{i}^{(n)}>}|f(x)|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $|V|\geq\sum_{i=1}^{n}\pi\cdot(m_{i})^{2}\cdot(x_{i}-x_{i-1})=\pi\cdot\sum_{i=1}^{n}(m_{i})^{2}\cdot(x_{i}-x_{i-1})\overset{n\rightarrow\infty}{\rightarrow}\pi\cdot\int_{a}^{b}[f(x)]^{2}dx$
+\end_inset
+
+ (dolna suma całkowa Darboux)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $|V|\leq\sum_{i=1}^{n}\pi\cdot(M_{i})^{2}\cdot(x_{i}-x_{i-1})=\pi\cdot\sum_{i=1}^{n}(M_{i})^{2}\cdot(x_{i}-x_{i-1})\overset{n\rightarrow\infty}{\rightarrow}\pi\cdot\int_{a}^{b}[f(x)]^{2}dx$
+\end_inset
+
+ (górna suma całkowa Darboux)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ jest ciągła w sensie Riemanna na 
+\begin_inset Formula $<a,b>\implies f^{2}\,\text{też jest}\implies\text{(dolna suma)\ensuremath{=\text{(górna suma)\ensuremath{=\int_{a}^{b}[f(x)]^{2}}}}}dx$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Z tw o 3 ciągach otrzymujemy 
+\begin_inset Formula $|V|=\lim_{n\rightarrow\infty}V=\pi\cdot\int_{a}^{b}[f(x)]^{2}dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

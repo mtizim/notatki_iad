@@ -98,7 +98,7 @@
 \end_inset
 
 mówimy, że ten ciąg jest normalny, jeśli 
-\begin_inset Formula $\delta(\Pi_{n}):=\max_{i\in1,\dots,kn}(x_{i}^{(n)},-x)\overset{n\rightarrow\infty}{\rightarrow}0$
+\begin_inset Formula $\delta(\Pi_{n}):=\max_{i\in1,\dots,kn}(x_{i}^{(n)}-x_{i-1}^{(n)})\overset{n\rightarrow\infty}{\rightarrow}0$
 \end_inset
 
 
