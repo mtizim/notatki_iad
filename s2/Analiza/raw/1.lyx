@@ -362,7 +362,7 @@ Własność 0.8: Jeśli
 \end_inset
 
  jest ciągła, to 
-\begin_inset Formula $\int_{a}^{b}f(x)dx\cdot g'(x)dx=\begin{cases}
+\begin_inset Formula $\int_{a}^{b}f(x)\cdot g'(x)dx=\begin{cases}
 t=g(x)\\
 dt=g'(x)dx\\
 a\rightarrow g(a)=\alpha\\

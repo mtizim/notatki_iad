@@ -1,0 +1,741 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Twierdzenie 3.4:
+\begin_inset Newline newline
+\end_inset
+
+Szereg 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+spełnia warunek Cauchy'ego zbieżności szeregu, tzn 
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{m>n\ge n_{0}}|a_{n+1}+\dots+a_{m}|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D: Szereg 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny
+\begin_inset Formula $\overset{\text{def.}}{\iff}$
+\end_inset
+
+ciąg sum częs=ściowych 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+ ciąg 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ spełnia warunek Cauchy'ego, tzn
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{m,n\ge n_{0}}|S_{m}-S_{n}|<\epsilon\iff\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{m>n\ge n_{0}}|(\text{po rozwinięciu i poskreślaniu) \ensuremath{a_{n+1}+\dots+a_{m}}}|<\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Uwaga 3.1: Dwa szeregi 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ i 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ różniące się skończoną liczbą wyrazów są albo jednocześnie zbieżne albo
+ jednocześnie rozbieżne.
+ Wynika to z warunku Cauchy'ego zbieżności szeregu, w którym 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ możemy wziąć na tyle duże, żeby 
+\begin_inset Formula $\forall_{n\ge n_{0}}a_{n}=b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 3.5: Niech 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ i 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ to szeregi zbieżne i 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ Wówczas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\lambda a_{n}$
+\end_inset
+
+ jest zbieżny i 
+\begin_inset Formula $=\lambda\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Formula $\lim_{n\rightarrow\infty}(\lambda a_{1}+\dots+\lambda a_{n})=\lambda\lim_{n\rightarrow\infty}(a_{1}+\dots+a_{n})=\lambda\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}(a_{n}+b_{n})$
+\end_inset
+
+ jest zbieżny i 
+\begin_inset Formula $=\sum_{n=1}^{\infty}a_{n}+\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{1}+b_{1}+\dots+a_{n}+b_{n})=\lim_{n\rightarrow\infty}(a_{1}+\dots+a_{n}+b_{1}+\dots+b_{n})\overset{\text{bo szeregi zbieżne}}{=}\lim_{n\rightarrow\infty}(a_{1}+\dots+a_{n})+\lim_{n\rightarrow\infty}(b_{1}+\dots+b_{n})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Szeregi o wyrazach nieujemnych:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Zakładamy, że 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{n}\ge0$
+\end_inset
+
+, co oznacza, że 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ ma wyrazy nieujemne.
+ Wówczas 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}S_{n+1}-S_{n}=a_{n+1}\ge0$
+\end_inset
+
+, co oznacza, że ciąg 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ jest niemalejący 
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ciąg 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ jest ograniczon z góry, skąd 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\{S_{n}\}$
+\end_inset
+
+ jest ograniczony z góry.
+\begin_inset Newline newline
+\end_inset
+
+W przypadku gdy 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ ma wyrazy nieujemne, możliwe są tylko dwie sytuacje:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny, co zapisujemy 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}<\infty$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest rozbieżny i 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nie jest możliwy przypadek, że 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest rozbieżny i 
+\begin_inset Formula $\lim_{n\rightarrow\infty}S_{n}$
+\end_inset
+
+ nie istnieje
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 3.6 (kryterium porównawcze): Jeśli 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}0\le a_{n}\le b_{n},$
+\end_inset
+
+to 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\implies\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny
+\begin_inset Newline newline
+\end_inset
+
+D: Z założenia 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\begin_inset Formula $\{b_{1}+\dots+b_{n}\}$
+\end_inset
+
+ jest ograniczony z góry, tzn 
+\begin_inset Formula $\exists_{M\in\mathbb{R}}\forall_{n\in\mathbb{N}}b_{1}+\dots+b_{n}\le M$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{1}+\dots+a_{n}\le b_{1}+\dots+b_{n}<M$
+\end_inset
+
+, co oznacza, że ciąg 
+\begin_inset Formula $\{a_{1}+\dots+a_{n}\}$
+\end_inset
+
+ jest ograniczony z góry 
+\begin_inset Formula $\implies\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest zbieżny
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ jest rozbieżny 
+\begin_inset Formula $\implies\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ jest rozbieżny
+\begin_inset Newline newline
+\end_inset
+
+D: Zakładamy, że 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ rozbieżny 
+\begin_inset Formula $\implies\lim_{n\rightarrow\infty}(a_{1}+\dots+a_{n})=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{1}+\dots+a_{n}\leq b_{1}+\dots+b_{n},$
+\end_inset
+
+więc z tw.
+ o 2 ciągach, otrzymujemy, że 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(b_{1}+\dots+b_{n})=\infty\implies\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ jest rozbieżny
+\end_layout
+
+\begin_layout Enumerate
+Kryterium porównawcze pozostaje prawdziwy, gdy 
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}0\leq a_{n}\leq b_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Twierdzenie 3.7 ( kryterium d' Alemberta):
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{n}>0$
+\end_inset
+
+ i istnieje granica 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_{n}}\overset{\text{ozn}}{=}g$
+\end_inset
+
+,to
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g<1\implies\sum_{n=1}^{\infty}a_{n}<\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g>1\implies\sum_{n=1}^{\infty}a_{n}<=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g=1\implies???$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D:
+\begin_inset Newline newline
+\end_inset
+
+1: Niech 
+\begin_inset Formula $g<1$
+\end_inset
+
+.
+ Wówczas 
+\begin_inset Formula $\exists_{\epsilon_{1}>0}g+\epsilon_{1}<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z założenia 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_{n}}=g\iff\forall_{\epsilon>0}\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|\frac{a_{n+1}}{a_{n}}-g|<\epsilon$
+\end_inset
+
+.
+ W szczególności biorąc 
+\begin_inset Formula $\epsilon=\epsilon_{1}$
+\end_inset
+
+otrzymjemy
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|\frac{a_{n+1}}{a_{n}}-g|<\epsilon_{1}\implies\forall_{n\ge n_{0}}\frac{a_{n+1}}{a_{n}}<\epsilon_{1}+g.$
+\end_inset
+
+ Stąd 
+\begin_inset Formula $a_{n_{0}+1}<a_{n_{0}}(\epsilon_{1}+g)$
+\end_inset
+
+ i 
+\begin_inset Formula $a_{n_{0}+2}<a_{n_{0}+1}(\epsilon_{1}+g)<a_{n_{0}}(\epsilon_{1}+g)^{2}$
+\end_inset
+
+, itd więc
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{p\in\mathbb{N}}a_{n_{0}+p}<a_{n_{0}}(\epsilon_{1}+g)^{p}\implies\sum_{p=1}^{\infty}a_{n_{0}+p}$
+\end_inset
+
+ jest zbieżny z kryterium porównawczego, bo 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n_{0}}(\epsilon_{1}+g)^{p}$
+\end_inset
+
+ jest zbieżny jako szereg geometryczny o ilorazie 
+\begin_inset Formula $q=\epsilon_{1}+g,|q|<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Skoro 
+\begin_inset Formula $\sum_{p=1}^{\infty}a_{n_{0}+p}$
+\end_inset
+
+, to szereg 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ też jest zbieżny, bo opuszczamy skończoną liczbę wyrazów.
+\begin_inset Newline newline
+\end_inset
+
+2: Niech 
+\begin_inset Formula $g>1$
+\end_inset
+
+ wtedy 
+\begin_inset Formula $\exists_{\epsilon_{2}>0}g-\epsilon_{2}>1.$
+\end_inset
+
+ 
+\begin_inset Formula $\exists_{n_{0}\in\mathbb{N}}\forall_{n\ge n_{0}}|\frac{a_{n+1}}{a_{n}}-g|<\epsilon_{2}\implies\forall_{n\ge n_{0}}\frac{a_{n+1}}{a_{n}}>-\epsilon_{2}+g>1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stąd 
+\begin_inset Formula $a_{n_{0}+1}>a_{n_{0}},a_{n_{0}+2}>a_{n_{0}+1}>a_{n_{0}}$
+\end_inset
+
+, itp
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{p\in\mathbb{N}}a_{n_{0}+p}>a_{n_{0}}>0\implies\lim_{n\rightarrow\infty}a_{n}\neq0$
+\end_inset
+
+, bo gdyby granica ta istniała, to mielibyśmy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}\ge a_{n_{0}}>0$
+\end_inset
+
+ co oznacza, że 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ nie spełnia podstawowego warunku zbieżności szeregu, więc jest rozbieżny
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 3.8 (kryterium Cauchy'ego)
+\begin_inset Newline newline
+\end_inset
+
+Załóżmy, ze 
+\begin_inset Formula $\forall_{n\in\mathbb{N}}a_{n}\ge0$
+\end_inset
+
+ i oznaczmy, że 
+\begin_inset Formula $g=\limsup\sqrt[n]{a_{n}}$
+\end_inset
+
+ Wówczas
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g<1\implies\sum_{n=1}^{\infty}a_{n}<\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g>1\implies\sum_{n=1}^{\infty}a_{n}<=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g=1\implies???$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Twierdzenie 3.9 (kryterium całkowe)
+\begin_inset Newline newline
+\end_inset
+
+Jeśli 
+\begin_inset Formula $f:\,<1,\infty)\rightarrow\mathbb{R}$
+\end_inset
+
+ jest nieujemna i nierosnąca, to 
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+ jest zbieżny 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{1}^{\infty}f(x)dx$
+\end_inset
+
+ jest zbieżna
+\begin_inset Newline newline
+\end_inset
+
+D: 
+\begin_inset Formula $f(2)+\dots+f(n)\leq\int_{1}^{n}f(x)dx\leq f(1)+\dots+f(n-1)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{n}-f(1)\leq\int_{1}^{n}f(x)dx\leq S_{n-1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\impliedby::$
+\end_inset
+
+ Zakładamy, że 
+\begin_inset Formula $\int_{1}^{\infty}f(x)dx$
+\end_inset
+
+ jest zbieżna
+\begin_inset Formula $\implies\lim_{n\rightarrow\infty}\int_{1}^{n}f(x)dx=g\implies$
+\end_inset
+
+ ciąg 
+\begin_inset Formula $b_{n}=\int_{1}^{n}f(x)dx$
+\end_inset
+
+ jest zbieżny, więc jest też ograniczony, tzn 
+\begin_inset Formula $\exists_{M\in\mathbb{R}}\forall_{n\in\mathbb{N}}\int_{1}^{n}f(x)dx\leq M$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zatem 
+\begin_inset Formula $\forall_{n\geq2}S_{n}\leq\int_{1}^{n}f(x)dx+f(1)\leq M+f(1)\implies\{S_{n}\}$
+\end_inset
+
+ jest ograniczony z góry, a ponieważ 
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+ to szereg wyrażeń nieujemnych, to 
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+ jest zbieżny
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies::$
+\end_inset
+
+Pokazanie że implikacja jest prawdziwa, jest równoważne pokazaniu, że 
+\begin_inset Formula $\int_{1}^{\infty}f(x)dx$
+\end_inset
+
+ jest rozbieżna 
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+ jest rozbieżna
+\begin_inset Newline newline
+\end_inset
+
+Załóżmy, że 
+\begin_inset Formula $\int_{1}^{\infty}f(x)dx$
+\end_inset
+
+ jest rozbieżna, tzn 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{1}^{n}f(x)dx=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall_{n\ge2}\int_{1}^{n}f(x)dx\leq S_{n-1}$
+\end_inset
+
+ więc z tw o 2 ciągach otrzymujemy 
+\begin_inset Formula $\lim_{n\rightarrow\infty}S_{n-1}=\infty$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\lim_{n\rightarrow\infty}S_{n}=\infty$
+\end_inset
+
+, co oznacza, że 
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+ jest rozbieżny
+\end_layout
+
+\end_body
+\end_document
